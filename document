@@ -21,7 +21,7 @@
 \usepackage{subfigure}
 \usepackage{float}
 %\usepackage[outdir=./]{epstopdf}
-
+\usepackage{kotex}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
@@ -130,189 +130,196 @@ User & WonJun Choi & He is a user of LG brid.zzz product and is a student about 
 \begin{tabular}{m{1.6cm} m{1.5cm} m{3.7cm}}
 \midrule
 Software developer & ByeongHeon Kang & First, a software developer accurately comprehends the project requirements, identifies user needs, and provides a sense of direction for the software. This leads to the development of technical specifications and system architecture. This design phase determines the fundamental structure of the software, serving as a blueprint for its implementation. Next, the developer embarks on the actual coding and development work. In this phase, they adhere to technical specifications, writing source code and implementing various features and functionalities. Ensuring code quality and performance is crucial, and the developer performs testing and debugging to resolve errors and bugs. Effective communication about project progress and challenges is necessary. This facilitates alignment among all team members and is pivotal for the successful development of the software.\\\\
-User & WonJun Choi & He is a user of LG brid.zzz product and is a student about to take midterm exams. During the exam period, fatigue accumulated in his body due to intermittent tension and insomnia. Accordingly, he started using an application linked to brid.zzz. Through the application, he was able to record his sleep status and manage images and diaries. Through images created through his own brain waves during sleep, he was able to check his sleep state more intuitively, and was sometimes able to share his dreams with other friends which intrigued his friend. \\\\
+User & WooSung Jung & He is a Development Manager. He's in charge of this project. Due to the nature of the project, identifying the needs of customers and users and the ability to identify the needs of engineers is critical. Instead of just identifying each need, he needs to compromise each need and oversee the project's direction in a way that will satisfy everyone. This role also requires the ability to understand the conditions required as the project progresses. \\\\
 \bottomrule
 \end{tabular}
 \end{table}
 
+\section{\Large{Introduction}}
+\begin{enumerate}[label=\arabic*]
+    \item {\large{Motivation}} \\
+    Sleep is an important physiological process that greatly affects our health and quality of life. Bad sleep quality can be associated with stress, depression, anxiety, excessive fatigue, poor concentration, and physical health problems. So it is very important to measure and improve sleep quality. Under this background, it is important to understand the relationship between sleep quality and brain waves and to create an application that helps correct sleep patterns.\\
+    In LG electronic brid.zzz has launched home appliances for mind care and slip care. Brid.zzz manages the 'bloom' that everyone has. Whether you are a student or an office worker, there are moments when you feel stress and tension in your daily life. Just as it's hard to get sunny every day, you can't avoid cloudy days. That's why brid.zzz takes care of "blurring". The brid.zzz will be a very useful appliance for modern people. Sleep care is good to use when you can't sleep well. When you enter the sleep care screen, it consists of an intuitive layout such as an OTT home screen, and you can choose the sound you're attracted to. I usually turn on the sound of bonfires or rain when I can't sleep well, and when I write, I turn on the sound of nature to make my mind comfortable. You lose your thoughts, your concentration increases, and your mind becomes calm. Brid.zzz not only plays sound, but also detects the user's sleep stage in real time and induces brainwave control to create a suitable sleep cycle. For example, if the user is determined to be asleep through brain waves, the sound is turned off, or if it is found to be in REM sleep state (light sleep), the sound is reproduced again to induce deep sleep. If I turn on ASMR on YouTube, I can sleep well, but I woke up again because of the sound, brid.zzz recognized through brain waves, so there was no such discomfort. We are decided to develop an application for people suffering from sleep disorders using this brid.zzz. \cite{LG_bridzzz} \\
+    \begin{enumerate}[label=\alph*]
+        \item Excessive coffee dependence, caffeine addiction leads to insomnia.\\
+        There are a lot of people who love coffee. Enjoy coffee during work, after meals, when taking a break, and when taking a walk. The coffee shops lined up on the side of the road are an element that proves the public's love for coffee. In addition, various variation coffee products such as americano, latte, macchiato, and mixed coffee appear to satisfy the public's taste. The caffeine content in coffee affects the brain and contributes to the production of neurotransmitters such as serotonin and dopamine, which improves fatigue recovery and stress. It acts on the central nervous system and exhibits a human arousal effect. This is effective in driving away drowsiness, which is a positive factor in increasing work concentration. The problem is excessive intake. It is known that 150ml of coffee contains an average of 40 to 180mg of caffeine. According to a study by the Ministry of Food and Drug Safety, the recommended daily intake of caffeine for Koreans is about 400 milligrams for adult men. It varies from person to person but drinking only 3 to 5 cups of coffee a day exceeds the daily intake of caffeine. Too much caffeine can cause side effects such as headaches, heart palpitations, nervousness, dizziness, and cold sweat. Among them, insomnia is considered a representative side effect of caffeine. This is because caffeine increases the heart rate, causing excitement in the body and further disrupting the activity of adenosine receptors that induce sleep. Insomnia is a symptom of poor sleep despite being given the right time and opportunity. It is characterized by various adverse conditions, such as feeling tired or unable to concentrate during the day due to lack of sleep at night. The causes of insomnia vary. Mental illness such as mental and physical constitution, way of life, sleeping habits, sleep diseases, and depression are cited as causes. Among them, excessive caffeine intake can cause chronic insomnia, so care should be taken. If you are suffering from insomnia, it is advisable to properly control your coffee intake. It is also a good idea to enjoy other drinks instead of coffee. It is a good drink to drink instead of coffee, including chamomile tea that helps calm and comfortably sleep well, and lavender tea that is good for nerve stability and stress relief. In addition, it is a good way to activate the rhythm of the body through regular aerobic exercise. If insomnia persists for more than a month despite reduced coffee intake, if it is difficult to maintain work during the day or if daytime sleepiness or narcolepsy occurs, it is recommended to visit the sleep clinic for a thorough examination. The exact cause of insomnia can be determined by physical examination, medical history, and blood tests. Insomnia can be caused not only by sleeping habits but also by depression, which can be confirmed through specialized examination processes such as physical examination, psychoanalysis, writing a sleep diary, and multiple sleep tests. The multi-way sleep test has the advantage that even office workers who are busy with their busy schedules can easily receive it because it is possible to proceed with a simple process in which patients achieve normal sleep at night by attaching a sensor. \cite{caffein}\\
+        \item Exercise and Sleep\\
+        It's better to exercise together with treatment according to the cause. Also, you can expect some effects just by exercising. This is because exercise promotes blood circulation and lowers stress. It's not a fundamental remedy, but it helps you sleep. People sleep more than 30 percent of their lives. The brain's biological clock keeps you active during the day and sleeping at night. Body rhythm and mental vitality are restored during sleep. Biological rhythms increase sleep time in winter when the night is long, and sleep in summer when the night is short. This is why naps are more common in summer than in winter. In addition, obese people tend to sleep long, and skinny people tend to sleep short. The quality of sleep is determined by exercise time. Morning or daytime exercise is recommended. Exercise at night slows sleep time due to increased body temperature and excitement of sympathetic nerves. The sleep cycle time is pushed back by the vitality of the body. Exercise consumes energy and increases body temperature. Blood pressure and pulse increase and cortisol increase. A good night's sleep works well when the wakefulness hormone cortisol is reduced, and melatonin is released. Exercise in the morning or during the day also has the effect of enjoying the sunlight for a long time, which promotes sleep. Running vigorously releases serotonin. Serotonin, a neurotransmitter, blocks the sunlight's optic nerve stimulation. At the Fred Hutchinson Cancer Research Center, Group A had morning walking exercises five times a week in 45 minutes and Group B had morning stretching three times a week in 20 minutes a day for a year. As a result, 70\% of the walking group A slept better than before exercise, and 30\% of the stretching group B slept better. This means that light exercise such as walking in the morning helps improve sleep quality.\cite{workout} If you exercise at night, you should avoid sweating. It is recommended to lighten the stretching for about 30 minutes. Indoor exercise helps you sleep by lying down and pushing your back high into the sky, and yoga's cat posture, which circles your back and waist. It relaxes the rigid body due to tension and relieves excessive brain energy through excessive thinking to stabilize brain waves. Along with exercise, the fundamental treatment is to comprehensively approach psychological factors and physical problems, which are dysfunction of the ledger, identify the cause, and take individual treatment. Brainwave measurement records, additional information (exercise records, food records, dreams) It was planned to create a function to create a picture that summarizes the sleep information of the day in one sheet and stores the information. It implements a function to share a picture summarizing sleep in one sheet on SNS such as Instagram. Based on the stored information, we're going to do a correlation analysis of each indicator It implements functions such as "drinking caffeine drinks lowers your sleep score by 20 percent" and "increases your sleep score by 30 percent due to regular exercise."  It implements a generative AI function that generates customized music based on brainwave information.\\
+    \end{enumerate}
 
+    \item{\large{Problem Statement}}
+        \begin{enumerate}[label=\alph*]
+        Sleep plays a key role in our health and daily lives. Then how long should we sleep? For adults, 7-8 hours of sleep per day is generally recommended. However, this may vary depending on each individual's constitution. What is more important than sleep time is to get regular and adequate sleep. With proper sleep, our bodies can reduce stress, strengthen our immune system, and regain mental and physical vitality.\\
+        There are various cases of sleep deprivation in modern society, which can be affected by an individual's lifestyle, occupation, habits, and health conditions. Below are some common examples of sleep deprivation in modern society.\\
+            \item Daily Stress: Daily stress such as work, study, family, and financial pressures can lead to sleep deprivation. Stress can increase your sleep tension and lead to poor sleep\\
+            \item Digital devices: Late use of digital devices such as smartphones, tablets, and computers can cause blue light and stress, negatively affecting sleep.\\
+            \item  Working Hours and Traffic Problems: Many people have short sleep hours due to irregular working hours or long traffic jams. Sleep deprivation is especially likely if the work is done at night.\\
+            \item Social pressure: Social pressure and competition are intensifying in modern society, which can lead to increased anxiety and stress. This can lead to sleep deprivation.\\
+            \item Use of chemicals and medicines: Foods or drinks contain caffeine or alcohol, and some medicines can negatively affect sleep.\\
+            \item Irregular Lifestyle: Irregular eating habits, lack of exercise, and habits that do not consistently maintain sleep time can lead to sleep deprivation.\\
+            \item Older Population: More problems with sleep quality and sleep deprivation may occur in older populations, which may be related to health conditions.\\
+            \item Sleep Disorders: People with sleep disorders such as sleep apnea syndrome and restless leg syndrome can find it difficult to get normal sleep.\\
+            \item Holiday Night Irregular Activities: You often stay active late without maintaining your sleep pattern on weekends or during vacations.\\
+        \end{enumerate}
 
-\section{Introduction}
-% no \IEEEPARstart
-This demo file is intended to serve as a ``starter file''
-for IEEE Computer Society conference papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8b and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
+    \item{\large{Related Software}}
+        \begin{enumerate}[label=\alph*]
+            \item Sleep Cycle\\
+            It is an application service that provides an alarm function according to the sleep cycle by utilizing the principle that it is fresher when waking up during shallow sleep rather than deep sleep. When the normal wake-up time is input, the most effective wake-up time is calculated to configure a smart alarm. The main screen consists of menus such as\\ a) sleep b) profile c) statistics d) profile, etc.\\
+            \begin{enumerate}
+            \item Sleep: Enter the target wake-up time before going to sleep and calculate the shallow sleep cycle to set off the alarm. You can enter variables such as coffee and late-night snacks before sleep, so you can diagnose yourself on what items your quality of sleep is affected by.\\
+            \item Diary: calculates and shows the time spent in bed, sleep time, by date and day of the week. In addition, the sound index of the back of the snoring is used to determine the user's deep sleep/sharp surface condition. In addition, the user's total snoring time and surrounding noise are numerically displayed.\\
+            \item Statistics: calculates sleep quality, regularity of sleep, bedtime, wake-up time, efficiency, sleep time, time taken to fall asleep, snoring, etc. and displays them in the form of bar graphs.\\
+            \item Profile: Briefly shows the average value of the data, and there is a settings menu. In addition, you can set interworking functions and sleep goals with Apple Watch.\\
+            \end{enumerate}
 
-\hfill mds
- 
-\hfill August 26, 2015
+            \item Sleep Tracker\\
+            An application of sleep recorder and sleep sound provision. When executing the application, the user's wake-up time / bed time / purpose of using the application is input. The purpose of using the app includes tracking sleep/getting asleep faster/improving sleep quality/making a more comfortable breakfast/living regularly/resting. The application can be used after customization according to the survey. The main screen consists of a) Tracker b) Exploration c) Statistics d) Settings within.
+            \begin{enumerate}
+            \item Tracker: If you enter the bedtime and alarm light and press the 'sleep now' button, the sleep tracker function is activated. When the sleep tracker function is operated, the sound around the device is recorded, and the recording ends when the "woke" button is pressed and pressed long.\\
+            \item Exploration: Exploration provides sound for sleep. Sleep sound is divided into items such as rain/nature/life/ASMR/meditation, and is a format in which data of each item is downloaded and reproduced.\\
+            \item Statistics: The statistics menu is also divided into diary/statistics menus.\\
+                \begin{enumerate}
+                    \item Diary: The diary menu shows the ratio of sleep scores and deep sleep, and a function to add notes to each sleep is implemented. It can also play recorded audio data when sleeping.
+                    \item Statistic: The statistics menu calculates weekly/monthly sleep scores, changes in bed/wake time, and averages. It also represents the amount of recorded noise and insufficient sleep time by period.\\
+                \end{enumerate}
+            \item Settings: The 'My Settings' menu provides synchronization through data backup. In addition, it provides my profile information, general settings/language settings, and data management functions.\\
+            \end{enumerate}
 
-\subsection{Subsection Heading Here}
-Subsection text here.
+            \item Better Sleep\\
+            It is an application that provides sound for sleep. The menu screen consists of\\ a) a home b) a sound c) a sleep d) a sleep\\ e) a profile.\\
+            \begin{enumerate}
+            \item Home: Shows menus such as favorites, my playlist, story, meditation, music, breath, and more, and you can click on each menu to listen to the services you want.\\
+            \item Sound: More services are available than those presented on the home screen. White noise, water, nature, asmr, brainwave customized frequencies, etc. are provided, and multiple items selected by the user can be heard at the same time rather than a single sound function. It presents specific sound items such as "wind between palm trees", "dawn", and "beach".\\
+            \item Sleep: Start tracking sleep. You can select and listen to the desired sound while in use, and the sound around the device is also recorded.\\
+            \item Diary: Shows data on sleep quality. Through breathing in sleep, snoring, and heart rate (interworking with the watch), it indicates the amount of time spent in sleep, shallow sleep, deep sleep, and quality of sleep.\\
+            \end{enumerate}
 
+            \item Calm\\
+            It is a meditation/sleeping application that inputs mood states in real time. The calm application consists of a) a home b) a sleep c) a search d) a profile menu.\\
+            \begin{enumerate}
+                \item Home: A list of recommended meditation content is listed below, with the user's status questioned at the top. The user's condition can be selected from six emojis, and it is divided into six categories: calmness, sadness, tiredness, anxiety, panic, and uncertainty. It is a screen in which customized meditation contents are presented accordingly when the user's status is input.\\
+                \item Sleep: Provides audio to help you fall into a deep sleep. It consists of items such as story, meditation, music, and soundscape, and is provided with a like/share function and a timer function when playing.\\
+                \item Explore: Provides the ability to search for audio by title, narrator, artist, or topic.\\
+                \item Profile: Record how many meditation sessions you've gone through in total, and how many days are the longest continuous performance. It also provides a function that shows the calendar and shows whether meditation is carried out at a glance.\\
+            \end{enumerate}
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+            \item Dream Kit\\
+            It's an application that records your dream. Images through generative AI can be recorded together. It is largely composed of three menus.\\
+            \begin{enumerate}
+                \item Modify your dream diary into a sleep diary so that you can check your daily sleep. If you press the content of the dream, you will go to the details of the dream content.\\ 
+                Items in the insomnia diary can be viewed by the user in the past. Images can also be viewed together.\\
 
+                \item The calendar comes out and the date of recording the dream diary comes out. Click on that date to get a dream diary for the detailed individual dates described above.\\
+                The date the sleep data is entered is checked. In addition, since the brainwave data set is divided into 16 categories (undetermined), colors are recorded in the calendar according to the classification. Through this, you can see your sleep patterns at a glance for a month or a year. \\
+                
+                \item You can see other users' dream diaries. You can see the most popular dream diary first. I think it's good to refer to the pattern of sleep diaries being recorded.\\
+            \end{enumerate}
 
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure}
+            \item Insomniac Diary\\
+            In fact, patients suffering from insomnia are receiving help by checking their sleeping habits through insomnia diaries. If you look at the information collected in your insomnia diary, you can largely distinguish between the information collected by Breeze and the information you need to enter directly. Since there are quite a few items that need to be entered directly, it would be good to optimize them as the most important content.\\
+            \begin{enumerate}
+                \item Direct input: Caffeine intake, hours of exercise per day, medication taken today, how many naps you took, mood during the day, current concerns, food you ate 2 hours before bed, why you woke up.\\
+                \item Breeze data: the amount of time you tried to give to them, the amount of time you slept, the amount of brain waves you woke up, the amount of RAM sleep you slept.\\
+                
+            \end{enumerate}
+            Key information can be extracted based on Breeze data.
+        \end{enumerate}
 
-% Note that the IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
+        \section{\Large{Requirement Analysis}}
+        \begin{enumerate}[label=\arabic*]
+            \item {\large{Main}}\\
+            This is the first page that opens when a user downloads and runs an application. The first impression is very important because the main page of the application is the first page you encounter the application. If the first impression is not good, no matter how good the function and performance of the application is, users may be less interested in using the application, so a lot of effort should be put into the design aspect.\\
+            \begin{enumerate}
+                \item Introduction Application
+                \begin{enumerate}
+                \item The application introduction screen is located at the top of the main page.\\
+                \item The application introduction screen is composed of the logo of the application and the application name.\\
+                \end{enumerate}
 
+                \item Sign-In and Sign-Up Buttons
+                \begin{enumerate}
+                \item Sign-In and Sign-Up buttons are located at the bottom of the main page.\\
+                \item The two buttons are moved to the Sign-Up page and Sing-In page, respectively.\\
+                \end{enumerate}
+            \end{enumerate}
 
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
-%
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
-%\label{fig_second_case}}
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
-% labels, the optional argument to \subfloat must be present. If a
-% subcaption is not desired, just leave its contents blank,
-% e.g., \subfloat[].
+            \item Sign-In\\
+            It is a login page that can be used if you are a member of the application.\\
+            \begin{enumerate}
+                \item ID, password input box\\
+                \item Login button: When you click the login button, the first time you access it, you go to the information page, otherwise the Home screen.\\
+            \end{enumerate}
 
+            \item Sign-Up\\
+            It is a page which leads people to sign-up this application.\\
+            \begin{enumerate}
+                \item ID field
+                \begin{enumerate}
+                    \item ID input box
+                    \item Double check button\\
+                \end{enumerate}
+                \item Password input box\\
+                \item Password verification input box\\
+                \item Name, phone number, email, date of birth input box\\
+            \end{enumerate}
 
-% An example of a floating table. Note that, for IEEE style tables, the
-% \caption command should come BEFORE the table and, given that table
-% captions serve much like titles, are usually capitalized except for words
-% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
-% and up, which are usually not capitalized unless they are the first or
-% last word of the caption. Table text will default to \footnotesize as
-% the IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
+            \item Home\\
+            It is a screen that appears after the login screen. It is also a page for writing a sleep journal, which is the main purpose of the application. In the case of writing a sleep journal, it will be placed in the center of the screen in the shape of a calendar to give a visual emphasis effect. Dream images created based on abstract data recorded on a daily basis, quantitative data input by users, and data measured in Breeze are stored in the calendar.\\
+            \begin{enumerate}
+                \item User responsive calendar\\
+                When the user selects a date specific to the calendar, the user can inquire the sleep image and quantitative data of the corresponding date. The calendar basically uses a calendar form that is displayed on a monthly basis. You can move any month to look up through the go back and go forward buttons, and click the number of months you are currently looking up displayed at the top of the center to display a list that allows you to look up by specifying the year and month. The user can specifically select and inquire about the year and month. The year you are currently looking up is shown in the upper left. The date on which the sleep record is entered in the calendar is checked in a circle. The circles are separated according to the sleep score for that date.\\\\
+                (Green: Upper than 85, Yellow: Upper than 75, Red: Upper than 65, Black: Lower than 75)\\\\
+                When you click on a circled date, the sleep diary for that date is visible under the calendar. You can check the sleep diary on that date by scrolling down. In the sleep diary of that date, the image and date are displayed at the top, and additional information is displayed below. If you click on an uncircled date, you will see a box that allows you to record your sleep diary for that date. Click to navigate to the window where you can create a sleep diary for that date.\\
+            \end{enumerate}
 
+            \item Write Sleep Diary\\
+            If you click the Sleep Diary creation window, it will be linked to the Sleep Diary creation window for that date. The sleep diary writing window can be changed to the desired date. First, in the window, pre-sleep information is input. Enter caffeine intake, exercise, sleeping pill dosage, and concerns on the day.\\
 
-% Note that the IEEE does not put floats in the very first column
-% - or typically anywhere on the first page for that matter. Also,
-% in-text middle ("here") positioning is typically not used, but it
-% is allowed and encouraged for Computer Society conferences (but
-% not Computer Society journals). Most IEEE journals/conferences use
-% top floats exclusively. 
-% Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the
-% \fnbelowfloat command of the stfloats package.
+             \begin{enumerate}
+                \item (Recommended) If the input time is before going to sleep, temporary storage is possible. Subsequent progress can be written through a notification sent after sleep or through writing a sleep diary. 
+                \item If the input time point is after the sleep of the input date, it can proceed immediately to the next. \\
+            \end{enumerate}
+            
+            I get sleep data for that date from Brid.zzz via API. Thereafter, the reason for the number of breaks based on the Brid.zzz data is inputted through a pop-up window.  Then, with the pop-up window, whether you had a dream, what kind of dream you had, and how you feel after waking up. Once you've entered all, click Save. When stored, it is stored together with the generated image.
+            The sleep diary is shown to the user after being saved.\\
 
+            \item Create Images with Generative AI\\
+            When you press Save, the data moves to the server, moving the sleep score among dreams, worries, moods after waking up, and Breeze data to the items in the prompt of the image creation AI. If all three items are not entered, an image is generated based on the Breeze data sleep score. The image is stored by setting a date as a key in the database. \\
+                \begin{enumerate}
+                    \item Prompt Setting
+                    \begin{enumerate}
+                        \item Image Description is a combination of Adjectives/Adverbs, Subjects, Background Description and Details, mainly using adjectives and nouns.
+                        \item The description must match the selected category and style.
+                        \item Too complicated and lengthy descriptions can produce false images and bad quality.\cite{prompt}\\
+                    \end{enumerate}
+                \end{enumerate}
 
+            \item Sleep Solution\\
+            Users wear Breeze and sleep every day. Breeze can provide sleep scores, sleep time, and RAM sleep count. The user directly inputs data such as caffeine intake, drug use, exercise, and meal intake. Depending on the data input by the user, it is possible to measure the change in the Breeze sleep score, sleep time, and number of RAM sleep. This application can learn long-term data and give customized daily life pattern advice to users. Various variables such as changes in sleep according to caffeine intake time, changes in sleep according to caffeine intake, changes in sleep according to exercise time and exercise intensity, drug type doses and changes over time can be advised to improve users' sleep quality. Providing sleep solutions allows users to be more active in data input.\\
+            \begin{enumerate}
+                    \item Data Analysis
+                   Long-term user data is required to provide a customized sleep solution. The items of data required are as follows. 1) Quality of sleep, 2) exercise, 3) Sleep time, 4) Stress level, 5) Blood pressure.\\
+                   Among the above items, nominal variables go through a one-hot encoder process and perform a data EDA process, such as processing for null.\\
+                   After that, linear regression is used to determine the correlation between each variable and the quality of sleep. However, in addition to the linear regression model, other models will be applied, and models with higher reliability will be finally adopted.\\
+                \end{enumerate}
 
+            \item Settings
+                \begin{enumerate}
+                    \item Change Personal Information\\
+                    With the My Page function, you can change the information entered at the time of membership registration, such as your name, birthday, gender, email, and body information.\\
+                    \item Guarantee Security\\
+                    In addition, users' security can be improved by displaying messages that induce password changes every three months.\\
+                    \item Provide Release Information\\
+                    By providing release information, it provides users with application version information to induce the use of the latest version of the application at all times to help them take advantage of various functions to be added in the future.\\
+                    \item Alarm Receiving Function\\
+                    The alarm receiving function helps users use the application more actively by sending alarms when sleep data is not entered or Breeze is not used.\\ In addition, the alarm reception rejection setting allows the user to avoid fatigue in the application with unwanted alarm reception.
+                \end{enumerate}
+            \end{enumerate}
+        \end{enumerate}
 
-\section{Conclusion}
-The conclusion goes here.
-
-
-
-
-% conference papers do not normally have an appendix
-
-
-
-% use section* for acknowledgment
-\ifCLASSOPTIONcompsoc
-  % The Computer Society usually uses the plural form
-  \section*{Acknowledgments}
-\else
-  % regular IEEE prefers the singular form
-  \section*{Acknowledgment}
-\fi
-
-
-The authors would like to thank...
-
-
-
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
-
-
-
+\bibliographystyle{unsrt}
+\bibliography{ref}
 
 % that's all folks
 \end{document}
