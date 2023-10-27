@@ -313,14 +313,70 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                     \item Provide Release Information\\
                     By providing release information, it provides users with application version information to induce the use of the latest version of the application at all times to help them take advantage of various functions to be added in the future.\\
                     \item Alarm Receiving Function\\
-                    The alarm receiving function helps users use the application more actively by sending alarms when sleep data is not entered or Breeze is not used.\\ In addition, the alarm reception rejection setting allows the user to avoid fatigue in the application with unwanted alarm reception.
+                    The alarm receiving function helps users use the application more actively by sending alarms when sleep data is not entered or Breeze is not used.\\ In addition, the alarm reception rejection setting allows the user to avoid fatigue in the application with unwanted alarm reception.\\
                 \end{enumerate}
             \end{enumerate}
         \end{enumerate}
+
+\section{\Large{Development Environment}}
+\begin{enumerate}[label=\arabic*]
+    \item {\large{Choice of software development platform}}
+    \begin{enumerate}[label=\alph*]
+        \item development platform
+        \begin{enumerate}
+            \item Windows 10 : Windows are most commonly used operating system in Korea.  Among them, Windows 10, is used since Windows 11, the latest version, currently has stability problems.
+            \item Mac OS ARM : It is a Unix-based operating system and it used to use the Xcode. Xcode verifies that the application is operating in an iOS environment. 
+        \end{enumerate}
+        \item Language / Framework
+        \begin{enumerate}
+            \item Python : \\
+            
+            \item Javascript / CSS /HTML\\
+            Javascript - Javascript is an interpreter or JIT compilation programming language that is widely used in script language for pages and non-browser environments such as Node.js. Users can obtain lots of reference materials in that javascript is the most commonly used programming language. \\
+            React Native : React Native is a cross-platform development tool that satisfies the conditions for supporting both Android and iOS operating systems since the expected application user is a household unit. With the concept of a component that emphasizes V among mvc patterns, fast development through code recycling is possible. Because it is client side rendering, front end developers can easily and actively develop. With large community, it is possible to solve problems quickly.
+            \item JAVA/JPA : \\
+            SQL is created to manage data in a relational database system, which is used to directly access the database and modify data.
+        \end{enumerate}
+        \item Software 
+        \begin{enumerate}
+            \item Visual Studio Code : Widely used code editor, developed by Microsoft. It is a scalable code editor that provides convenient functions that exceed the level of code editors through a wide variety of extensions. We will be using extensions related to Django, Javascript and React.
+            \item JupyterNotebook : Integrated development environment for Android development. We don’t use Android studios to write code, but we’re going to use Android simulators to be sure it works in Android. Or if it is necessary to utilize the Android native functions within React Native, we will use Android studio only in that part.
+            \item Spring : Collection of OS X’s development tools developed by Apple. It will be used to test code written reactively in an iOS environment using an iOS simulator in it.
+            \item Git \& Github : Git is a distributed version management system that manages file change and tracking multi user's access, and Github is a web service that hosts these flag stores. Since we are developing both front and back ends by two team members, collaboration is important. So to prevent code collisions, we must check each other’s code. We will periodically integrate and manage code at remote storage through Github. Also, we will use git flow strategy to securely protect the integrated development  code while sustaining concurrency
+            \item Slack :  Swagger is an open source software framework supported by a large tool ecosystem that helps developers design, build, document and consume REST web service. Since REST api does not have standardized conventions, front end developers should always check the specifications of api according to back-end developers. We will define api standards more easily and check api standards through swagger. 
+            \item Notion : Multipurpose recording tools can create their own systems for knowledgement management, memo writing, data management and project management. We will manage the schedule using our own project schedule management template in Notion. We plan to adopt the agile method and build new sprints every 3 days for speedy development.  
+            \item Tensorflow \: Tensorflow is an open-source machine learning system developed by Google in 2015. Python allows you to develop artificial intelligence easily and quickly, and you can easily develop top artificial intelligence models through a large amount of libraries that already exist. It is also suitable for our team, which needs to be developed quickly as a platform that is very good for abstraction and visualization. 
+            \end{enumerate}
+    \end{enumerate}
+    
+    \item {\large{Software in Use}}\\
+    
+    
+    \item {\large{Cost}}
+    \begin{enumerate}[label=\alph*]
+        
+    \end{enumerate}
+    
+    \item {\large{Task distribution}}
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{m{3cm}|m{4cm}}
+    \toprule
+    Jeong Woo Sung& Front end and Design \\
+    Choi Won Joon & Front end and Design\\
+    Kang Byeng Heon & Back end and Search\\
+    Jeong Yun Seo & AI and documentation\\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\end{enumerate}
 
 \bibliographystyle{unsrt}
 \bibliography{ref}
 
 % that's all folks
 \end{document}
+
+
+
 
