@@ -267,14 +267,10 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \item Home\\
             It is a screen that appears after the login screen. It is also a page for writing a sleep journal, which is the main purpose of the application. In the case of writing a sleep journal, it will be placed in the center of the screen in the shape of a calendar to give a visual emphasis effect. Dream images created based on abstract data recorded on a daily basis, quantitative data input by users, and data measured in Breeze are stored in the calendar.\\
             \begin{enumerate}
-                \item User responsive calendar\\
-                When the user selects a date specific to the calendar, the user can inquire the sleep image and quantitative data of the corresponding date. The calendar basically uses a calendar form that is displayed on a monthly basis. You can move any month to look up through the go back and go forward buttons, and click the number of months you are currently looking up displayed at the top of the center to display a list that allows you to look up by specifying the year and month. The user can specifically select and inquire about the year and month. The year you are currently looking up is shown in the upper left. The date on which the sleep record is entered in the calendar is checked in a circle. The circles are separated according to the sleep score for that date.\\\\
-                (Green: Upper than 85, Yellow: Upper than 75, Red: Upper than 65, Black: Lower than 75)\\\\
-                When you click on a circled date, the sleep diary for that date is visible under the calendar. You can check the sleep diary on that date by scrolling down. In the sleep diary of that date, the image and date are displayed at the top, and additional information is displayed below. If you click on an uncircled date, you will see a box that allows you to record your sleep diary for that date. Click to navigate to the window where you can create a sleep diary for that date.\\
+                \item Write Sleep Diary\\
+                If you click the Sleep Diary creation window, it will be linked to the Sleep Diary creation window for that date. The sleep diary writing window can be changed to the desired date. First, in the window, pre-sleep information is input. Enter caffeine intake, exercise, sleeping pill dosage, and concerns on the day.\\
             \end{enumerate}
 
-            \item Write Sleep Diary\\
-            If you click the Sleep Diary creation window, it will be linked to the Sleep Diary creation window for that date. The sleep diary writing window can be changed to the desired date. First, in the window, pre-sleep information is input. Enter caffeine intake, exercise, sleeping pill dosage, and concerns on the day.\\
 
              \begin{enumerate}
                 \item (Recommended) If the input time is before going to sleep, temporary storage is possible. Subsequent progress can be written through a notification sent after sleep or through writing a sleep diary. 
@@ -284,6 +280,33 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             I get sleep data for that date from Brid.zzz via API. Thereafter, the reason for the number of breaks based on the Brid.zzz data is inputted through a pop-up window.  Then, with the pop-up window, whether you had a dream, what kind of dream you had, and how you feel after waking up. Once you've entered all, click Save. When stored, it is stored together with the generated image.
             The sleep diary is shown to the user after being saved.\\
 
+            \item Monthly Calendar Screen\\
+            When you  click the calendar in the navigation bar at the bottom, you will be directed to  the Monthly Calendar screen. At the top, the logo of the application and text indicating that it is a calendar screen are disposed, and the calendar is disposed at the center of the screen. A calendar is in the form of a monthly calendar.\\
+            \begin{enumerate}
+                \item A monthly calendar\\
+                Users can show the record status of their sleep diaries at a glance through the monthly calendar. The monthly calendar can check the sleep image recording status of the year and month when selecting the desired year and month.\\
+                Color display according to sleep scores is provided differently to  increase the visibility of sleep conditions displayed on the calendar.\\
+                When you click on the space with sleep diary records on your monthly calendar, you will be taken to the Daily Diary screen.\\
+                If you click on the space  where no sleep diary image has  been created on the monthly calendar, you will be taken to the screen for creating a sleep diary for that date.\\
+
+            \item Daily Diary Screen\\
+            It is a screen provided when you click on a specific date on the monthly calendar screen. The Daily Diary screen provides objective indicators of sleep on that date, as well as a record of sleep diaries, images showing sleep conditions, and factors affecting sleep on that have been received through LG Brid.zzz. The screen consists of dates , pictures, Brid.zzz data, factors affecting sleep, and sleep diaries from the top.
+            \begin{enumerate}
+                \item Date\\
+                The clicked screen provides the date information to which the record is applied.\\
+                \item Sleep Summary Images\\
+                Images provided through generative AI are provided.\\
+
+                \item Briz.zzz data\\
+                Objective data indicating sleep scores and quality of sleep are presented.\\
+                \item Factors Affecting Sleep\\
+                Displays records of caffeine, exercise and intensity, and drug use that affect sleep.\\
+                \item A diary\\
+                Displays the created diary in text format. In the sleep diary, qualitative data such as the contents of the dream, the author's emotional state, and the feeling of the day are entered.\\
+            \end{enumerate}
+
+
+            \end{enumerate}
             \item Create Images with Generative AI\\
             When you press Save, the data moves to the server, moving the sleep score among dreams, worries, moods after waking up, and Breeze data to the items in the prompt of the image creation AI. If all three items are not entered, an image is generated based on the Breeze data sleep score. The image is stored by setting a date as a key in the database. \\
                 \begin{enumerate}
@@ -322,39 +345,89 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 \begin{enumerate}[label=\arabic*]
     \item {\large{Choice of software development platform}}
     \begin{enumerate}[label=\alph*]
-        \item development platform
+        \item Development Platform
         \begin{enumerate}
-            \item Windows 10 : Windows are most commonly used operating system in Korea.  Among them, Windows 10, is used since Windows 11, the latest version, currently has stability problems.
-            \item Mac OS ARM : It is a Unix-based operating system and it used to use the Xcode. Xcode verifies that the application is operating in an iOS environment. 
+            \item Windows 11 : Windows OS provided by Microsoft is the most widely used operating system in Korea.  There are various versions of Windows, but Windows 11 was adopted and used to carry out projects. The reasons for adopting Windows 11 as a platform in our project are as follows. First, the web development environment has improved. The second UI has become convenient to use. This may vary from person to person, but our team felt that the UI had improved.\\
+            \item Mac OS sonoma : It is a Mac OS version released by Apple in 2023. Apple has the advantage of being convenient to develop because it provides developer beta OS.\\
         \end{enumerate}
-        \item Language / Framework
+        \item Language/Framework
         \begin{enumerate}
-            \item Python : \\
-            
             \item Javascript / CSS /HTML\\
-            Javascript - Javascript is an interpreter or JIT compilation programming language that is widely used in script language for pages and non-browser environments such as Node.js. Users can obtain lots of reference materials in that javascript is the most commonly used programming language. \\
-            React Native : React Native is a cross-platform development tool that satisfies the conditions for supporting both Android and iOS operating systems since the expected application user is a household unit. With the concept of a component that emphasizes V among mvc patterns, fast development through code recycling is possible. Because it is client side rendering, front end developers can easily and actively develop. With large community, it is possible to solve problems quickly.
-            \item JAVA/JPA : \\
-            SQL is created to manage data in a relational database system, which is used to directly access the database and modify data.
+            "Your Daily Sleep at a Glance" was implemented through a web app. An app that looks like a native app but uses web technology is called a "web app". The reasons why we adopted the web app are as follows.\\
+            First, web apps are widely used in various device environments such as PCs and smartphones without installing separate apps.\\ Second, maintenance is easier than native apps. Since the update is performed through the web, the user may not be burdened by the corresponding application modification work.\\
+            Since the characteristics of these web apps conform to the development of the application, which is in the early stages, they were implemented as web apps. When creating a web application, the application screen was constructed using HTML CSS and JavaScript, which are web languages.\cite{webapp}\\
+            \item JAVA: \\
+            Java is a programming language that is mainly used to develop the web and mobile. The advantages of Java are as follows.\\
+            First, it can run independently of the operating system.\\
+            Second, it supports automatic memory management, etc., so it has high stability.\\
+            Third, there are many references because it is an old language.\\ In our team project, JAVA was used to develop the backend, and the backend development was completed by using Spring with JAVA.\\
+            \item JPA(Java Persistence API):\\
+            JPA is a collection of interfaces that use object-relational mapping (ORM) technology standards in the Java field. Hyberate is a representative open source that implements JPA.\\
+            When implementing the backend of our project, we adopted it to use relational databases in Java applications. The reasons for choosing JPA over SQL are as follows.\\
+            First, developers don't have to care about queries because DB can be manipulated through methods other than SQL.\\
+            Second, object-oriented code writing becomes possible. This increases productivity. Because of these advantages, we used JPA in our project.\\\\
+            \item Spring:\\
+            Spring is an open-source framework that facilitates the development of Java applications for the enterprise. Through this, we developed the Back-End of our project. The reason why we chose the spring is as follows.\\
+            First, because it is an open source. Spring is free for all users, so you can develop it at no cost. Also, because it is open source, you can use good code that many people have already created.\\
+            Second, it is a lightweight framework. Compared to existing technologies, the code that developers need to write is simple, making it a little easier when developing Back-End.
+            \item Python:\\
+            Python is a programming language used for web applications, software development, data science, and machine learning.\\
+            Python can increase productivity because it is easy to use among programming languages. The python community is on the big side worldwide, so it's easy to get help when problems arise. It is also compatible with various operating systems such as Windows and Mac OS. Since python has a variety of libraries, it is easy to adopt and use libraries suitable for the developer's purpose.\\
+            Because of the advantages of Python as described above, Python was used in our project to analyze data (Data EDA) and conduct machine learning. In particular, data analysis was conducted using libraries such as numpy and pandas.\\
         \end{enumerate}
         \item Software 
         \begin{enumerate}
-            \item Visual Studio Code : Widely used code editor, developed by Microsoft. It is a scalable code editor that provides convenient functions that exceed the level of code editors through a wide variety of extensions. We will be using extensions related to Django, Javascript and React.
-            \item JupyterNotebook : Integrated development environment for Android development. We don’t use Android studios to write code, but we’re going to use Android simulators to be sure it works in Android. Or if it is necessary to utilize the Android native functions within React Native, we will use Android studio only in that part.
-            \item Spring : Collection of OS X’s development tools developed by Apple. It will be used to test code written reactively in an iOS environment using an iOS simulator in it.
-            \item Git \& Github : Git is a distributed version management system that manages file change and tracking multi user's access, and Github is a web service that hosts these flag stores. Since we are developing both front and back ends by two team members, collaboration is important. So to prevent code collisions, we must check each other’s code. We will periodically integrate and manage code at remote storage through Github. Also, we will use git flow strategy to securely protect the integrated development  code while sustaining concurrency
-            \item Slack :  Swagger is an open source software framework supported by a large tool ecosystem that helps developers design, build, document and consume REST web service. Since REST api does not have standardized conventions, front end developers should always check the specifications of api according to back-end developers. We will define api standards more easily and check api standards through swagger. 
-            \item Notion : Multipurpose recording tools can create their own systems for knowledgement management, memo writing, data management and project management. We will manage the schedule using our own project schedule management template in Notion. We plan to adopt the agile method and build new sprints every 3 days for speedy development.  
-            \item Tensorflow \: Tensorflow is an open-source machine learning system developed by Google in 2015. Python allows you to develop artificial intelligence easily and quickly, and you can easily develop top artificial intelligence models through a large amount of libraries that already exist. It is also suitable for our team, which needs to be developed quickly as a platform that is very good for abstraction and visualization. 
+            \item VScode : \\
+            VScode is one of the lightest editors available to developers. The software is a free open source code editor released by Microsoft in 2015. It supports multiple programming languages and provides a number of capabilities to improve developer productivity. \\
+            VScode is easy for developers to use and is a universal editor used when they first enter development, but it has the following disadvantages. First, restrictions can arise when working on large-scale projects. Memory usage can increase when using a second large file. Finally, debugging is not as good as other editors. It supports basic debugging, but lacks advanced debugging capabilities. Nevertheless, there are the following reasons why our team used the VScode to proceed with the project. First, compatibility between platforms is good. Team members who use Windows OS and MAC OS coexist in our team. Therefore, it was important to use a compatible platform when working, and we were able to solve this problem because vs was compatible.\\
+            Second, the capacity is not heavy. Because the VScode runs on low-spec hardware, it was easy to work with computers their own computers.\\
+            For the above two reasons, our team used the VScode as a code editor.\\
+            
+            \item JupyterNotebook : \\
+            Jupiter Notebook is an open source web application that provides an interactive environment for code generation, visualization, and documentation.\\
+            It provides exploratory data analysis (EDA), data organization and transformation, data visualization, statistical modeling, machine learning, deep learning, and many other languages.\\
+            It consists of code cells and markdown cells, which allow you to write and execute Python codes, and markdown cells allow you to write documents, express formulas, or insert images.\\
+            Running Python code one line at a time makes it easier to debug and test. When the code is executed, results are displayed directly below, and visualized graphs or tables can be viewed immediately.\\
+            The combination of code, markdown, links, and images makes it easier for data teams to use, and can run on a cell-by-cell basis to take advantage of the code's capabilities. You can convert from the web interface to HTML, PowerPoint, LaTeX, PDF, ReStructuredText, Markdown, and Python. This flexibility makes it easier for data scientists to share their work with others.\\
+            
+            \item Git \& Github :\\
+            A version management software called git was used to manage the progress of the project's work. The project progress was recorded by recording changes in the work file with git and sending them to github. Using github made it easier to manage and roll back code changes, and using features such as code review and branching, team projects could be carried out without difficulty.\cite{github}\\
+            
+            \item Slack : \\
+            Slack is an app that connects people and information. Slack can improve how organizations communicate by bringing people together and running a unified team. \\
+            Slack helps employees work in a more connected, flexible, and inclusive way. Slack makes it easy for you to message and collaborate with your colleagues inside and outside your organization as if you were in personal contact with others. People work in a dedicated space called a channel that combines information with people who need it. \\
+            Slack supports asynchronous operations. By channeling a task, you can access the information you want at any time, regardless of location, time zone, or functionality. Ask questions, get answers, and update without scheduling. Slack provides access to the same shared, searchable information for all of your organization. When teams collaborate on a channel, everyone can share information at the same time, allowing all teams to share progress and make decisions faster.\\
+            
+            \item AWS:\\
+            It is a cloud computing platform provided by AWS Amazon. It currently offers more than 200 services. Among them, the functions used in our project are AWS EC2 and AWS S3 storage.
+                \begin{enumerate}
+                    \item AWS EC2\\
+                    ASW EC2 provides computing capacity that can be scaled on-demand from the cloud. It can build any number of virtual servers, configure security and networking, and manage storage. Among many clouds, we used this cloud because our project uses machine learning. According to AWS official documents, EC2 offers services to optimize price-to-performance for machine learning projects. Because of this, we used AWS EC2.\\
+                    \item AWS S3 storage\\
+                    AWS S3 is a repository built to store and retrieve the desired amount of data. This has the advantage of being scalable and paying only for the amount of use, so you only have to pay for the size of our project. The main reason we chose AWS S3 is that it can store almost any kind of data. Our project receives the user's sleep state, inputs it into the image-generating AI, and obtains the image output. In this case, since the data type of the output stored in the storage is an image, it should be a storage capable of storing an image.\cite{AWS}\\
+                \end{enumerate}
+                
+            \item DALL-E2:\\
+            It is an image-generating artificial intelligence developed by Open AI. Our project needs an image-generating AI to represent the user's sleep state as an image, and we decided to use DALL-E as the generating AI used at this time. The reason is that DALL-E's API is provided as an open source.\cite{dalle}\\
+
+        \item Overleaf:\\
+        Overleaf is an online co - thesis writing tool. Everything from selecting the topic of the thesis to posting is possible. It is a paper writing tool based on LaTeX and Rich Text. We wrote a paper using LaTeX during the project. Overleaf is very easy to share and save PDFs when working on team projects. In addition, when creating a shared link, it provides security functions, so there is no need to go through a separate encryption process. In addition, Overleaf is convenient to understand the progress of the project in real time when conducting a joint project. Big errors can be prevented in advance because the contents of the co-researcher's writing can be checked from time to time.\\
+            
+            
             \end{enumerate}
     \end{enumerate}
     
-    \item {\large{Software in Use}}\\
-    
-    
-    \item {\large{Cost}}
+    \item {\large{Cost Estimation}}
     \begin{enumerate}[label=\alph*]
-        
+        Almost all platforms are not charged in the course of the project, but the following three are charged according to their usage. The details are as follows.
+        \begin{enumerate}
+            \item AWS EC2\\
+            Using an on-demand instance, you will pay per hour or per second without a long-term commitment. The fee is subject to many conditions. Assuming that you use Seoul, Windows OS, 0.5GiB memory, and EBS-only storage, the on-demand hourly rate is charged USD 0.0111.\\
+            \item AWS S3 storage\\
+            AWS S3 will only pay for what it uses. Costs are subject to the following conditions. Storage charges, request and data retrieval charges, data transfer and transfer acceleration charges, data management and insights function charges, replication charges, conversion and query function charges. Based on S3 Standard, a general-purpose storage suitable for all data types, assuming the area of use is Seoul, 0.025USD per GB is charged.\\
+            \item DALL-E2\\
+            DALL-E2 is paid but is available for free until 18USD because OpenAI API is offering free credits. Since then, it has received 0.020USD per image based on 1024x1024 images.\\
+        \end{enumerate}
     \end{enumerate}
     
     \item {\large{Task distribution}}
@@ -362,17 +435,254 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
     \centering
     \begin{tabular}{m{3cm}|m{4cm}}
     \toprule
-    Jeong Woo Sung& Front end and Design \\
-    Choi Won Joon & Front end and Design\\
-    Kang Byeng Heon & Back end and Search\\
-    Jeong Yun Seo & AI and documentation\\
+    Jeong Woo Sung& Front-End and Design \\
+    Choi Won Joon & Front-End and Design\\
+    Kang Byeng Heon & Back-End and Search\\
+    Jeong Yun Seo & AI and Documentation\\
     \bottomrule
     \end{tabular}
     \end{table}
+    \begin{enumerate}
+        \item Front-End:\\
+        Front-end developers are developers who create areas that users see with their eyes and implement functions. For example, it is in charge of UI such as buttons, input windows, and application icons in the page. Since users are in charge of seeing and experiencing themselves, there are frequent collaborations with marketers and designers, and there are cases where they concurrently work in design. As such, it is important to pay attention to visual details, and the ability to fully implement the user experience experienced by users in the service is also important. Front-end developers mainly use HTML, CSS, and JavaScript.\\
+        In our project, Front-End developers focused on creating a UI for "web apps," especially in implementing them easily for users. The languages used at this time used HTML, CSS, and JavaScript, which are common languages of front-end developers.\\
+
+        \item Back-End:\\
+        A Back-End developer is a developer in charge of storing, managing, and delivering information needed by users among the web development areas. In other words, developing and managing servers is the main task of Back-End developers. Back-End developers need to understand the overall structure of web services, and logical thinking is required. Back-End developers use languages such as Java, Python, and JavaScript.\\
+        In our team project, Back-End developers were primarily responsible for the development and management of data servers, such as member information management, sleep data organization and sleep-state images conservation. The language used at this time was Java and additionally, Spring and JPA were used to develop the Back-End.\\
+
+        \item Design:\\
+        Web designers design and create the entire site, including the first screen or detailed screen of the website, and the color and icon of the menu.\\
+        It reprocesses text, images, videos, and voices on web pages to make them easier for users to understand and use.\\
+        The main screen of the website is updated as needed and animation or specific effects are implemented on the web using HTML5, CSS, Javascript, JSP, ASP, XML, and the technologies needed to produce the website. \\
+        In our project, the role of a designer was defined as the role of prototype design. Previously, it was said to use HTML5 and CSS, but in our project, we used Figma to design it.\\
+
+        \item AI:\\
+        In our project, the AI person was responsible for analyzing the user's sleep data and finding the right analysis algorithm for that data. During this project, a linear regression algorithm was mainly used to analyze sleep conditions.\\
+        
+    \end{enumerate}
 \end{enumerate}
+
+\section{\Large{Specifications}}
+“Your daily sleep at a glance” is an application linked to LG. LG Brid.zzz interworks the user's sleep data with our application using API and uses the data entered into LG Brid.zzz. The main purpose of our application is to induce users suffering from sleep disorders to continue to write sleep diaries by adding elements that are more visually interesting when writing sleep diaries. For this purpose, we used image-generating AI. Create a picture of the sleep of the day by putting the data taken from the LG Brid.zzz and the qualitative data entered by the user into the prompt. Add this image to your diary, which you create, to encourage you to increase your visual interest. In addition, it provides sleep solutions, which can contribute to improving your sleep quality.\\
+
+\begin{enumerate}[label=\alph*]
+    \item \textit{Entry}\\
+    This window appears the first time you run the “Your Daily Sleep at a Glance” application. In this screen, the logo of our application appears in the center, and two buttons are arranged vertically and side by side around this logo.\\
+    The button located at the top of the two buttons is a login button, and the button located at the bottom is a membership registration button.\\
+
+    \item \textit{Sign-In}\\
+    The login screen consists of two input cells and one button. The two input compartments are spaces that allow you to enter your ID and password, respectively. And one button is a button that allows users to press when they forget their ID or password. If the user enters the ID and password correctly, the login is completed with a pop-up window of "Login Success".\\
+    However, when login is not successful, it goes through the following process.\\
+    \begin{enumerate}
+        \item Invalid ID/password entry
+        \begin{enumerate}
+            \item Simple typo occurs\\
+            - Prompts to enter the correct inputs pop-up message.\\
+            - Return to the login screen to continue the login operation.\\
+
+            \item Users forget their ID or password\\
+            - Press the Forgot password button.\\
+        \end{enumerate}
+        \item Press the Forgot Password button\\
+            When you press the Forgot Password button, a window for finding the password appears.\\
+            Go to the window where you can authenticate yourself. The means of self-authentication are as follows.\\
+            \begin{enumerate}
+                \item Email authentication:\\
+                A series of codes are sent to the personal email entered at the time of membership registration and entered into the application to complete identity authentication.\\
+                \item Phone number authentication:\\
+                An SMS containing the authentication code is sent to the personal number entered at the time of membership registration, and if you enter it in the input box, your identity authentication is completed.\\
+            \end{enumerate}
+            If the identity authentication is successful, the password can be modified. When resetting a password, ensure that the following conditions are met for enhanced security reasons.\\
+            \begin{enumerate}
+                \item 8 characters or more
+                \item Include capital letters
+                \item Include special characters\\
+            \end{enumerate}
+            When a user enters a new password, press the "Confirm duplicate" button to avoid duplication.\\
+            If it is confirmed that there is no overlap, a pop-up window will appear as "password modification complete".\\
+            When the password is modified, return to the login screen and proceed with login.\\
+    \end{enumerate}
+    
+    \item \textit{Sign-Up}\\
+    If a user wants to join our application, when the membership window is first opened, five input windows and one button are visible. Each input window item consists of name, ID, password, age, gender, phone number, and e-mail. Phone numbers and e-mails are items for self-authentication when an account is lost, so users are required to enter them.\\
+    One button is the "next" button. The reason for the "next" button is that there are additional items to be entered. Since our application provides a sleep analysis solution, we need to know additional items such as height, weight, and occupation.\\
+    When the user presses the "Next" button, a new window consisting of three input windows, one check box, and one button appears. The items of the three input windows consist of height, weight, and occupation. Since such items are very private personal information, check the check box with the message allowing personal information registration. Finally, if you press the "Completed" button located at the bottom center, your membership will be completed.\\
+
+    \item \textit{Main Screen}
+    \begin{enumerate}
+        \item The top\\
+        The top bar is located.\\
+        \item Suspension\\
+        It is a screen that appears after the login screen and is a page for writing a sleep journal, which is the main purpose of the application. In the case of writing a sleep journal, it will be placed in the center of the screen to give a visual emphasis effect. In the center of the screen, the date is shown in the form of [November 16,  2023] in the upper left of the box, and the date cannot be modified separately. If you press the Suyeon diary button inside the date, the link is hung on the page for writing the sleep diary, and the page is moved.\\
+        The box below the Sleep Diary Writing box shows a summary of the solution from the sleep-related data analysis. Specifically, the phrase [Caffeine has the worst effect on Kang  Byung-hun's sleep! If you click the box, you will be directed to the main page of the solution page, which is the third item in the navigation bar.\\
+        \item The bottom\\
+        The navigation bar is located.\\
+    \end{enumerate}
+
+    \item \textit{Writing a Sleep Diary Page 1}
+    \begin{enumerate}
+        \item The top\\
+        The top bar is located.\\
+        \item Suspension\\
+        The date is written on the first box. The box is a static image, not a reactive image.\\
+        The second box contains a survey box in which the user receives input of various factors that affect sleep. The input factor is 1) caffeine [Check the check box based  on how many cups of coffee] [0 cup, 2 cup, 3 cup, 4 cup or more]\\
+        2) How many hours did you exercise before going to bed? [Continuous data type]\\
+        3)How many hours did you exercise ( constant data type )\\
+        4) Dose of sleeping pills (choose the type of sleeping pills, and choose the number of pills you took).\\
+        In the server, the number of sleeping pills x the number of medicines is entered in a water-repellent type.\\
+        Below the box are the following buttons: Press the next button to move to the next input page. Clicking the next page does not save that information in the database.\\
+        \item The bottom\\
+        The navigation bar is located.\\
+    \end{enumerate}
+    
+    \item \textit{Writing a Sleep Diary Page 2}
+    Entry Conditions:\\
+    When you click Next on the Sleep Diary Writing page, if you have Breeze data for that date, the page does not enter, but enters page 3. When you press Next, you enter the page if there is no Breeze data for that date.
+    \begin{enumerate}
+        \item The top\\
+        The top bar is located.\\
+        \item Suspension\\
+        The date is written on the first box. The box is a static image, not a reactive image.\\
+        In the second box, enter the sleep time and the number of times you wake up. The next button is located at the bottom.\\
+
+        \item The bottom\\
+        The navigation bar is located.\\
+    \end{enumerate}
+
+    \item \textit{Writing a Sleep Diary Page 3}
+    \begin{enumerate}
+        \item The top\\
+        The top bar is located.\\
+        \item Suspension\\
+         You can write a sleep diary as a txt file. The topic of the sleep diary is:\\
+        1) Worries you had before going to sleep.\\
+	2) Whether you had a dream (check box format)\\
+	3) A text box appears when you check that you have had a dream      and you can receive text.\\
+        When the Done button is pressed, all data stored in the sleep diary is stored in the database.
+        Also, an image is generated with the sleep diary3 data.\\
+
+        \item The bottom\\
+        The navigation bar is located.\\
+    \end{enumerate}
+
+    \item \textit{Monthly Calendar Screen}\\
+    When moving to the monthly calendar screen, users can check their weekly and monthly writing trends by indicating whether or not to write a sleep diary on the calendar.\\
+    \begin{enumerate}
+        \item In the case of the completed space, a circle mark is provided on that date. Circle marks appear in different colors depending on your sleep score. A green mark remains if the sleep score is 85 points or higher, a yellow mark if  the sleep score is 75 points or more and less than 85, a black mark if the sleep  score is 65 points or less. When you click on the screen of the corresponding date, it moves to the Daily Diary screen.\\
+        \item If it is not written, the sleep diary is not completed, so a pop-up window is displayed and the user is asked about the intention to write a sleep diary for image generation on that date.\\
+        The pop-up window consists of a yes/no button at the bottom , along with the  phrase 'Would  you like to keep a sleep diary?'\\
+        1) If you  click 'Yes', you will  be taken to the page for creating a sleep diary for that date.\\
+        2) If  you click 'No', stay on the  current monthly calendar screen.\\
+    \end{enumerate}
+
+    \item \textit{Daily Diary Screen}\\
+    \begin{enumerate}
+        \item Sleep Summary Images\\
+        An image generated through the generative AI is posted by summing the sleep data of the corresponding date. In the upper right corner of this image are the share and save buttons.\\
+
+        \item Breeze data\\
+        If  Breeze data exists:\\
+        If data from  the use of Breeze products exists, objective data on sleep is presented in a simplified form. A circular graph of sleep scores and quality of sleep is presented in the corresponding item to intuitively present information to the user.\\
+        If  Breeze data does not exist:\\
+        If data from the  use of Breeze products does not exist, the item will display the phrase 'data does not exist'.\\
+
+        \item Factors Affecting Sleep\\
+        \begin{enumerate}
+            \item Caffeine\\
+            \begin{enumerate}
+                \item About taking caffeine:\\
+                The dosage of caffeine is expressed in units of 'remains', which is the  set standard.\\
+            When taking caffeine , information such as '1 to 2 cups' and '3 to 4' cups is displayed on the screen.\\
+            If you have not taken caffeine, it is displayed as 'none' on the  screen.\\\\
+                \item Caffeine Time:\\
+            Displays information about how many hours before	 	sleep you took caffeine.\\
+	       If you take	caffeine, the phrase 'taking caffeine N hours before sleep' is displayed on the screen.\\
+	   If caffeine is not taken, it is displayed as 'none' by integrating it with the screen and the  degree of administration.\\
+            \end{enumerate}
+            
+        \item Exercise status\\
+        \begin{enumerate}
+            \item A workout session:\\
+              Indicate information about how many hours before sleep you exercised.\\
+            When exercising , the phrase "exercise before N hours of sleep" is displayed on the screen.\\
+
+            \item Intensity of exercise:\\
+            Since the exercise intensity felt by each person is different, the intensity is input according to the user's subjective criteria.\\
+            Exercise intensity is input in the form of a radio button.\\
+            The choices for exercise intensity are as follows.:\\\\
+            \textit{Very weak, Weak, Medium, Strong, Very strong}\\\\
+            In the absence of data  records for exercise, the phrase 'none' is displayed integrally.\\
+
+            \item Medication status:\\
+            Give a list of medications taken before sleep on that date.\\
+            If no medication is taken before sleep on that date, the phrase "None" is displayed.\\
+            \end{enumerate}
+        
+        \end{enumerate}
+    \item Sleep Diary\\
+        The sleep diary is provided on the screen in text format. If the length of the sleep diary is long, a scroll bar is created on the right side of the text box, and the scroll bar provides the user with the ability to read all the contents of the diary.\\
+    \end{enumerate}
+
+    \item \textit{Sleep Solution}\\
+    Users wear  Breeze and sleep every day. Breeze provides sleep scores, sleep time, and RAM sleep count. Breeze's data is stored in the database through API. The user directly enters data such as caffeine intake, drug use, exercise, and meal intake.\\
+    On the "Write a Sleep Diary" screen, users can enter data such as caffeine, taking drugs, exercising, and eating meals.\\
+
+    \begin{enumerate}
+        \item Interworking with Home Screen
+        \begin{enumerate}
+            \item Caffeine\\
+            It measures the data input by the user and changes in Breeze sleep score, sleep time, and RAM sleep count. If you consume more caffeine than usual, you will output a sentence on the HOME screen saying, "Your caffeine intake has increased more than usual." If the user clicks the sentence output on the HOME screen, it moves to the sleep solution screen.\\
+
+            \item Exercise\\
+            It measures the data input by the user and changes in Breeze sleep score, sleep time, and RAM sleep count. If there is a significant change in the usual amount of exercise, there is a change in the usual amount of exercise on the HOME screen.’  print out the sentence. If the user clicks the sentence output on the HOME screen, it moves to the sleep solution screen.\\
+
+            \item Medication\\
+            It measures the data input by the user and changes in Breeze sleep score, sleep time, and RAM sleep count. If there is a significant change in the usual amount of exercise, the sentence 'There is a change in the usual drug dose trend' is printed on the HOME screen. If the user clicks the sentence output on the HOME screen, it moves to the sleep solution screen.\\
+        \end{enumerate}
+        \item Sleep Data Analysis Screen\\
+        This feature can learn long-term data to provide customized daily life pattern advice to users. Various variables such as sleep changes according to caffeine intake time, exercise time, sleep changes according to exercise intensity changes, and sleep changes according to drug dose changes can be analyzed to generate advice to help users sleep.\\
+        To improve the quality of your sleep, you can advise changes in exercise intensity, duration, dosage and time of medication types, and sleep solutions allow you to enter data more aggressively. The more actively a user enters data, the more high-quality data can be received, and the more high-quality data can be received. Providing high-quality results to users will make users interested in functions, allowing them to write more active data and use applications frequently.\\
+        
+        \item Data Analysis Method\\
+        Data Analysis Long-term user data is required to provide a customized sleep solution. The items of data required are as follows. \\\\
+        \textit{Quality of sleep, Exercise, Sleep time, Stress level, Blood pressure.}\\\\
+        Among the above items, nominal variables go through a one-hot encoder process and perform a data EDA process, such as processing for null.\\
+        After that, linear regression is used to determine the correlation between each variable and the quality of sleep. For this project, we use some sleep-state based on many factors in Kaggle.\\
+    \end{enumerate}
+
+    \item \textit{Settings}\\
+    The setup window is a window that contains various information about the user's personal information management and applications, and the detailed functions of the setup window are as follows.\\
+    \begin{enumerate}
+        \item My Page\\
+        When you press the "My Page" button, a new window appears. This window allows you to modify a user's account.\\
+        The ability to modify is all the information received from membership registration, such as ID change, height and weight change.\\
+        However, when changing your ID or password, you must go through self-authentication through phone number or e-mail. The process for self-authentication is as follows.\\\\
+        \textit{1) Press the Modify ID/password button.\\2) A new window for self-authentication appears.\\3) Choose whether to authenticate by contact or email.\\4) After authentication, you will return to the My Page window when it is completed.\\5) If not complete, a pop-up will appear saying "Error occurred" and will return to the self-authentication window.\\}
+        \item Marketing Setting\\
+        The marketing setting is a toggle button, allowing you to choose whether to receive new events or promotional advertising texts on the application.\\
+
+        \item Alarm Setting\\
+        The alarm setting is a toggle button, allowing you to choose whether to receive new announcements on the application or not.\\
+
+        \item Help\\
+        Help is a button, and when pressed, it will be moved to a new window.\\
+        It provides features such as a brochure for first-time users of the application.\\
+
+        \item Updates and Version\\
+        The update check and version information is buttoned, and when pressed, it will be moved to a new window.\\
+        The new window consists of text and a button. The text shows the version information of my application and the updated date.\\
+        If there is no update, the "Do update" button is provided so that the user can update the application.\\
+        
+    \end{enumerate}
+\end{enumerate}
+ 
 
 \bibliographystyle{unsrt}
 \bibliography{ref}
+
+% that's all folks
+\end{document}
 
 % that's all folks
 \end{document}
