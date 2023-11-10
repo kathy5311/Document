@@ -22,6 +22,7 @@
 \usepackage{float}
 %\usepackage[outdir=./]{epstopdf}
 \usepackage{kotex}
+\usepackage{graphicx}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
@@ -154,12 +155,14 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \item Daily Stress: Daily stress such as work, study, family, and financial pressures can lead to sleep deprivation. Stress can increase your sleep tension and lead to poor sleep\\
             \item Digital devices: Late use of digital devices such as smartphones, tablets, and computers can cause blue light and stress, negatively affecting sleep.\\
             \item  Working Hours and Traffic Problems: Many people have short sleep hours due to irregular working hours or long traffic jams. Sleep deprivation is especially likely if the work is done at night.\\
+            Experts say long-distance commuters have significantly less sleep time than short-distance commuters, and persistent sleep disorders pose a high risk of exposure to diseases such as depression and memory loss.\cite{commuter}\\
             \item Social pressure: Social pressure and competition are intensifying in modern society, which can lead to increased anxiety and stress. This can lead to sleep deprivation.\\
             \item Use of chemicals and medicines: Foods or drinks contain caffeine or alcohol, and some medicines can negatively affect sleep.\\
+            In fact, according to the Agricultural and Fishery Products Distribution Center, caffeine intake in Korea is lower than in OECD countries, but caffeine intake tends to increase as coffee shops spread and coffee drinking culture after meals spreads. These statistics show that people in our country are more likely to suffer from sleep disorders caused by excessive caffeine intake.\cite{caffeine2}\\
             \item Irregular Lifestyle: Irregular eating habits, lack of exercise, and habits that do not consistently maintain sleep time can lead to sleep deprivation.\\
             \item Older Population: More problems with sleep quality and sleep deprivation may occur in older populations, which may be related to health conditions.\\
             \item Sleep Disorders: People with sleep disorders such as sleep apnea syndrome and restless leg syndrome can find it difficult to get normal sleep.\\
-            \item Holiday Night Irregular Activities: You often stay active late without maintaining your sleep pattern on weekends or during vacations.\\
+            \item Holiday Night Irregular Activities: You often stay active late without maintaining your sleep pattern on weekends or during vacations. When you return to your daily life after changing day and night during the holiday period, your biorhythms do not recover and you cannot sleep at night, causing sleep disorders.\\
         \end{enumerate}
 
     \item{\large{Related Software}}
@@ -355,12 +358,14 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \item Javascript / CSS /HTML\\
             "Your Daily Sleep at a Glance" was implemented through a web app. An app that looks like a native app but uses web technology is called a "web app". The reasons why we adopted the web app are as follows.\\
             First, web apps are widely used in various device environments such as PCs and smartphones without installing separate apps.\\ Second, maintenance is easier than native apps. Since the update is performed through the web, the user may not be burdened by the corresponding application modification work.\\
-            Since the characteristics of these web apps conform to the development of the application, which is in the early stages, they were implemented as web apps. When creating a web application, the application screen was constructed using HTML CSS and JavaScript, which are web languages.\cite{webapp}\\
+            Since the characteristics of these web apps conform to the development of the application, which is in the early stages, they were implemented as web apps. When creating a web application, the application screen was constructed using HTML CSS and JavaScript, which are web languages.\cite{webapp}\\\\
+            \includegraphics[width=7cm]{javascript.png}\\\\\\
             \item JAVA: \\
             Java is a programming language that is mainly used to develop the web and mobile. The advantages of Java are as follows.\\
             First, it can run independently of the operating system.\\
             Second, it supports automatic memory management, etc., so it has high stability.\\
-            Third, there are many references because it is an old language.\\ In our team project, JAVA was used to develop the backend, and the backend development was completed by using Spring with JAVA.\\
+            Third, there are many references because it is an old language.\\ In our team project, JAVA was used to develop the backend, and the backend development was completed by using Spring with JAVA.\cite{java}\\\\
+            \includegraphics[width=7cm]{java.png}\\
             \item JPA(Java Persistence API):\\
             JPA is a collection of interfaces that use object-relational mapping (ORM) technology standards in the Java field. Hyberate is a representative open source that implements JPA.\\
             When implementing the backend of our project, we adopted it to use relational databases in Java applications. The reasons for choosing JPA over SQL are as follows.\\
@@ -369,11 +374,13 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \item Spring:\\
             Spring is an open-source framework that facilitates the development of Java applications for the enterprise. Through this, we developed the Back-End of our project. The reason why we chose the spring is as follows.\\
             First, because it is an open source. Spring is free for all users, so you can develop it at no cost. Also, because it is open source, you can use good code that many people have already created.\\
-            Second, it is a lightweight framework. Compared to existing technologies, the code that developers need to write is simple, making it a little easier when developing Back-End.
+            Second, it is a lightweight framework. Compared to existing technologies, the code that developers need to write is simple, making it a little easier when developing Back-End.\cite{spring}\\\\
+            \includegraphics[width=6cm]{spring.png}\\
             \item Python:\\
             Python is a programming language used for web applications, software development, data science, and machine learning.\\
             Python can increase productivity because it is easy to use among programming languages. The python community is on the big side worldwide, so it's easy to get help when problems arise. It is also compatible with various operating systems such as Windows and Mac OS. Since python has a variety of libraries, it is easy to adopt and use libraries suitable for the developer's purpose.\\
-            Because of the advantages of Python as described above, Python was used in our project to analyze data (Data EDA) and conduct machine learning. In particular, data analysis was conducted using libraries such as numpy and pandas.\\
+            Because of the advantages of Python as described above, Python was used in our project to analyze data (Data EDA) and conduct machine learning. In particular, data analysis was conducted using libraries such as numpy and pandas.\cite{python}\\
+            \includegraphics[width=6cm]{python.png}\\\\
         \end{enumerate}
         \item Software 
         \begin{enumerate}
@@ -382,36 +389,40 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             VScode is easy for developers to use and is a universal editor used when they first enter development, but it has the following disadvantages. First, restrictions can arise when working on large-scale projects. Memory usage can increase when using a second large file. Finally, debugging is not as good as other editors. It supports basic debugging, but lacks advanced debugging capabilities. Nevertheless, there are the following reasons why our team used the VScode to proceed with the project. First, compatibility between platforms is good. Team members who use Windows OS and MAC OS coexist in our team. Therefore, it was important to use a compatible platform when working, and we were able to solve this problem because vs was compatible.\\
             Second, the capacity is not heavy. Because the VScode runs on low-spec hardware, it was easy to work with computers their own computers.\\
             For the above two reasons, our team used the VScode as a code editor.\\
-            
+            \includegraphics[width=7cm]{vscode.png}
             \item JupyterNotebook : \\
             Jupiter Notebook is an open source web application that provides an interactive environment for code generation, visualization, and documentation.\\
             It provides exploratory data analysis (EDA), data organization and transformation, data visualization, statistical modeling, machine learning, deep learning, and many other languages.\\
             It consists of code cells and markdown cells, which allow you to write and execute Python codes, and markdown cells allow you to write documents, express formulas, or insert images.\\
             Running Python code one line at a time makes it easier to debug and test. When the code is executed, results are displayed directly below, and visualized graphs or tables can be viewed immediately.\\
             The combination of code, markdown, links, and images makes it easier for data teams to use, and can run on a cell-by-cell basis to take advantage of the code's capabilities. You can convert from the web interface to HTML, PowerPoint, LaTeX, PDF, ReStructuredText, Markdown, and Python. This flexibility makes it easier for data scientists to share their work with others.\\
+            \includegraphics[width=4cm]{jupyternotebook.png}\\\\
             
             \item Git \& Github :\\
             A version management software called git was used to manage the progress of the project's work. The project progress was recorded by recording changes in the work file with git and sending them to github. Using github made it easier to manage and roll back code changes, and using features such as code review and branching, team projects could be carried out without difficulty.\cite{github}\\
+            \includegraphics[width=5cm]{github.png}\\\\
             
             \item Slack : \\
             Slack is an app that connects people and information. Slack can improve how organizations communicate by bringing people together and running a unified team. \\
             Slack helps employees work in a more connected, flexible, and inclusive way. Slack makes it easy for you to message and collaborate with your colleagues inside and outside your organization as if you were in personal contact with others. People work in a dedicated space called a channel that combines information with people who need it. \\
-            Slack supports asynchronous operations. By channeling a task, you can access the information you want at any time, regardless of location, time zone, or functionality. Ask questions, get answers, and update without scheduling. Slack provides access to the same shared, searchable information for all of your organization. When teams collaborate on a channel, everyone can share information at the same time, allowing all teams to share progress and make decisions faster.\\
-            
+            Slack supports asynchronous operations. By channeling a task, you can access the information you want at any time, regardless of location, time zone, or functionality. Ask questions, get answers, and update without scheduling. Slack provides access to the same shared, searchable information for all of your organization. When teams collaborate on a channel, everyone can share information at the same time, allowing all teams to share progress and make decisions faster.\cite{github}\\
+            \includegraphics[width=5cm]{slack.png}\\
             \item AWS:\\
-            It is a cloud computing platform provided by AWS Amazon. It currently offers more than 200 services. Among them, the functions used in our project are AWS EC2 and AWS S3 storage.
+            It is a cloud computing platform provided by AWS Amazon. It currently offers more than 200 services. Among them, the functions used in our project are AWS EC2 and AWS S3 storage.\\\\
+            \includegraphics[width=5cm]{aws.png}\\
                 \begin{enumerate}
                     \item AWS EC2\\
                     ASW EC2 provides computing capacity that can be scaled on-demand from the cloud. It can build any number of virtual servers, configure security and networking, and manage storage. Among many clouds, we used this cloud because our project uses machine learning. According to AWS official documents, EC2 offers services to optimize price-to-performance for machine learning projects. Because of this, we used AWS EC2.\\
                     \item AWS S3 storage\\
-                    AWS S3 is a repository built to store and retrieve the desired amount of data. This has the advantage of being scalable and paying only for the amount of use, so you only have to pay for the size of our project. The main reason we chose AWS S3 is that it can store almost any kind of data. Our project receives the user's sleep state, inputs it into the image-generating AI, and obtains the image output. In this case, since the data type of the output stored in the storage is an image, it should be a storage capable of storing an image.\cite{AWS}\\
+                    AWS S3 is a repository built to store and retrieve the desired amount of data. This has the advantage of being scalable and paying only for the amount of use, so you only have to pay for the size of our project. The main reason we chose AWS S3 is that it can store almost any kind of data. Our project receives the user's sleep state, inputs it into the image-generating AI, and obtains the image output. In this case, since the data type of the output stored in the storage is an image, it should be a storage capable of storing an image.\cite{AWS}\\\\
                 \end{enumerate}
                 
             \item DALL-E2:\\
             It is an image-generating artificial intelligence developed by Open AI. Our project needs an image-generating AI to represent the user's sleep state as an image, and we decided to use DALL-E as the generating AI used at this time. The reason is that DALL-E's API is provided as an open source.\cite{dalle}\\
 
         \item Overleaf:\\
-        Overleaf is an online co - thesis writing tool. Everything from selecting the topic of the thesis to posting is possible. It is a paper writing tool based on LaTeX and Rich Text. We wrote a paper using LaTeX during the project. Overleaf is very easy to share and save PDFs when working on team projects. In addition, when creating a shared link, it provides security functions, so there is no need to go through a separate encryption process. In addition, Overleaf is convenient to understand the progress of the project in real time when conducting a joint project. Big errors can be prevented in advance because the contents of the co-researcher's writing can be checked from time to time.\\
+        Overleaf is an online co - thesis writing tool. Everything from selecting the topic of the thesis to posting is possible. It is a paper writing tool based on LaTeX and Rich Text. We wrote a paper using LaTeX during the project. Overleaf is very easy to share and save PDFs when working on team projects. In addition, when creating a shared link, it provides security functions, so there is no need to go through a separate encryption process. In addition, Overleaf is convenient to understand the progress of the project in real time when conducting a joint project. Big errors can be prevented in advance because the contents of the co-researcher's writing can be checked from time to time.\cite{overleaf}\\\\
+        \includegraphics[width=5cm]{overleaf.png}\\\\
             
             
             \end{enumerate}
@@ -422,11 +433,11 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         Almost all platforms are not charged in the course of the project, but the following three are charged according to their usage. The details are as follows.
         \begin{enumerate}
             \item AWS EC2\\
-            Using an on-demand instance, you will pay per hour or per second without a long-term commitment. The fee is subject to many conditions. Assuming that you use Seoul, Windows OS, 0.5GiB memory, and EBS-only storage, the on-demand hourly rate is charged USD 0.0111.\\
+            Using an on-demand instance, you will pay per hour or per second without a long-term commitment. The fee is subject to many conditions. Assuming that you use Seoul, Windows OS, 0.5GiB memory, and EBS-only storage, the on-demand hourly rate is charged USD 0.0111.\cite{aws_ec2_cost}\\
             \item AWS S3 storage\\
-            AWS S3 will only pay for what it uses. Costs are subject to the following conditions. Storage charges, request and data retrieval charges, data transfer and transfer acceleration charges, data management and insights function charges, replication charges, conversion and query function charges. Based on S3 Standard, a general-purpose storage suitable for all data types, assuming the area of use is Seoul, 0.025USD per GB is charged.\\
+            AWS S3 will only pay for what it uses. Costs are subject to the following conditions. Storage charges, request and data retrieval charges, data transfer and transfer acceleration charges, data management and insights function charges, replication charges, conversion and query function charges. Based on S3 Standard, a general-purpose storage suitable for all data types, assuming the area of use is Seoul, 0.025USD per GB is charged.\cite{aws_s3_storage_cost}\\
             \item DALL-E2\\
-            DALL-E2 is paid but is available for free until 18USD because OpenAI API is offering free credits. Since then, it has received 0.020USD per image based on 1024x1024 images.\\
+            DALL-E2 has received 0.020USD per image based on 1024x1024 images and 0.018USD per image based on 512x512 images.\cite{dalle_cost}\\
         \end{enumerate}
     \end{enumerate}
     
@@ -468,12 +479,15 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
 \begin{enumerate}[label=\alph*]
     \item \textit{Entry}\\
-    This window appears the first time you run the “Your Daily Sleep at a Glance” application. In this screen, the logo of our application appears in the center, and two buttons are arranged vertically and side by side around this logo.\\
-    The button located at the top of the two buttons is a login button, and the button located at the bottom is a membership registration button.\\
+    This window appears the first time you run the “Your Daily Sleep at a Glance” application. In this screen, the logo of our application appears in the center, and two buttons are arranged vertically and side by side around this logo.\\\\
+    \centerline{\includegraphics[width=5cm]{logo2.png}}\\
+    The button located at the top of the two buttons is a login button, and the button located at the bottom is a membership registration button.\\\\
+    \includegraphics[width=8cm]{first_page.png}\\
 
     \item \textit{Sign-In}\\
     The login screen consists of two input cells and one button. The two input compartments are spaces that allow you to enter your ID and password, respectively. And one button is a button that allows users to press when they forget their ID or password. If the user enters the ID and password correctly, the login is completed with a pop-up window of "Login Success".\\
     However, when login is not successful, it goes through the following process.\\
+    \includegraphics[width=8cm]{login.png}\\
     \begin{enumerate}
         \item Invalid ID/password entry
         \begin{enumerate}
@@ -507,17 +521,24 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
     \item \textit{Sign-Up}\\
     If a user wants to join our application, when the membership window is first opened, five input windows and one button are visible. Each input window item consists of name, ID, password, age, gender, phone number, and e-mail. Phone numbers and e-mails are items for self-authentication when an account is lost, so users are required to enter them.\\
     One button is the "next" button. The reason for the "next" button is that there are additional items to be entered. Since our application provides a sleep analysis solution, we need to know additional items such as height, weight, and occupation.\\
-    When the user presses the "Next" button, a new window consisting of three input windows, one check box, and one button appears. The items of the three input windows consist of height, weight, and occupation. Since such items are very private personal information, check the check box with the message allowing personal information registration. Finally, if you press the "Completed" button located at the bottom center, your membership will be completed.\\
+    \includegraphics[width=4cm]{signup.png}\\
+    When the user presses the "Next" button, a new window consisting of three input windows, one check box, and one button appears. The items of the three input windows consist of height, weight, and occupation. Since such items are very private personal information, check the check box with the message allowing personal information registration. Finally, if you press the "Completed" button located at the bottom center, your membership will be completed.\\\\
+    \includegraphics[width=8cm]{signin2.png}\\\\
+    \includegraphics[width=8cm]{signin1.png}\\\\
+    
 
     \item \textit{Main Screen}
     \begin{enumerate}
         \item The top\\
         The top bar is located.\\
+        There is a bell-shaped button at the top left, and pressing it will pop up a list of announcements and notifications sent by the application. Here, users can check important announcements.\\\\
+        \includegraphics[width=4cm]{notification.png}\\\\
         \item Suspension\\
         It is a screen that appears after the login screen and is a page for writing a sleep journal, which is the main purpose of the application. In the case of writing a sleep journal, it will be placed in the center of the screen to give a visual emphasis effect. In the center of the screen, the date is shown in the form of [November 16,  2023] in the upper left of the box, and the date cannot be modified separately. If you press the Suyeon diary button inside the date, the link is hung on the page for writing the sleep diary, and the page is moved.\\
         The box below the Sleep Diary Writing box shows a summary of the solution from the sleep-related data analysis. Specifically, the phrase [Caffeine has the worst effect on Kang  Byung-hun's sleep! If you click the box, you will be directed to the main page of the solution page, which is the third item in the navigation bar.\\
         \item The bottom\\
         The navigation bar is located.\\
+        \includegraphics[width=4cm]{home1.png}\\
     \end{enumerate}
 
     \item \textit{Writing a Sleep Diary Page 1}
@@ -526,17 +547,20 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         The top bar is located.\\
         \item Suspension\\
         The date is written on the first box. The box is a static image, not a reactive image.\\
-        The second box contains a survey box in which the user receives input of various factors that affect sleep. The input factor is 1) caffeine [Check the check box based  on how many cups of coffee] [0 cup, 2 cup, 3 cup, 4 cup or more]\\
-        2) How many hours did you exercise before going to bed? [Continuous data type]\\
-        3)How many hours did you exercise ( constant data type )\\
+        The second box contains a survey box in which the user receives input of various factors that affect sleep. The input factor is 1) caffeine\\
+        Check the check box based  on how many cups of coffee. Also, Check the check box based on how many hours did you take caffeine before going to bed. \\
+        \textit{(None, 1cup, 2cups, 3cups, more than 4)}\\
+        2) How many hours did you exercise before going to bed? [Constant data type]\\
+        3)How many hours did you exercise [Constant data type]\\
         4) Dose of sleeping pills (choose the type of sleeping pills, and choose the number of pills you took).\\
         In the server, the number of sleeping pills x the number of medicines is entered in a water-repellent type.\\
         Below the box are the following buttons: Press the next button to move to the next input page. Clicking the next page does not save that information in the database.\\
         \item The bottom\\
-        The navigation bar is located.\\
+        The navigation bar is located.\\\\
+        \includegraphics[width=4cm]{home2.png}\\
     \end{enumerate}
     
-    \item \textit{Writing a Sleep Diary Page 2}
+    \item \textit{Writing a Sleep Diary Page 2}\\
     Entry Conditions:\\
     When you click Next on the Sleep Diary Writing page, if you have Breeze data for that date, the page does not enter, but enters page 3. When you press Next, you enter the page if there is no Breeze data for that date.
     \begin{enumerate}
@@ -548,6 +572,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
         \item The bottom\\
         The navigation bar is located.\\
+        \includegraphics[width=4cm]{home3.png}\\
     \end{enumerate}
 
     \item \textit{Writing a Sleep Diary Page 3}
@@ -564,6 +589,8 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
         \item The bottom\\
         The navigation bar is located.\\
+        \includegraphics[width=8cm]{home4.png}\\\\
+        \includegraphics[width=8cm]{home5.png}\\
     \end{enumerate}
 
     \item \textit{Monthly Calendar Screen}\\
@@ -573,9 +600,11 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         \item If it is not written, the sleep diary is not completed, so a pop-up window is displayed and the user is asked about the intention to write a sleep diary for image generation on that date.\\
         The pop-up window consists of a yes/no button at the bottom , along with the  phrase 'Would  you like to keep a sleep diary?'\\
         1) If you  click 'Yes', you will  be taken to the page for creating a sleep diary for that date.\\
-        2) If  you click 'No', stay on the  current monthly calendar screen.\\
+        2) If  you click 'No', stay on the  current monthly calendar screen.\\\\
+        \includegraphics[width=8cm]{diary.png}\\\\
+        
     \end{enumerate}
-
+    
     \item \textit{Daily Diary Screen}\\
     \begin{enumerate}
         \item Sleep Summary Images\\
@@ -583,13 +612,15 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
         \item Breeze data\\
         If  Breeze data exists:\\
-        If data from  the use of Breeze products exists, objective data on sleep is presented in a simplified form. A circular graph of sleep scores and quality of sleep is presented in the corresponding item to intuitively present information to the user.\\
+        If data from  the use of Breeze products exists, objective data on sleep is presented in a simplified form. A circular graph of sleep scores and quality of sleep is presented in the corresponding item to intuitively present information to the user.\\\\
+        \includegraphics[width=8cm]{daily_diary_revise.png}\\
         If  Breeze data does not exist:\\
-        If data from the  use of Breeze products does not exist, the item will display the phrase 'data does not exist'.\\
+        If data from the  use of Breeze products does not exist, the item will display the phrase 'data does not exist'.\\\\
+        \includegraphics[width=8cm]{daily_diary_nodatare.png}\\
 
         \item Factors Affecting Sleep\\
         \begin{enumerate}
-            \item Caffeine\\
+            \item Caffeine
             \begin{enumerate}
                 \item About taking caffeine:\\
                 The dosage of caffeine is expressed in units of 'remains', which is the  set standard.\\
@@ -601,7 +632,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 	   If caffeine is not taken, it is displayed as 'none' by integrating it with the screen and the  degree of administration.\\
             \end{enumerate}
             
-        \item Exercise status\\
+        \item Exercise status
         \begin{enumerate}
             \item A workout session:\\
               Indicate information about how many hours before sleep you exercised.\\
@@ -609,9 +640,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
             \item Intensity of exercise:\\
             Since the exercise intensity felt by each person is different, the intensity is input according to the user's subjective criteria.\\
-            Exercise intensity is input in the form of a radio button.\\
-            The choices for exercise intensity are as follows.:\\\\
-            \textit{Very weak, Weak, Medium, Strong, Very strong}\\\\
+            When the user enters the exercise time on the screen, it is displayed on the 'work out' screen.\\
             In the absence of data  records for exercise, the phrase 'none' is displayed integrally.\\
 
             \item Medication status:\\
@@ -648,7 +677,8 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         Data Analysis Long-term user data is required to provide a customized sleep solution. The items of data required are as follows. \\\\
         \textit{Quality of sleep, Exercise, Sleep time, Stress level, Blood pressure.}\\\\
         Among the above items, nominal variables go through a one-hot encoder process and perform a data EDA process, such as processing for null.\\
-        After that, linear regression is used to determine the correlation between each variable and the quality of sleep. For this project, we use some sleep-state based on many factors in Kaggle.\\
+        After that, linear regression is used to determine the correlation between each variable and the quality of sleep. For this project, we use some sleep-state based on many factors in Kaggle.\\\\
+        \includegraphics[width=4cm]{solution_revise.png}\\
     \end{enumerate}
 
     \item \textit{Settings}\\
@@ -684,8 +714,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 % that's all folks
 \end{document}
 
-% that's all folks
-\end{document}
+
 
 
 
