@@ -371,7 +371,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             When implementing the backend of our project, we adopted it to use relational databases in Java applications. The reasons for choosing JPA over SQL are as follows.\\
             First, developers don't have to care about queries because DB can be manipulated through methods other than SQL.\\
             Second, object-oriented code writing becomes possible. This increases productivity. Because of these advantages, we used JPA in our project.\\\\
-            \item Spring:\\
+            \item Spring Boot:\\
             Spring is an open-source framework that facilitates the development of Java applications for the enterprise. Through this, we developed the Back-End of our project. The reason why we chose the spring is as follows.\\
             First, because it is an open source. Spring is free for all users, so you can develop it at no cost. Also, because it is open source, you can use good code that many people have already created.\\
             Second, it is a lightweight framework. Compared to existing technologies, the code that developers need to write is simple, making it a little easier when developing Back-End.\cite{spring}\\\\
@@ -706,7 +706,56 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         
     \end{enumerate}
 \end{enumerate}
- 
+
+ \section{\Large{Architecture Design \& Implementation}}
+\begin{enumerate}[label=\arabic*]
+    \item {\large{Overall Architecture}}\\
+    \begin{figure}[H]
+        \centering
+    \end{figure}
+    Our service consists of four modules.\\
+    The first module is the front-end. We conducted front-end development based on a web app, using JavaScript, CSS, and HTML. Additionally, we utilized React to componentize complex and repetitive code, enabling simple and intuitive development. The reason for developing a web app is the advantage of being able to run it anytime, anywhere with internet access without the need for a separate app installation. Thanks to this, users can easily record actions affecting sleep when connected to the internet, even without installing the application separately. Moreover, we developed a user-friendly UI, providing a comfortable interface reminiscent of accessing an app, even when connected through the web.\\
+    The second module is the back-end. We used the open-source framework Spring Boot, based on the Java language, for the web application server. Overcoming the drawbacks of Spring, such as configuration complexity, initial setup difficulty, dependency management issues, and the complexity of WAR server configuration, led us to choose Spring Boot. Apache Tomcat serves as the web application server. In the back-end, we handle communication with Brid.zzz. When the server receives a signal for data synchronization to load Brid.zzz's data, it stores it in the database and responds to application requests.\\
+    Detailed information includes Java JDK version 17, packaging: war, and Spring Boot version 3.1.5.\\
+    The third module is the database, where we used MySQL, an open-source relational database widely used worldwide. It stores various data generated through user-application interactions, including Brid.zzz data, user information, and sleep solution details.\\
+    Lastly, we have machine learning. Our application analyzes the correlation between user sleep data collected through Brid.zzz and various factors that users input regarding their sleep. We organize these correlations to inform users about how changes in specific factors affect sleep quality. In implementing this, our focus was on determining the most reliable algorithm. We experimented with multiple models to choose the most suitable one. Additionally, we provide a feature using image-generating AI, prompting users to provide data, based on which it generates sleep images for the day. By offering these images along with machine learning-generated sleep solutions, we provided users with visual stimulation.\\
+    
+    \item {\large{Directory Organization}}\\
+    \begin{enumerate}[label=\alph*]
+        \item Front-end
+\begin{flushleft}
+        \tablefirsthead{\toprule Directory & File name & etc \\}
+        \tablehead{\toprule Directory & File name & etc\\}
+        \tabletail{\midrule}
+        \tablelasttail{\bottomrule}
+        \begin{supertabular}{p{0.5\linewidth} | p{0.3\linewidth} p{0.05\linewidth}}
+        \midrule
+        /my-insomnia-diary & \makecell[l]{.eslintrc.cjs\\.gitignore\\README.md\\index.html\\package-lock.json\\package.json\\postcss.config.js\\tailwind.config.js\\vite.config.js} \\
+        \midrule
+        
+        /my-insomnia-diary/public & vite.svg \\
+        \midrule
+
+        \makecell[l]{/my-insomnia-diary\\/public/images} & \makecell[l]{main.jpg\\sub.jpg\\sub2.jpg} \\
+        \midrule
+        
+    
+        \makecell[l]{/my-insomnia-diary\\/src} & \makecell[l]{App.css\\App.jsx\\globew.png\\index.css\\main.jsx}\\
+        \midrule
+        
+        \makecell[l]{/my-insomnia-diary\\/src/assets} & \makecell[l]{react.svg}\\
+        \midrule
+        
+        \makecell[l]{/my-insomnia-diary\\/src/pages} & \makecell[l]{Calendar.jsx\\Diary.jsx\\Home.jsx\\Login.jsx\\Signup.jsx\\SignupDetail.jsx\\SignupUserInfo.jsx\\Write.jsx}\\
+        \midrule
+
+        \makecell[l]{/my-insomnia-diary\\/src/router} & \makecell[l]{index.jsx}\\
+        \midrule
+        
+        \end{supertabular}
+\end{flushleft}
+
+\end{enumerate}
 
 \bibliographystyle{unsrt}
 \bibliography{ref}
