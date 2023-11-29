@@ -359,7 +359,8 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             "Your Daily Sleep at a Glance" was implemented through a web app. An app that looks like a native app but uses web technology is called a "web app". The reasons why we adopted the web app are as follows.\\
             First, web apps are widely used in various device environments such as PCs and smartphones without installing separate apps.\\ Second, maintenance is easier than native apps. Since the update is performed through the web, the user may not be burdened by the corresponding application modification work.\\
             Since the characteristics of these web apps conform to the development of the application, which is in the early stages, they were implemented as web apps. When creating a web application, the application screen was constructed using HTML CSS and JavaScript, which are web languages.\cite{webapp}\\\\
-            \includegraphics[width=7cm]{javascript.png}\\\\\\
+            \includegraphics[width=7cm]{javascript.png}
+    
             \item JAVA: \\
             Java is a programming language that is mainly used to develop the web and mobile. The advantages of Java are as follows.\\
             First, it can run independently of the operating system.\\
@@ -370,12 +371,13 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             JPA is a collection of interfaces that use object-relational mapping (ORM) technology standards in the Java field. Hyberate is a representative open source that implements JPA.\\
             When implementing the backend of our project, we adopted it to use relational databases in Java applications. The reasons for choosing JPA over SQL are as follows.\\
             First, developers don't have to care about queries because DB can be manipulated through methods other than SQL.\\
-            Second, object-oriented code writing becomes possible. This increases productivity. Because of these advantages, we used JPA in our project.\\\\
+            Second, object-oriented code writing becomes possible. This increases productivity. Because of these advantages, we used JPA in our project.\\
             \item Spring Boot:\\
             Spring is an open-source framework that facilitates the development of Java applications for the enterprise. Through this, we developed the Back-End of our project. The reason why we chose the spring is as follows.\\
             First, because it is an open source. Spring is free for all users, so you can develop it at no cost. Also, because it is open source, you can use good code that many people have already created.\\
             Second, it is a lightweight framework. Compared to existing technologies, the code that developers need to write is simple, making it a little easier when developing Back-End.\cite{spring}\\\\
-            \includegraphics[width=6cm]{spring.png}\\
+            \includegraphics[width=6cm]{springboot.jpg}\\
+            \newpage
             \item Python:\\
             Python is a programming language used for web applications, software development, data science, and machine learning.\\
             Python can increase productivity because it is easy to use among programming languages. The python community is on the big side worldwide, so it's easy to get help when problems arise. It is also compatible with various operating systems such as Windows and Mac OS. Since python has a variety of libraries, it is easy to adopt and use libraries suitable for the developer's purpose.\\
@@ -414,7 +416,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                     \item AWS EC2\\
                     ASW EC2 provides computing capacity that can be scaled on-demand from the cloud. It can build any number of virtual servers, configure security and networking, and manage storage. Among many clouds, we used this cloud because our project uses machine learning. According to AWS official documents, EC2 offers services to optimize price-to-performance for machine learning projects. Because of this, we used AWS EC2.\\
                     \item AWS S3 storage\\
-                    AWS S3 is a repository built to store and retrieve the desired amount of data. This has the advantage of being scalable and paying only for the amount of use, so you only have to pay for the size of our project. The main reason we chose AWS S3 is that it can store almost any kind of data. Our project receives the user's sleep state, inputs it into the image-generating AI, and obtains the image output. In this case, since the data type of the output stored in the storage is an image, it should be a storage capable of storing an image.\cite{AWS}\\\\
+                    AWS S3 is a repository built to store and retrieve the desired amount of data. This has the advantage of being scalable and paying only for the amount of use, so you only have to pay for the size of our project. The main reason we chose AWS S3 is that it can store almost any kind of data. Our project receives the user's sleep state, inputs it into the image-generating AI, and obtains the image output. In this case, since the data type of the output stored in the storage is an image, it should be a storage capable of storing an image.\cite{AWS}\\
                 \end{enumerate}
                 
             \item DALL-E2:\\
@@ -556,7 +558,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         In the server, the number of sleeping pills x the number of medicines is entered in a water-repellent type.\\
         Below the box are the following buttons: Press the next button to move to the next input page. Clicking the next page does not save that information in the database.\\
         \item The bottom\\
-        The navigation bar is located.\\\\
+        The navigation bar is located.\\
         \includegraphics[width=4cm]{home2.png}\\
     \end{enumerate}
     
@@ -600,8 +602,8 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         \item If it is not written, the sleep diary is not completed, so a pop-up window is displayed and the user is asked about the intention to write a sleep diary for image generation on that date.\\
         The pop-up window consists of a yes/no button at the bottom , along with the  phrase 'Would  you like to keep a sleep diary?'\\
         1) If you  click 'Yes', you will  be taken to the page for creating a sleep diary for that date.\\
-        2) If  you click 'No', stay on the  current monthly calendar screen.\\\\
-        \includegraphics[width=8cm]{diary.png}\\\\
+        2) If  you click 'No', stay on the  current monthly calendar screen.\\
+        \includegraphics[width=8cm]{diary.png}\\
         
     \end{enumerate}
     
@@ -612,10 +614,10 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
         \item Breeze data\\
         If  Breeze data exists:\\
-        If data from  the use of Breeze products exists, objective data on sleep is presented in a simplified form. A circular graph of sleep scores and quality of sleep is presented in the corresponding item to intuitively present information to the user.\\\\
+        If data from  the use of Breeze products exists, objective data on sleep is presented in a simplified form. A circular graph of sleep scores and quality of sleep is presented in the corresponding item to intuitively present information to the user.\\
         \includegraphics[width=8cm]{daily_diary_revise.png}\\
         If  Breeze data does not exist:\\
-        If data from the  use of Breeze products does not exist, the item will display the phrase 'data does not exist'.\\\\
+        If data from the  use of Breeze products does not exist, the item will display the phrase 'data does not exist'.\\
         \includegraphics[width=8cm]{daily_diary_nodatare.png}\\
 
         \item Factors Affecting Sleep\\
@@ -625,7 +627,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                 \item About taking caffeine:\\
                 The dosage of caffeine is expressed in units of 'remains', which is the  set standard.\\
             When taking caffeine , information such as '1 to 2 cups' and '3 to 4' cups is displayed on the screen.\\
-            If you have not taken caffeine, it is displayed as 'none' on the  screen.\\\\
+            If you have not taken caffeine, it is displayed as 'none' on the  screen.\\
                 \item Caffeine Time:\\
             Displays information about how many hours before	 	sleep you took caffeine.\\
 	       If you take	caffeine, the phrase 'taking caffeine N hours before sleep' is displayed on the screen.\\
@@ -674,10 +676,10 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         To improve the quality of your sleep, you can advise changes in exercise intensity, duration, dosage and time of medication types, and sleep solutions allow you to enter data more aggressively. The more actively a user enters data, the more high-quality data can be received, and the more high-quality data can be received. Providing high-quality results to users will make users interested in functions, allowing them to write more active data and use applications frequently.\\
         
         \item Data Analysis Method\\
-        Data Analysis Long-term user data is required to provide a customized sleep solution. The items of data required are as follows. \\\\
-        \textit{Quality of sleep, Exercise, Sleep time, Stress level, Blood pressure.}\\\\
+        Data Analysis Long-term user data is required to provide a customized sleep solution. The items of data required are as follows. \\
+        \textit{Quality of sleep, Exercise, Sleep time, Stress level, Blood pressure.}\\
         Among the above items, nominal variables go through a one-hot encoder process and perform a data EDA process, such as processing for null.\\
-        After that, linear regression is used to determine the correlation between each variable and the quality of sleep. For this project, we use some sleep-state based on many factors in Kaggle.\\\\
+        After that, linear regression is used to determine the correlation between each variable and the quality of sleep. For this project, we use some sleep-state based on many factors in Kaggle.\\
         \includegraphics[width=4cm]{solution_revise.png}\\
     \end{enumerate}
 
@@ -687,7 +689,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         \item My Page\\
         When you press the "My Page" button, a new window appears. This window allows you to modify a user's account.\\
         The ability to modify is all the information received from membership registration, such as ID change, height and weight change.\\
-        However, when changing your ID or password, you must go through self-authentication through phone number or e-mail. The process for self-authentication is as follows.\\\\
+        However, when changing your ID or password, you must go through self-authentication through phone number or e-mail. The process for self-authentication is as follows.\\
         \textit{1) Press the Modify ID/password button.\\2) A new window for self-authentication appears.\\3) Choose whether to authenticate by contact or email.\\4) After authentication, you will return to the My Page window when it is completed.\\5) If not complete, a pop-up will appear saying "Error occurred" and will return to the self-authentication window.\\}
         \item Marketing Setting\\
         The marketing setting is a toggle button, allowing you to choose whether to receive new events or promotional advertising texts on the application.\\
@@ -702,7 +704,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         \item Updates and Version\\
         The update check and version information is buttoned, and when pressed, it will be moved to a new window.\\
         The new window consists of text and a button. The text shows the version information of my application and the updated date.\\
-        If there is no update, the "Do update" button is provided so that the user can update the application.\\
+        If there is no update, the "Do update" button is provided so that the user can update the application.
         
     \end{enumerate}
 \end{enumerate}
@@ -710,53 +712,318 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
  \section{\Large{Architecture Design \& Implementation}}
 \begin{enumerate}[label=\arabic*]
     \item {\large{Overall Architecture}}\\
-    \begin{figure}[H]
-        \centering
-    \end{figure}
+    \includegraphics[width=7cm]{관계도2.drawio.png}\\
+    The process of image request and retrieval using the DALL·E API is as follows.\\
+    \includegraphics[width=8cm]{dalle_process3.drawio.png}\\
     Our service consists of four modules.\\
     The first module is the front-end. We conducted front-end development based on a web app, using JavaScript, CSS, and HTML. Additionally, we utilized React to componentize complex and repetitive code, enabling simple and intuitive development. The reason for developing a web app is the advantage of being able to run it anytime, anywhere with internet access without the need for a separate app installation. Thanks to this, users can easily record actions affecting sleep when connected to the internet, even without installing the application separately. Moreover, we developed a user-friendly UI, providing a comfortable interface reminiscent of accessing an app, even when connected through the web.\\
     The second module is the back-end. We used the open-source framework Spring Boot, based on the Java language, for the web application server. Overcoming the drawbacks of Spring, such as configuration complexity, initial setup difficulty, dependency management issues, and the complexity of WAR server configuration, led us to choose Spring Boot. Apache Tomcat serves as the web application server. In the back-end, we handle communication with Brid.zzz. When the server receives a signal for data synchronization to load Brid.zzz's data, it stores it in the database and responds to application requests.\\
     Detailed information includes Java JDK version 17, packaging: war, and Spring Boot version 3.1.5.\\
     The third module is the database, where we used MySQL, an open-source relational database widely used worldwide. It stores various data generated through user-application interactions, including Brid.zzz data, user information, and sleep solution details.\\
     Lastly, we have machine learning. Our application analyzes the correlation between user sleep data collected through Brid.zzz and various factors that users input regarding their sleep. We organize these correlations to inform users about how changes in specific factors affect sleep quality. In implementing this, our focus was on determining the most reliable algorithm. We experimented with multiple models to choose the most suitable one. Additionally, we provide a feature using image-generating AI, prompting users to provide data, based on which it generates sleep images for the day. By offering these images along with machine learning-generated sleep solutions, we provided users with visual stimulation.\\
-    
+    \newpage
     \item {\large{Directory Organization}}\\
     \begin{enumerate}[label=\alph*]
         \item Front-end
 \begin{flushleft}
-        \tablefirsthead{\toprule Directory & File name & etc \\}
-        \tablehead{\toprule Directory & File name & etc\\}
+        \tablefirsthead{\toprule Directory & File name \\}
+        \tablehead{\toprule Directory & File name \\}
         \tabletail{\midrule}
         \tablelasttail{\bottomrule}
         \begin{supertabular}{p{0.5\linewidth} | p{0.3\linewidth} p{0.05\linewidth}}
         \midrule
-        /my-insomnia-diary & \makecell[l]{.eslintrc.cjs\\.gitignore\\README.md\\index.html\\package-lock.json\\package.json\\postcss.config.js\\tailwind.config.js\\vite.config.js} \\
+        \makecell[l]{/frontend\\/my-insomnia-diary} & \makecell[l]{.eslintrc.cjs\\.gitignore\\README.md\\index.html\\package-lock.json\\package.json\\postcss.config.js\\tailwind.config.js\\vite.config.js} \\
         \midrule
         
-        /my-insomnia-diary/public & vite.svg \\
+        /frontend\\/my-insomnia-diary/public & vite.svg \\
         \midrule
 
-        \makecell[l]{/my-insomnia-diary\\/public/images} & \makecell[l]{main.jpg\\sub.jpg\\sub2.jpg} \\
+        \makecell[l]{/frontend\\/my-insomnia-diary\\/public/images} & \makecell[l]{main.jpg\\sub.jpg\\sub2.jpg} \\
         \midrule
         
     
-        \makecell[l]{/my-insomnia-diary\\/src} & \makecell[l]{App.css\\App.jsx\\globew.png\\index.css\\main.jsx}\\
+        \makecell[l]{/frontend\\/my-insomnia-diary\\/src} & \makecell[l]{App.css\\App.jsx\\globew.png\\index.css\\main.jsx}\\
         \midrule
         
-        \makecell[l]{/my-insomnia-diary\\/src/assets} & \makecell[l]{react.svg}\\
+        \makecell[l]{/frontend\\/my-insomnia-diary\\/src/assets} & \makecell[l]{react.svg}\\
         \midrule
         
-        \makecell[l]{/my-insomnia-diary\\/src/pages} & \makecell[l]{Calendar.jsx\\Diary.jsx\\Home.jsx\\Login.jsx\\Signup.jsx\\SignupDetail.jsx\\SignupUserInfo.jsx\\Write.jsx}\\
+        \makecell[l]{/frontend\\/my-insomnia-diary\\/src/pages} & \makecell[l]{Calendar.jsx\\Diary.jsx\\Home.jsx\\Login.jsx\\Signup.jsx\\SignupDetail.jsx\\SignupUserInfo.jsx\\Write.jsx}\\
         \midrule
 
-        \makecell[l]{/my-insomnia-diary\\/src/router} & \makecell[l]{index.jsx}\\
+        \makecell[l]{/frontend\\/my-insomnia-diary\\/src/router} & \makecell[l]{index.jsx}\\
         \midrule
         
         \end{supertabular}
 \end{flushleft}
+        
+        \item back end
+        \begin{flushleft}
+        \tablefirsthead{\toprule Directory & File name \\ \midrule}
+        \tablehead{\toprule Directory & File name\\ \midrule}
+        \tabletail{\midrule }
+        \tablelasttail{\bottomrule}
+        \begin{supertabular}{p{0.5\linewidth} | p{0.3\linewidth} p{0.05\linewidth}}
+        \makecell[l]{/backend} & \makecell[l]{.gitignore\\ build.gradle\\gradlew\\gradlew.bat\\settings.gradle}\\
+        \midrule
 
+        \makecell[l]{/backend/gradle\\/wrapper} & \makecell[l]{gradle-\\wrapper.jar\\ gradle-\\wrapper.properties}\\
+        \midrule
+
+        \makecell[l]{/backend/src\\/main/java\\/com/example\\/insomniadiary} & \makecell[l]{Backend-\\Application.java}\\
+        \midrule
+
+        \makecell[l]{/backend/src\\/main/java\\/com/example\\/insomniadiary\\/controller} & \makecell[l]{Image-\\Controller.java}\\
+        \midrule
+
+        \makecell[l]{/backend/src\\/main/java\\/com/example\\/insomniadiary\\/domain/image} & \makecell[l]{Image.java\\Image-\\Repository.java\\MemoryImage-\\Repository.java}\\
+        \midrule
+
+        \makecell[l]{/backend/src\\/main/java\\/com/example\\/insomniadiary\\/domain/sleepdiary} & \makecell[l]{MemorySleep-\\Diary-\\Repository.java\\Sleep-\\Diary.java\\SleepDiary-\\Repository.java}\\
+        \midrule
+
+        \makecell[l]{/backend/src\\/main/java\\/com/example\\/insomniadiary\\/domain/user} & \makecell[l]{User.java\\User-\\Repository.java}\\
+        \midrule
+
+        \makecell[l]{/.idea} & \makecell[l]{.gitignore\\InsomniaDiary\\-LG-bridzz.iml\\compiler.xml\\gradle.xml\\jarRepositories.xml\\misc.xml\\modules.xml\\uiDesigner.xml\\vcs.xml}\\
+        \midrule
+
+        \makecell[l]{/.idea/inspection-\\Profiles} & \makecell[l]{Project-\\Default.xml}\\
+        \midrule
+    
+        
+        \end{supertabular}
+\end{flushleft}
+        
 \end{enumerate}
+
+    \item {\large{Module 1 : front end}}
+    \begin{enumerate}[label=\alph*]
+        \item Purpose\\
+        This module is primarily used to show users generated sleep images through sleep solutions and lunar phases. Additionally, it handles all the visual aspects of using this application. Also, this application provides only mobile UI.\\
+        \item Functionality\\
+        This module provides two main functions. The first is sleep diary writing. It allows users to check whether they have written a sleep diary in calendar format. It also enables users to directly input factors that may affect sleep using input boxes. Lastly, it provides a text box for users to write their sleep diary for the day.\\
+        The second is providing sleep solutions. We analyze the correlation between Brid.zzz data and the factors users have input to offer sleep solutions. For user readability, we use graphs and tables to enhance visibility. Additionally, along with the sleep solution, it inputs sleep data into the DALL·E prompt to represent the sleep state with unique images. This allows users to easily grasp their sleep state through visuals.\\
+        \item Location of Source Code\\
+        /frontend/my-insomnia-diary
+        \item Class Component
+        \begin{enumerate}
+            \item Entry\\
+            It shows the first screen of the app. This screen was implemented as a functional component and used react. It consists of a logo image, login button, and sign-up button. An logo is included using the img tag with a source (src) pointing to '/images/main.jpg'. The image is styled with Tailwind CSS classes. Two Link components are used for navigation. One links to '/Login' with the label "LOGIN," and the other links to '/Signup' with the label "SIGN UP." In summary, this code defines a React component for an Entry page. It includes text, an image, and navigation links styled using Tailwind CSS. The component is intended to be used in a React application and serves as a simple entry point with links to login and sign-up pages.\\
+            \item Sign In Page\\
+            This page defines a functional component named Login. Functional components are a way to define React components using a function. The JSX includes a form element with email and password input fields. The form has a placeholder action, indicating that form submission is not yet handled. The email and password input fields have labels and are styled using Tailwind CSS classes. There are two Link components from 'react-router-dom' used for navigation. One links to the root ('/') with a "Cancel" label, and the other links to '/home' with a "Login" label. It also defines a React component for a login page with form inputs for email and password, styling using Tailwind CSS, navigation links, and an image.\\
+            \item Sign Up Page1\\
+            This is a page for sign-up. This page starts with defining a functional component named `Sign-up` for the sign-up page.
+            The component returns JSX markup representing the structure and layout of the sign-up page.
+            The JSX includes a form element with email and password input fields for user registration.
+            Also, email input includes a button for duplicate checking. Two password input fields are provided to enter and confirm the password. "Cancel" and "Next" buttons are implemented using `Link` components for navigation. The "Next" button links to '/signup/userinfo'`.\\
+            \item Sign Up Page2\\
+            This page is a React component written in JSX, representing a user information page for the signup process. It defines a functional component named SignupUserInfo for the user information page in the signup process. The JSX includes a form element with input fields for name, birthdate, phone number, and phone number verification. Each input field is styled with Tailwind CSS classes, and placeholder text is provided for user guidance. Phone number input includes a button for sending an authentication message. Phone number verification input includes a button for confirming the authentication code.  "Cancel" and "Next" buttons are implemented using Link components for navigation. The "Next" button links to '/signup/detail'.\\
+            \item Sign Up Page3\\
+            This is React component written in JSX, representing a user information page for the sign-up process. Let's break down the key components and functionalities of the code. It defines a functional component named `SignupUserInfo` for the user information page in the sign-up process. The JSX includes a form element with input fields for height, age, weight, and gender.Each input field is styled with Tailwind CSS classes, and placeholder text is provided for user guidance. Gender options are presented as radio buttons with labels. The default gender is set to 'male'. "Cancel" and "Complete" buttons are implemented using `Link` components for navigation. The "Complete" button links to '/Login'.
+            \item Monthly Calendar\\
+            This page is a React component written in JSX, representing a calendar page. This page imports the necessary dependencies, including “useState”for managing state, "Link" and "useNavigate" from 'react-router-dom' for navigation, "Datepicker" from 'flowbite-react' for the date picker component, and a custom "BottomBar" component. It uses the "useState" hook to manage the state of the selected date, initialized with the current date. It defines a function to handle changes in the selected date. It updates the state with the new date, logs the date to the console, and navigates to the '/Diary' route. The component returns JSX markup representing the structure and layout of the calendar page. and it includes a title, a date picker, and a link to write a sleep diary. It includes a custom "BottomBar" component, presumably providing additional navigation options. Finally, it provides a link to navigate to the '/Write' route with styling for a button-like appearance.\\
+            \item Writing a sleep diary-Text input\\
+            This page represents a React component for a diary entry page. It defines a variable DiaryText that holds the content of the diary entry as a multiline string. It defines a functional component named Write representing the diary entry page. It includes a date, an image, sleep quality information, user data, and a text area for the diary entry. This page provides a link to navigate to the '/Calendar' route with styling for a button-like appearance. \\
+            \item Writing a sleep diary-Factors input\\
+            This page is a React component that displays a form for writing factors that affect sleep conditions. It defines arrays containing options for caffeine dosage, pill dosage, and pill type. It defines a functional component named "Write" representing the sleep diary form. The component returns JSX markup representing the structure and layout of the sleep diary form. Sections include Caffeine, Workout, Pills, Fill in the data, and Diary. The form includes various input elements such as radio buttons, select drop downs, and text inputs. Users can input data related to caffeine dosage, workout details, pill information, sleep time, wake-up frequency, and diary entry. It provides navigation links to cancel or complete the sleep diary form.\\
+        \end{enumerate}
+        \item Where it's taken from\\
+        First, users give their own data directly.\\
+        Second, previous data is get from database.\\
+        Third, Brid.zzz gives sleep-state data.\\
+        \item How/Why we used the module\\
+        Since we implemented it as a web app, we used CSS/JS/HTML, and of course, we also used React Native. This is because React enhances code reusability and readability by modularizing the code into components, contributing to efficient development. Additionally, by passing HTML and React.js components to the browser's tree structure, we can build clean code that is easy to maintain. Thanks to JSX and Virtual DOM, React.js apps are faster and more efficient, so we incorporated React for these benefits.\\
+    \end{enumerate}
+    
+    \item {\large{Module 2 : back end}}
+    \begin{enumerate}[label=\alph*]
+        \item Purpose\\
+        We provide a sleep solution based on users' sleep diaries and sleep data. In addition, we utilize image-generating AI to create and provide a image of the user's sleep for each day. A server was necessary to efficiently manage these diverse pieces of information.\\
+        \item Functionality\\
+        Our service comprehensively manages various user information. On the back-end, it handles user membership details, Brid.zzz data, sleep state images, and other diverse data. When a user requests data, the server accesses the database and delivers the requested information back to the user.\\
+        \item Location of Source Code\\
+        /backend
+        \item Class Component
+        \begin{enumerate}
+            \item /controller/ImageController.java\\
+            This file represents the controller part of a web application related to image generation implemented using Spring Boot. An image is represented by the Image class, which includes user-provided data and the URL generated through the OpenAI service. The generated image is presented after receiving the form through the "/generate" endpoint and displaying the result through the "/result" endpoint. The OpenAI Image service is used for image generation, and the token for calling this service is configured through the OpenAiService.\\
+            \item /domain/image/\\
+            The files related to image processing are stored in this path.
+            \begin{enumerate}
+                \item /image/Image.java\\
+                This file defines the Image class, which is used to store information related to images. The Image class is used for the purpose of storing data related to images. The class includes fields such as Id to represent the identifier of the image, concern to represent the user's concerns, Dream to represent information about the dream, and url to store the URL of the generated image.
+
+                \item /image/ImageRepository.java\\
+                This file defines the "ImageRepository" interface for manipulating data related to images in the database. The save method is used to save an image, and the "findById" method finds an image based on its identifier. The return type uses Optional to handle situations where the value may not exist.\\
+
+                \item /image/MemoryImageRepository.java\\
+                This file defines the "MemoryImageRepository" class for storing and retrieving image data in memory. It creates an in-memory repository for storing and retrieving images, using "ConcurrentHashMap" to support concurrency. It uses "AtomicLong" to generate identifiers for images, incrementing it with each image stored to provide unique values.\\
+            \end{enumerate}
+            It is a file responsible for automatically connecting data from objects and databases. This makes it easier to access values in the database from Django. In this file, all tables in the database appear as objects.
+
+            \item /domain/sleepdiary/\\
+            The files related to sleepdiary are stored in this path.
+            \begin{enumerate}
+                \item /MemorySleepDiaryRepository.java\\
+                This file defines the "MemorySleepDiaryRepository" class for storing and retrieving sleep diary data in memory. It creates an in-memory repository for storing and retrieving sleep diaries, using "ConcurrentHashMap" to support concurrency. It uses "AtomicLong" to generate identifiers for sleep diaries, incrementing it with each diary stored to provide unique values.\\
+
+                \item /SleepDiary.java\\
+                This file defines the "SleepDiary" class, representing a sleep diary. The "SleepDiary" class is used to store data related to sleep diaries. The class includes fields such as "Id" to represent the identifier of the sleep diary, and various fields to store information such as caffeine intake, exercise, medication, sleep time, and wake-up time.\\
+
+                \item /SleepDiaryRepository.java\\
+                The "SleepDiaryRepository" interface defines methods related to saving and retrieving sleep diaries. The "save" method is used to save a sleep diary, and the "findByID" method finds a sleep diary based on its identifier. The return type uses "Optional" to handle situations where the value may not exist.\\
+            \end{enumerate}
+
+            \item /domain/user\\
+            The files related to users are stored in this path.
+            \begin{enumerate}
+                \item /User.java\\
+                This code defines the "User" class, representing a user. The "User" class is used to store data related to users. The class includes fields such as "id" to represent the identifier of the user, and various fields to store information such as email, password, username, age, and weight. The constructor allows for the initialization of each field of the user.\\
+
+                \item /UserRepository.java\\
+                This code defines the "UserRepository" interface for manipulating data related to users in the database. The "UserRepository" interface defines methods related to saving and retrieving users. The save method is used to save a user, and the "findById" method finds a user based on its identifier. The "findByName" method finds a user based on the username, and the "findAll" method retrieves all users. The return type uses "Optional" to handle situations where the value may not exist.\\
+            \end{enumerate}
+        \end{enumerate}
+        \item Where it's taken from\\
+        The data primarily used on the backend consists of user-entered personal information, data obtained from Brid.zzz, and data acquired through DALL·E.
+        \item How/Why we used the module\\
+        Spring is a framework that assists in the development of Java applications. However, Spring involves a complex configuration process, and to simplify this, Spring Boot was adopted. For this reason, we chose Spring Boot. Additionally, for the web application server (WAS), Tomcat was used because it is currently one of the most widely used servers.\\
+    \end{enumerate}
+
+    \item {\large{Module 4 : Data Analysis \& Machine Learning}}
+    \begin{enumerate}[label=\alph*]
+        \item Purpose\\
+        We provide users with sleep solutions through this application. For this purpose, it is necessary to analyze quantitative data from Brid.zzz and user-input data. The process involves data preprocessing and correlation analysis to make use of the data. Additionally, machine learning is essential to offer predicted sleep states based on how factors affecting sleep change over time.\\
+        \item Functionality\\
+        Data analysis and machine learning are essential for providing users with sleep solutions. When users record sleep factors on the sleep factor input page, this information is stored in the database. Additionally, data from Brid.zzz is also stored in the database. Through machine learning and correlation analysis, these data are analyzed and used to predict sleep states. When users request predicted data, it is provided accordingly.\\
+        \item Location of Source Code\\
+        /InsomniaDiary\_LG-bridzz/dataAnalysis
+        \item Class Component
+        \begin{enumerate}
+            \item Evaluation\\
+           \begin{enumerate}
+               \item RMSE\\
+               The root mean square error (RMSE) is one of the key evaluation metrics for regression prediction models. It measures the average difference between the predicted values and the actual values in a prediction model, assessing the model's accuracy. A lower RMSE indicates a better predictive model, and in the case of a perfect predictive model, the RMSE would be 0.\\
+               \begin{center}
+                \setlength{\baselineskip}{1.5\baselineskip}
+                   $\mathrm{RMSE}(y, \hat{y}) = \sqrt{\frac{\sum_{i=0}^{N -1} (y_i - \hat{y}_i)^2}{N}}$\\
+               \end{center}
+               \setlength{\baselineskip}{1.2\baselineskip}
+                $\hat{y}$ : predicted value\\
+                ${y}$: observed value\\
+                ${N}$: the number of observations\\
+
+                \item MSE\\
+                Mean Squared Error (MSE) is a frequently used loss function in regression. It is calculated by taking the square of the errors and then averaging them. A lower MSE indicates that the predicted values are closer to the original values, implying higher accuracy.\\
+                \begin{center}
+                \setlength{\baselineskip}{1.5\baselineskip}
+                    $\mathrm{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$\\
+                \end{center}
+                \setlength{\baselineskip}{1.2\baselineskip}
+                $\hat{y}$ : predicted value\\
+                ${y}$: observed value\\
+                ${n}$: the number of observations\\
+
+                \item R2\_score\\
+                The R2 score, representing the coefficient of determination, is an evaluation metric for the performance of a regression model. It is the squared value of the correlation coefficient. Unlike the correlation coefficient, the coefficient of determination quantifies the extent to which variables influence each other or the degree of causation. In the context of a regression model, it illustrates how well the independent variables explain the variability in the dependent variable. A higher R2 score suggests that the independent variables effectively explain the variation in the dependent variable.\\
+                \begin{center}
+                    ${R^2 score} = \frac{SSE}{SST} = 1- \frac{SSR}{SST}$\\
+                    ${SST} =\ \sum _{i=1}^n{\left({y}_i-\overline {y}\right)}^2$
+                    ${SSE} =\ \sum _{i=1}^n{\left(\hat{{y}_i}-\overline {y}\right)}^2$
+                    ${SSR} =\ \sum _{i=1}^n{\left({y}_i-\hat{{y}_i}\right)}^2$
+                \end{center}
+                $\hat{y}_i$ : predicted value\\
+                ${y}_i$: observed value\\
+                $\overline{y}$: mean of the observed value\\
+                ${n}$: the number of observations\\
+           \end{enumerate}
+            \newpage
+           \item Correlation Analysis\\
+           Correlation analysis is sometimes referred to as the initial step in conducting regression analysis. It is a technique for analyzing the linear relationship between two variables measured as continuous variables. It indicates whether one variable increases or decreases linearly as the other variable increases.\\
+           In our project, we conducted a correlation analysis with sleep quality as the dependent variable and exercise frequency, caffeine intake, and alcohol consumption as independent variables. The results are as follows:\\
+           \includegraphics[width=8cm]{correlation.png}\\
+           As seen in the table, the factor showing a positive correlation is exercise frequency, while negative correlations are observed with alcohol consumption and caffeine intake.\\
+
+            \item train-test set split\\
+            This is a module provided within the scikit-learn's model\_selection package. In simple terms, when using this module, it allows you to split your dataset into training and testing sets. This process is crucial for evaluating a model, aiming to prevent overfitting, and is considered an essential step in the model evaluation process.\\
+            We set the ratio of train and test set into 7:3.\\
+
+            \item Linear Regression\\
+            Linear regression is a data analysis technique used to predict the values of an unknown variable using known values of other related data. Linear regression consists of independent variables (variables that influence) and dependent variables (variables that are influenced).\\
+            In our project, independent variables include caffeine intake, alcohol consumption, and exercise frequency, while the dependent variable is set as sleep quality.\\
+            \includegraphics[width=8cm]{linearRegression.png}\\
+            When using 5-fold cross-validation for linear regression, the average RMSE (Root Mean Squared Error) was found to be 0.122. Additionally, it was observed that the regression coefficient for caffeine approached 0, for alcohol consumption it was negative, and for exercise frequency, it was positive.\\
+
+            \item Ridge Regression\\
+            This is regularized linear regression, where a regularization term with an alpha value is added to the cost function. The regularization term ensures that the model's weights are kept as small as possible, not only fitting the algorithm to the data but also preventing the weights from becoming too large. The alpha parameter controls how much the model is regularized. If alpha is 0, it becomes the same as linear regression. When alpha is very large, the weights tend to become close to zero.\\
+            \includegraphics[width=8cm]{ridgeregression.png}\\
+            In Ridge regression, the model was executed with five different alpha values. However, despite varying alpha values, no significant changes were observed. The results of Ridge regression showed an R2 score of 0.113 and an RMSE of 0.122.\\
+
+            \item Lasso Regression\\
+            Lasso regression is a type of linear regression that adds a constraint to minimize the sum of the absolute values of the weights, in addition to finding weights and biases that minimize the MSE. All elements of the weights should become zero or close to zero. Lasso regression also aims to prevent overfitting.\\
+            \includegraphics[width=8cm]{lassoregression.png}\\
+            Despite dividing the alpha values into five and conducting Lasso regression, all five results showed regression coefficients that were too small to yield significant outcomes. Additionally, an RMSE of 0.130 was observed, and the R2 score turned out to be negative. A negative R2 score implies that the model is unreliable.\\
+
+            \item XGBoost Regression\\
+            XGBoost is a model that currently holds top ranks on various AI competition platforms such as Kaggle. XGBoost, short for Extreme Gradient Boosting, operates within the boosting framework. Boosting involves creating a second model (Model 2) by feeding sampled data into the first model and analyzing the errors of the first model's predictions. Subsequently, a third model (Model 3) is built to analyze the errors of Model 2. This process continues, with each model analyzing errors and improving regression accuracy. It's important to note that XGBoost is not limited to regression models; it can also be used for classification tasks.
+            \includegraphics[width=8cm]{xgboost.png}\\
+            The XGBoost regression resulted in an RMSE of 0.112 and an R2 score of 0.245. It can be identified as the most effective regression model among those conducted so far.\\
+
+            \item EDA(Exploratory Data Analysis)\\
+            This is the process of observing and understanding the collected data from various perspectives. In other words, it is the step of intuitively looking at the data through graphs or statistical methods before analyzing it.\\
+            By reviewing the distribution and values of the data, one can better understand the phenomena represented by the data and discover potential issues with the data. Additionally, examining the data from various angles can reveal patterns that may not have been noticed during the problem definition stage. Detecting outliers is also one of the steps in the Exploratory Data Analysis(EDA) process.\\
+
+            \item K-fold\\
+            This is cross-validation conducted by creating K folds. It is performed to improve the accuracy for dataset with a small total number of data points.\\
+            In the scikit-learn module, which was used in this project, the 'cross\_val\_score' API is provided for K-fold cross-validation.\\
+
+            \item Regression Coeffiecient\\
+            Regression coefficients are the coefficients in the equation that represents the relationship between independent variables and the dependent variable, indicating the extent to which each independent variable influences the dependent variable.\\
+            The formula for calculating regression coefficients is as follows:\\
+            \begin{center}
+            \setlength{\baselineskip}{1.5\baselineskip}
+                $\mathrm{\hat{\beta}} = (X^T X)^{-1} X^T y$\\
+            \end{center}
+            \setlength{\baselineskip}{1.2\baselineskip}
+            $\hat{\beta}$: the vector of regression coefficients.\\
+            ${X}$: the matrix of independent variables.\\
+            ${y}$: the vector of dependent variable values.\\
+        \end{enumerate}
+        
+    \item Where it's taken from\\
+    When users provide responses regarding factors that may influence their sleep, this data is stored in the database. Once a sufficient amount of data is accumulated, the system trains on the user-inputted data along with data retrieved from Brid.zzz to offer a personalized sleep solution. If an adequate amount of data has not been accumulated, the system utilizes data provided by other users with similar physiological profiles to offer a sleep solution to the user.\\
+    
+    \item How/Why we used the module\\
+        \begin{enumerate}
+            \item pandas\\
+            Pandas is a popular open-source data manipulation and analysis library for Python. It provides easy-to-use data structures, such as DataFrame and Series, that are designed to efficiently manipulate large datasets. Pandas is particularly useful for tasks like cleaning, filtering, and analyzing data. It also integrates well with other libraries in the Python ecosystem, making it a powerful tool for data scientists and analysts. With Pandas, you can easily load data from various file formats, perform data cleaning operations, handle missing data, and conduct statistical and exploratory data analysis.\\
+
+            \item numpy\\
+            NumPy is a powerful open-source numerical computing library for Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. NumPy is a fundamental package for scientific computing in Python and is widely used in various fields such as machine learning, data science, and engineering.\\
+
+            \newpage
+            \item matplotlib.pyplot\\
+            matplotlib.pyplot is a collection of functions within the Matplotlib library, which is a widely-used Python plotting library for creating static, animated, and interactive visualizations in Python. The pyplot module provides a convenient interface for creating various types of plots and charts.\\
+
+            \item scikit-learn\\
+            Scikit-learn, often abbreviated as sklearn, is an open-source machine learning library for Python. It provides simple and efficient tools for data analysis and modeling, including a wide array of machine learning algorithms for tasks such as classification, regression, clustering, dimensionality reduction, and more.\\
+
+            \item scipy\\
+            Scipy is an open-source scientific computing library for Python that builds on the capabilities of NumPy and provides additional functionality for scientific and technical computing. It offers a collection of modules for optimization, signal and image processing, statistical functions, linear algebra, integration, interpolation, and more.\\
+            Scipy is a valuable companion to NumPy, providing additional capabilities for scientific computing tasks and contributing to the rich ecosystem of Python libraries used in scientific research, engineering, and data analysis.\\
+
+            \item math\\
+            The math module is a standard Python module that provides mathematical functions and constants for performing mathematical operations in Python. It is available by default and does not require additional installation.\\
+            
+            
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
 
 \bibliographystyle{unsrt}
 \bibliography{ref}
 
+% that's all folks
+\end{document}
