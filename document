@@ -119,8 +119,8 @@ Considering this background, developing an application that utilizes the relatio
 \toprule
 Roles & Name & Task description \& etc.\\
 \midrule
-Customer & YunSeo Jeong & She likes to enjoy SNS and communicate with people like any other person in their 20s. She suffers from insomnia these days. She's trying to relieve her insomnia herself. For that reason, she is writing a sleep diary to relieve insomnia. However, the existing sleep diary application was too restrict to record continuously. For keeping sleep diary steadly, she is looking for a sleep diary platform that is more fun and can communicate with people. \\\\
-User & WonJun Choi & He is a user of LG brid.zzz product and is a student about to take midterm exams. During the exam period, fatigue accumulated in his body due to intermittent tension and insomnia. Accordingly, he started using an application linked to brid.zzz. Through the application, he was able to record his sleep status and manage images and diaries. Through images created through his own brain waves during sleep, he was able to check his sleep state more intuitively, and was sometimes able to share his dreams with other friends which intrigued his friend. \\\\
+Customer & YunSeo Jeong & She likes to enjoy SNS and communicate with people like any other person in their 20s. She suffers from insomnia these days. She's trying to relieve her insomnia herself. For that reason, she is writing a sleep diary to relieve insomnia. However, the existing sleep diary application was too restrict to record continuously. For keeping sleep diary steadly, she is looking for a sleep diary platform that is more fun and can communicate with people. \vspace{12pt}\\
+User & WonJun Choi & He is a user of LG brid.zzz product and is a student about to take midterm exams. During the exam period, fatigue accumulated in his body due to intermittent tension and insomnia. Accordingly, he started using an application linked to brid.zzz. Through the application, he was able to record his sleep status and manage images and diaries. Through images created through his own brain waves during sleep, he was able to check his sleep state more intuitively, and was sometimes able to share his dreams with other friends which intrigued his friend. \vspace{12pt}\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -130,8 +130,8 @@ User & WonJun Choi & He is a user of LG brid.zzz product and is a student about 
 \center
 \begin{tabular}{m{1.6cm} m{1.5cm} m{3.7cm}}
 \midrule
-Software developer & ByeongHeon Kang & First, a software developer accurately comprehends the project requirements, identifies user needs, and provides a sense of direction for the software. This leads to the development of technical specifications and system architecture. This design phase determines the fundamental structure of the software, serving as a blueprint for its implementation. Next, the developer embarks on the actual coding and development work. In this phase, they adhere to technical specifications, writing source code and implementing various features and functionalities. Ensuring code quality and performance is crucial, and the developer performs testing and debugging to resolve errors and bugs. Effective communication about project progress and challenges is necessary. This facilitates alignment among all team members and is pivotal for the successful development of the software.\\\\
-User & WooSung Jung & He is a Development Manager. He's in charge of this project. Due to the nature of the project, identifying the needs of customers and users and the ability to identify the needs of engineers is critical. Instead of just identifying each need, he needs to compromise each need and oversee the project's direction in a way that will satisfy everyone. This role also requires the ability to understand the conditions required as the project progresses. \\\\
+Software developer & ByeongHeon Kang & First, a software developer accurately comprehends the project requirements, identifies user needs, and provides a sense of direction for the software. This leads to the development of technical specifications and system architecture. This design phase determines the fundamental structure of the software, serving as a blueprint for its implementation. Next, the developer embarks on the actual coding and development work. In this phase, they adhere to technical specifications, writing source code and implementing various features and functionalities. Ensuring code quality and performance is crucial, and the developer performs testing and debugging to resolve errors and bugs. Effective communication about project progress and challenges is necessary. This facilitates alignment among all team members and is pivotal for the successful development of the software.\vspace{12pt}\\
+User & WooSung Jung & He is a Development Manager. He's in charge of this project. Due to the nature of the project, identifying the needs of customers and users and the ability to identify the needs of engineers is critical. Instead of just identifying each need, he needs to compromise each need and oversee the project's direction in a way that will satisfy everyone. This role also requires the ability to understand the conditions required as the project progresses. \vspace{12pt}\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -140,12 +140,24 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 \begin{enumerate}[label=\arabic*]
     \item {\large{Motivation}} \\
     Sleep is an important physiological process that greatly affects our health and quality of life. Bad sleep quality can be associated with stress, depression, anxiety, excessive fatigue, poor concentration, and physical health problems. So it is very important to measure and improve sleep quality. Under this background, it is important to understand the relationship between sleep quality and brain waves and to create an application that helps correct sleep patterns.\\
-    In LG electronic brid.zzz has launched home appliances for mind care and slip care. Brid.zzz manages the 'bloom' that everyone has. Whether you are a student or an office worker, there are moments when you feel stress and tension in your daily life. Just as it's hard to get sunny every day, you can't avoid cloudy days. That's why brid.zzz takes care of "blurring". The brid.zzz will be a very useful appliance for modern people. Sleep care is good to use when you can't sleep well. When you enter the sleep care screen, it consists of an intuitive layout such as an OTT home screen, and you can choose the sound you're attracted to. I usually turn on the sound of bonfires or rain when I can't sleep well, and when I write, I turn on the sound of nature to make my mind comfortable. You lose your thoughts, your concentration increases, and your mind becomes calm. Brid.zzz not only plays sound, but also detects the user's sleep stage in real time and induces brainwave control to create a suitable sleep cycle. For example, if the user is determined to be asleep through brain waves, the sound is turned off, or if it is found to be in REM sleep state (light sleep), the sound is reproduced again to induce deep sleep. If I turn on ASMR on YouTube, I can sleep well, but I woke up again because of the sound, brid.zzz recognized through brain waves, so there was no such discomfort. We are decided to develop an application for people suffering from sleep disorders using this brid.zzz. \cite{LG_bridzzz} \\
+    In LG electronic brid.zzz has launched home appliances for mind care and slip care. Brid.zzz manages the 'bloom' that everyone has. Whether you are a student or an office worker, there are moments when you feel stress and tension in your daily life. Just as it's hard to get sunny every day, you can't avoid cloudy days. That's why brid.zzz takes care of "blurring". The brid.zzz will be a very useful appliance for modern people. Sleep care is good to use when you can't sleep well. When you enter the sleep care screen, it consists of an intuitive layout such as an OTT home screen, and you can choose the sound you're attracted to. I usually turn on the sound of bonfires or rain when I can't sleep well, and when I write, I turn on the sound of nature to make my mind comfortable. You lose your thoughts, your concentration increases, and your mind becomes calm.\\
+    Brid.zzz not only plays sound, but also detects the user's sleep stage in real time and induces brainwave control to create a suitable sleep cycle. For example, if the user is determined to be asleep through brain waves, the sound is turned off, or if it is found to be in REM sleep state (light sleep), the sound is reproduced again to induce deep sleep. If I turn on ASMR on YouTube, I can sleep well, but I woke up again because of the sound, brid.zzz recognized through brain waves, so there was no such discomfort. We are decided to develop an application for people suffering from sleep disorders using this brid.zzz. \cite{LG_bridzzz} \\
     \begin{enumerate}[label=\alph*]
         \item Excessive coffee dependence, caffeine addiction leads to insomnia.\\
-        There are a lot of people who love coffee. Enjoy coffee during work, after meals, when taking a break, and when taking a walk. The coffee shops lined up on the side of the road are an element that proves the public's love for coffee. In addition, various variation coffee products such as americano, latte, macchiato, and mixed coffee appear to satisfy the public's taste. The caffeine content in coffee affects the brain and contributes to the production of neurotransmitters such as serotonin and dopamine, which improves fatigue recovery and stress. It acts on the central nervous system and exhibits a human arousal effect. This is effective in driving away drowsiness, which is a positive factor in increasing work concentration. The problem is excessive intake. It is known that 150ml of coffee contains an average of 40 to 180mg of caffeine. According to a study by the Ministry of Food and Drug Safety, the recommended daily intake of caffeine for Koreans is about 400 milligrams for adult men. It varies from person to person but drinking only 3 to 5 cups of coffee a day exceeds the daily intake of caffeine. Too much caffeine can cause side effects such as headaches, heart palpitations, nervousness, dizziness, and cold sweat. Among them, insomnia is considered a representative side effect of caffeine. This is because caffeine increases the heart rate, causing excitement in the body and further disrupting the activity of adenosine receptors that induce sleep. Insomnia is a symptom of poor sleep despite being given the right time and opportunity. It is characterized by various adverse conditions, such as feeling tired or unable to concentrate during the day due to lack of sleep at night. The causes of insomnia vary. Mental illness such as mental and physical constitution, way of life, sleeping habits, sleep diseases, and depression are cited as causes. Among them, excessive caffeine intake can cause chronic insomnia, so care should be taken. If you are suffering from insomnia, it is advisable to properly control your coffee intake. It is also a good idea to enjoy other drinks instead of coffee. It is a good drink to drink instead of coffee, including chamomile tea that helps calm and comfortably sleep well, and lavender tea that is good for nerve stability and stress relief. In addition, it is a good way to activate the rhythm of the body through regular aerobic exercise. If insomnia persists for more than a month despite reduced coffee intake, if it is difficult to maintain work during the day or if daytime sleepiness or narcolepsy occurs, it is recommended to visit the sleep clinic for a thorough examination. The exact cause of insomnia can be determined by physical examination, medical history, and blood tests. Insomnia can be caused not only by sleeping habits but also by depression, which can be confirmed through specialized examination processes such as physical examination, psychoanalysis, writing a sleep diary, and multiple sleep tests. The multi-way sleep test has the advantage that even office workers who are busy with their busy schedules can easily receive it because it is possible to proceed with a simple process in which patients achieve normal sleep at night by attaching a sensor. \cite{caffein}\\
+        There are a lot of people who love coffee. Enjoy coffee during work, after meals, when taking a break, and when taking a walk. The coffee shops lined up on the side of the road are an element that proves the public's love for coffee. In addition, various variation coffee products such as americano, latte, macchiato, and mixed coffee appear to satisfy the public's taste. The caffeine content in coffee affects the brain and contributes to the production of neurotransmitters such as serotonin and dopamine, which improves fatigue recovery and stress. It acts on the central nervous system and exhibits a human arousal effect. This is effective in driving away drowsiness, which is a positive factor in increasing work concentration.\\
+        The problem is excessive intake. It is known that 150ml of coffee contains an average of 40 to 180mg of caffeine. According to a study by the Ministry of Food and Drug Safety, the recommended daily intake of caffeine for Koreans is about 400 milligrams for adult men. It varies from person to person but drinking only 3 to 5 cups of coffee a day exceeds the daily intake of caffeine. Too much caffeine can cause side effects such as headaches, heart palpitations, nervousness, dizziness, and cold sweat. Among them, insomnia is considered a representative side effect of caffeine. This is because caffeine increases the heart rate, causing excitement in the body and further disrupting the activity of adenosine receptors that induce sleep.\\
+        Insomnia is a symptom of poor sleep despite being given the right time and opportunity. It is characterized by various adverse conditions, such as feeling tired or unable to concentrate during the day due to lack of sleep at night.\\ The causes of insomnia vary. Mental illness such as mental and physical constitution, way of life, sleeping habits, sleep diseases, and depression are cited as causes. Among them, excessive caffeine intake can cause chronic insomnia, so care should be taken. If you are suffering from insomnia, it is advisable to properly control your coffee intake.\\
+        It is also a good idea to enjoy other drinks instead of coffee. It is a good drink to drink instead of coffee, including chamomile tea that helps calm and comfortably sleep well, and lavender tea that is good for nerve stability and stress relief. In addition, it is a good way to activate the rhythm of the body through regular aerobic exercise. \\
+        If insomnia persists for more than a month despite reduced coffee intake, if it is difficult to maintain work during the day or if daytime sleepiness or narcolepsy occurs, it is recommended to visit the sleep clinic for a thorough examination. The exact cause of insomnia can be determined by physical examination, medical history, and blood tests. Insomnia can be caused not only by sleeping habits but also by depression, which can be confirmed through specialized examination processes such as physical examination, psychoanalysis, writing a sleep diary, and multiple sleep tests.\\
+        The multi-way sleep test has the advantage that even office workers who are busy with their busy schedules can easily receive it because it is possible to proceed with a simple process in which patients achieve normal sleep at night by attaching a sensor. \cite{caffein}\\
         \item Exercise and Sleep\\
-        It's better to exercise together with treatment according to the cause. Also, you can expect some effects just by exercising. This is because exercise promotes blood circulation and lowers stress. It's not a fundamental remedy, but it helps you sleep. People sleep more than 30 percent of their lives. The brain's biological clock keeps you active during the day and sleeping at night. Body rhythm and mental vitality are restored during sleep. Biological rhythms increase sleep time in winter when the night is long, and sleep in summer when the night is short. This is why naps are more common in summer than in winter. In addition, obese people tend to sleep long, and skinny people tend to sleep short. The quality of sleep is determined by exercise time. Morning or daytime exercise is recommended. Exercise at night slows sleep time due to increased body temperature and excitement of sympathetic nerves. The sleep cycle time is pushed back by the vitality of the body. Exercise consumes energy and increases body temperature. Blood pressure and pulse increase and cortisol increase. A good night's sleep works well when the wakefulness hormone cortisol is reduced, and melatonin is released. Exercise in the morning or during the day also has the effect of enjoying the sunlight for a long time, which promotes sleep. Running vigorously releases serotonin. Serotonin, a neurotransmitter, blocks the sunlight's optic nerve stimulation. At the Fred Hutchinson Cancer Research Center, Group A had morning walking exercises five times a week in 45 minutes and Group B had morning stretching three times a week in 20 minutes a day for a year. As a result, 70\% of the walking group A slept better than before exercise, and 30\% of the stretching group B slept better. This means that light exercise such as walking in the morning helps improve sleep quality.\cite{workout} If you exercise at night, you should avoid sweating. It is recommended to lighten the stretching for about 30 minutes. Indoor exercise helps you sleep by lying down and pushing your back high into the sky, and yoga's cat posture, which circles your back and waist. It relaxes the rigid body due to tension and relieves excessive brain energy through excessive thinking to stabilize brain waves. Along with exercise, the fundamental treatment is to comprehensively approach psychological factors and physical problems, which are dysfunction of the ledger, identify the cause, and take individual treatment. Brainwave measurement records, additional information (exercise records, food records, dreams) It was planned to create a function to create a picture that summarizes the sleep information of the day in one sheet and stores the information. It implements a function to share a picture summarizing sleep in one sheet on SNS such as Instagram. Based on the stored information, we're going to do a correlation analysis of each indicator It implements functions such as "drinking caffeine drinks lowers your sleep score by 20 percent" and "increases your sleep score by 30 percent due to regular exercise."  It implements a generative AI function that generates customized music based on brainwave information.\\
+        It's better to exercise together with treatment according to the cause. Also, you can expect some effects just by exercising. This is because exercise promotes blood circulation and lowers stress. It's not a fundamental remedy, but it helps you sleep. People sleep more than 30 percent of their lives. The brain's biological clock keeps you active during the day and sleeping at night.\\
+        Body rhythm and mental vitality are restored during sleep. Biological rhythms increase sleep time in winter when the night is long, and sleep in summer when the night is short. This is why naps are more common in summer than in winter. In addition, obese people tend to sleep long, and skinny people tend to sleep short. \\
+        The quality of sleep is determined by exercise time. Morning or daytime exercise is recommended. Exercise at night slows sleep time due to increased body temperature and excitement of sympathetic nerves. The sleep cycle time is pushed back by the vitality of the body. Exercise consumes energy and increases body temperature. Blood pressure and pulse increase and cortisol increase. A good night's sleep works well when the wakefulness hormone cortisol is reduced, and melatonin is released. Exercise in the morning or during the day also has the effect of enjoying the sunlight for a long time, which promotes sleep. Running vigorously releases serotonin. Serotonin, a neurotransmitter, blocks the sunlight's optic nerve stimulation.\\
+        At the Fred Hutchinson Cancer Research Center, Group A had morning walking exercises five times a week in 45 minutes and Group B had morning stretching three times a week in 20 minutes a day for a year. As a result, 70\% of the walking group A slept better than before exercise, and 30\% of the stretching group B slept better. This means that light exercise such as walking in the morning helps improve sleep quality.\cite{workout}
+        If you exercise at night, you should avoid sweating. It is recommended to lighten the stretching for about 30 minutes.\\
+        Indoor exercise helps you sleep by lying down and pushing your back high into the sky, and yoga's cat posture, which circles your back and waist. It relaxes the rigid body due to tension and relieves excessive brain energy through excessive thinking to stabilize brain waves. Along with exercise, the fundamental treatment is to comprehensively approach psychological factors and physical problems, which are dysfunction of the ledger, identify the cause, and take individual treatment.\\
+        Brainwave measurement records, additional information (exercise records, food records, dreams) It was planned to create a function to create a picture that summarizes the sleep information of the day in one sheet and stores the information. It implements a function to share a picture summarizing sleep in one sheet on SNS such as Instagram. Based on the stored information, we're going to do a correlation analysis of each indicator It implements functions such as "drinking caffeine drinks lowers your sleep score by 20 percent" and "increases your sleep score by 30 percent due to regular exercise."  It implements a generative AI function that generates customized music based on brainwave information.\\
     \end{enumerate}
 
     \item{\large{Problem Statement}}
@@ -188,7 +200,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                 \end{enumerate}
             \item Settings: The 'My Settings' menu provides synchronization through data backup. In addition, it provides my profile information, general settings/language settings, and data management functions.\\
             \end{enumerate}
-
+\newpage
             \item Better Sleep\\
             It is an application that provides sound for sleep. The menu screen consists of\\ a) a home b) a sound c) a sleep d) a sleep\\ e) a profile.\\
             \begin{enumerate}
@@ -228,7 +240,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \end{enumerate}
             Key information can be extracted based on Breeze data.
         \end{enumerate}
-
+\newpage
         \section{\Large{Requirement Analysis}}
         \begin{enumerate}[label=\arabic*]
             \item {\large{Main}}\\
@@ -253,7 +265,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                 \item ID, password input box\\
                 \item Login button: When you click the login button, the first time you access it, you go to the information page, otherwise the Home screen.\\
             \end{enumerate}
-
+\newpage
             \item Sign-Up\\
             It is a page which leads people to sign-up this application.\\
             \begin{enumerate}
@@ -358,15 +370,41 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \item Javascript / CSS /HTML\\
             "Your Daily Sleep at a Glance" was implemented through a web app. An app that looks like a native app but uses web technology is called a "web app". The reasons why we adopted the web app are as follows.\\
             First, web apps are widely used in various device environments such as PCs and smartphones without installing separate apps.\\ Second, maintenance is easier than native apps. Since the update is performed through the web, the user may not be burdened by the corresponding application modification work.\\
-            Since the characteristics of these web apps conform to the development of the application, which is in the early stages, they were implemented as web apps. When creating a web application, the application screen was constructed using HTML CSS and JavaScript, which are web languages.\cite{webapp}\\\\
-            \includegraphics[width=7cm]{javascript.png}
-    
+            Since the characteristics of these web apps conform to the development of the application, which is in the early stages, they were implemented as web apps. When creating a web application, the application screen was constructed using HTML CSS and JavaScript, which are web languages.\cite{webapp}\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.55\textwidth]{javascript.png}
+                \end{center}
+                \caption{HTML/CSS/JS}
+                \label{fig:example}
+            \end{figure}
+            
+            \item React:\\
+            React, developed and maintained by Facebook, is a declarative, efficient, and flexible JavaScript library for building user interfaces. It is commonly used for developing single-page applications where user interactions and dynamic content updates are crucial. React allows developers to create reusable UI components, making it easier to manage complex UIs and maintain a consistent look and feel across an application. React is widely adopted in the web development community and has a large ecosystem of libraries and tools that complement its functionality. It is used by many companies and developers to create interactive and efficient user interfaces for web applications.\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.3\textwidth]{react.png}
+                \end{center}
+                \caption{React}
+                \label{fig:example}
+            \end{figure}
+            
             \item JAVA: \\
             Java is a programming language that is mainly used to develop the web and mobile. The advantages of Java are as follows.\\
             First, it can run independently of the operating system.\\
             Second, it supports automatic memory management, etc., so it has high stability.\\
-            Third, there are many references because it is an old language.\\ In our team project, JAVA was used to develop the backend, and the backend development was completed by using Spring with JAVA.\cite{java}\\\\
-            \includegraphics[width=7cm]{java.png}\\
+            Third, there are many references because it is an old language.\\ In our team project, JAVA was used to develop the backend, and the backend development was completed by using Spring with JAVA.\cite{java}\vspace{12pt}\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.55\textwidth]{java.png}
+                \end{center}
+                \caption{Java}
+                \label{fig:example}
+            \end{figure}
+            
             \item JPA(Java Persistence API):\\
             JPA is a collection of interfaces that use object-relational mapping (ORM) technology standards in the Java field. Hyberate is a representative open source that implements JPA.\\
             When implementing the backend of our project, we adopted it to use relational databases in Java applications. The reasons for choosing JPA over SQL are as follows.\\
@@ -375,15 +413,30 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \item Spring Boot:\\
             Spring is an open-source framework that facilitates the development of Java applications for the enterprise. Through this, we developed the Back-End of our project. The reason why we chose the spring is as follows.\\
             First, because it is an open source. Spring is free for all users, so you can develop it at no cost. Also, because it is open source, you can use good code that many people have already created.\\
-            Second, it is a lightweight framework. Compared to existing technologies, the code that developers need to write is simple, making it a little easier when developing Back-End.\cite{spring}\\\\
-            \includegraphics[width=6cm]{springboot.jpg}\\
-            \newpage
+            Second, it is a lightweight framework. Compared to existing technologies, the code that developers need to write is simple, making it a little easier when developing Back-End.\cite{spring}\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{springboot.jpg}
+                \end{center}
+                \caption{Sprint Boot}
+                \label{fig:example}
+            \end{figure}
+
             \item Python:\\
             Python is a programming language used for web applications, software development, data science, and machine learning.\\
             Python can increase productivity because it is easy to use among programming languages. The python community is on the big side worldwide, so it's easy to get help when problems arise. It is also compatible with various operating systems such as Windows and Mac OS. Since python has a variety of libraries, it is easy to adopt and use libraries suitable for the developer's purpose.\\
-            Because of the advantages of Python as described above, Python was used in our project to analyze data (Data EDA) and conduct machine learning. In particular, data analysis was conducted using libraries such as numpy and pandas.\cite{python}\\
-            \includegraphics[width=6cm]{python.png}\\\\
+            Because of the advantages of Python as described above, Python was used in our project to analyze data (Data EDA) and conduct machine learning. In particular, data analysis was conducted using libraries such as numpy and pandas.\cite{python}\vspace{5pt}\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{python.png}
+                \end{center}
+                \caption{Python}
+                \label{fig:example}
+            \end{figure}
         \end{enumerate}
+\newpage
         \item Software 
         \begin{enumerate}
             \item VScode : \\
@@ -391,43 +444,122 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             VScode is easy for developers to use and is a universal editor used when they first enter development, but it has the following disadvantages. First, restrictions can arise when working on large-scale projects. Memory usage can increase when using a second large file. Finally, debugging is not as good as other editors. It supports basic debugging, but lacks advanced debugging capabilities. Nevertheless, there are the following reasons why our team used the VScode to proceed with the project. First, compatibility between platforms is good. Team members who use Windows OS and MAC OS coexist in our team. Therefore, it was important to use a compatible platform when working, and we were able to solve this problem because vs was compatible.\\
             Second, the capacity is not heavy. Because the VScode runs on low-spec hardware, it was easy to work with computers their own computers.\\
             For the above two reasons, our team used the VScode as a code editor.\\
-            \includegraphics[width=7cm]{vscode.png}
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{vscode.png}
+                \end{center}
+                \caption{Visual Studio Code}
+                \label{fig:example}
+            \end{figure}
+            
             \item JupyterNotebook : \\
             Jupiter Notebook is an open source web application that provides an interactive environment for code generation, visualization, and documentation.\\
             It provides exploratory data analysis (EDA), data organization and transformation, data visualization, statistical modeling, machine learning, deep learning, and many other languages.\\
             It consists of code cells and markdown cells, which allow you to write and execute Python codes, and markdown cells allow you to write documents, express formulas, or insert images.\\
             Running Python code one line at a time makes it easier to debug and test. When the code is executed, results are displayed directly below, and visualized graphs or tables can be viewed immediately.\\
             The combination of code, markdown, links, and images makes it easier for data teams to use, and can run on a cell-by-cell basis to take advantage of the code's capabilities. You can convert from the web interface to HTML, PowerPoint, LaTeX, PDF, ReStructuredText, Markdown, and Python. This flexibility makes it easier for data scientists to share their work with others.\\
-            \includegraphics[width=4cm]{jupyternotebook.png}\\\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{jupyternotebook.png}
+                \end{center}
+                \caption{Jupyter Notebook}
+                \label{fig:example}
+            \end{figure}
             
             \item Git \& Github :\\
             A version management software called git was used to manage the progress of the project's work. The project progress was recorded by recording changes in the work file with git and sending them to github. Using github made it easier to manage and roll back code changes, and using features such as code review and branching, team projects could be carried out without difficulty.\cite{github}\\
-            \includegraphics[width=5cm]{github.png}\\\\
-            
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{github.png}
+                \end{center}
+                \caption{Git \& Github}
+                \label{fig:example}
+            \end{figure}
+
+  
             \item Slack : \\
             Slack is an app that connects people and information. Slack can improve how organizations communicate by bringing people together and running a unified team. \\
             Slack helps employees work in a more connected, flexible, and inclusive way. Slack makes it easy for you to message and collaborate with your colleagues inside and outside your organization as if you were in personal contact with others. People work in a dedicated space called a channel that combines information with people who need it. \\
-            Slack supports asynchronous operations. By channeling a task, you can access the information you want at any time, regardless of location, time zone, or functionality. Ask questions, get answers, and update without scheduling. Slack provides access to the same shared, searchable information for all of your organization. When teams collaborate on a channel, everyone can share information at the same time, allowing all teams to share progress and make decisions faster.\cite{github}\\
-            \includegraphics[width=5cm]{slack.png}\\
+            Slack supports asynchronous operations. By channeling a task, you can access the information you want at any time, regardless of location, time zone, or functionality. Ask questions, get answers, and update without scheduling. Slack provides access to the same shared, searchable information for all of your organization. When teams collaborate on a channel, everyone can share information at the same time, allowing all teams to share progress and make decisions faster.\cite{slack}\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{slack.png}
+                \end{center}
+                \caption{Slack}
+                \label{fig:example}
+            \end{figure}
+            
             \item AWS:\\
-            It is a cloud computing platform provided by AWS Amazon. It currently offers more than 200 services. Among them, the functions used in our project are AWS EC2 and AWS S3 storage.\\\\
-            \includegraphics[width=5cm]{aws.png}\\
+            It is a cloud computing platform provided by AWS Amazon. It currently offers more than 200 services. Among them, the functions used in our project are AWS EC2 and AWS S3 storage.\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{aws.png}
+                \end{center}
+                \caption{AWS}
+                \label{fig:example}
+            \end{figure}
+            
                 \begin{enumerate}
                     \item AWS EC2\\
                     ASW EC2 provides computing capacity that can be scaled on-demand from the cloud. It can build any number of virtual servers, configure security and networking, and manage storage. Among many clouds, we used this cloud because our project uses machine learning. According to AWS official documents, EC2 offers services to optimize price-to-performance for machine learning projects. Because of this, we used AWS EC2.\\
                     \item AWS S3 storage\\
                     AWS S3 is a repository built to store and retrieve the desired amount of data. This has the advantage of being scalable and paying only for the amount of use, so you only have to pay for the size of our project. The main reason we chose AWS S3 is that it can store almost any kind of data. Our project receives the user's sleep state, inputs it into the image-generating AI, and obtains the image output. In this case, since the data type of the output stored in the storage is an image, it should be a storage capable of storing an image.\cite{AWS}\\
                 \end{enumerate}
-                
+
             \item DALL-E2:\\
             It is an image-generating artificial intelligence developed by Open AI. Our project needs an image-generating AI to represent the user's sleep state as an image, and we decided to use DALL-E as the generating AI used at this time. The reason is that DALL-E's API is provided as an open source.\cite{dalle}\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{dalle.png}
+                \end{center}
+                \caption{DALL-E}
+                \label{fig:example}
+            \end{figure}
 
         \item Overleaf:\\
-        Overleaf is an online co - thesis writing tool. Everything from selecting the topic of the thesis to posting is possible. It is a paper writing tool based on LaTeX and Rich Text. We wrote a paper using LaTeX during the project. Overleaf is very easy to share and save PDFs when working on team projects. In addition, when creating a shared link, it provides security functions, so there is no need to go through a separate encryption process. In addition, Overleaf is convenient to understand the progress of the project in real time when conducting a joint project. Big errors can be prevented in advance because the contents of the co-researcher's writing can be checked from time to time.\cite{overleaf}\\\\
-        \includegraphics[width=5cm]{overleaf.png}\\\\
+        Overleaf is an online co - thesis writing tool. Everything from selecting the topic of the thesis to posting is possible. It is a paper writing tool based on LaTeX and Rich Text. We wrote a paper using LaTeX during the project. Overleaf is very easy to share and save PDFs when working on team projects. In addition, when creating a shared link, it provides security functions, so there is no need to go through a separate encryption process. In addition, Overleaf is convenient to understand the progress of the project in real time when conducting a joint project. Big errors can be prevented in advance because the contents of the co-researcher's writing can be checked from time to time.\cite{overleaf}\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{overleaf.png}
+                \end{center}
+                \caption{Overleaf}
+                \label{fig:example}
+            \end{figure}
+   
+\newpage
+        \item MySQL:\\
+        MySQL is an open-source relational database management system (RDBMS) that is widely used for managing and organizing large sets of data. Developed by Oracle Corporation, MySQL is a crucial component in many web applications and software stacks.\\
+        Overall, MySQL is a versatile and powerful database management system that is widely used for various applications, ranging from small websites to large-scale enterprise systems. Its combination of features, performance, and community support has contributed to its popularity in the software development industry.\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.3\textwidth]{mysql.png}
+                \end{center}
+                \caption{MySQL}
+                \label{fig:example}
+            \end{figure}
             
-            
+        \item npm:\\
+        npm is the default package manager for the Node.js, JavaScript runtime environment. It is a command-line tool that allows developers to discover, install, share, and manage packages of code written in JavaScript. These packages can include libraries, tools, frameworks, and other code modules that facilitate development tasks.\\
+        npm is widely used in web development for both server-side and client-side applications. It plays a crucial role in managing project dependencies, facilitating collaboration, and promoting code reuse within the JavaScript community.\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.3\textwidth]{npm.png}
+                \end{center}
+                \caption{npm}
+                \label{fig:example}
+            \end{figure}
             \end{enumerate}
+        
+        
     \end{enumerate}
     
     \item {\large{Cost Estimation}}
@@ -481,15 +613,38 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
 \begin{enumerate}[label=\alph*]
     \item \textit{Entry}\\
-    This window appears the first time you run the “Your Daily Sleep at a Glance” application. In this screen, the logo of our application appears in the center, and two buttons are arranged vertically and side by side around this logo.\\\\
-    \centerline{\includegraphics[width=5cm]{logo2.png}}\\
-    The button located at the top of the two buttons is a login button, and the button located at the bottom is a membership registration button.\\\\
-    \includegraphics[width=8cm]{first_page.png}\\
+    This window appears the first time you run the “Your Daily Sleep at a Glance” application. In this screen, the logo of our application appears in the center, and two buttons are arranged vertically and side by side around this logo.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{logo2.png}
+                \end{center}
+                \caption{Logo}
+                \label{fig:example}
+            \end{figure}
+    The button located at the top of the two buttons is a login button, and the button located at the bottom is a membership registration button.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.55\textwidth]{first_page.png}
+                \end{center}
+                \caption{Entry}
+                \label{fig:example}
+            \end{figure}
+
 
     \item \textit{Sign-In}\\
     The login screen consists of two input cells and one button. The two input compartments are spaces that allow you to enter your ID and password, respectively. And one button is a button that allows users to press when they forget their ID or password. If the user enters the ID and password correctly, the login is completed with a pop-up window of "Login Success".\\
     However, when login is not successful, it goes through the following process.\\
-    \includegraphics[width=8cm]{login.png}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.55\textwidth]{login.png}
+                \end{center}
+                \caption{Sign In}
+                \label{fig:example}
+            \end{figure}
+\newpage
     \begin{enumerate}
         \item Invalid ID/password entry
         \begin{enumerate}
@@ -523,24 +678,62 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
     \item \textit{Sign-Up}\\
     If a user wants to join our application, when the membership window is first opened, five input windows and one button are visible. Each input window item consists of name, ID, password, age, gender, phone number, and e-mail. Phone numbers and e-mails are items for self-authentication when an account is lost, so users are required to enter them.\\
     One button is the "next" button. The reason for the "next" button is that there are additional items to be entered. Since our application provides a sleep analysis solution, we need to know additional items such as height, weight, and occupation.\\
-    \includegraphics[width=4cm]{signup.png}\\
-    When the user presses the "Next" button, a new window consisting of three input windows, one check box, and one button appears. The items of the three input windows consist of height, weight, and occupation. Since such items are very private personal information, check the check box with the message allowing personal information registration. Finally, if you press the "Completed" button located at the bottom center, your membership will be completed.\\\\
-    \includegraphics[width=8cm]{signin2.png}\\\\
-    \includegraphics[width=8cm]{signin1.png}\\\\
-    
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{signup.png}
+                \end{center}
+                \caption{Sign Up}
+                \label{fig:example}
+            \end{figure}
+
+
+    When the user presses the "Next" button, a new window consisting of three input windows, one check box, and one button appears. The items of the three input windows consist of height, weight, and occupation. Since such items are very private personal information, check the check box with the message allowing personal information registration. Finally, if you press the "Completed" button located at the bottom center, your membership will be completed.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.45\textwidth]{signin2.png}
+                \end{center}
+                \caption{Sign Up Valid}
+                \label{fig:example}
+            \end{figure}
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.45\textwidth]{signin1.png}
+                \end{center}
+                \caption{Sign Up Invalid}
+                \label{fig:example}
+            \end{figure}
 
     \item \textit{Main Screen}
     \begin{enumerate}
         \item The top\\
         The top bar is located.\\
         There is a bell-shaped button at the top left, and pressing it will pop up a list of announcements and notifications sent by the application. Here, users can check important announcements.\\\\
-        \includegraphics[width=4cm]{notification.png}\\\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{notification.png}
+                \end{center}
+                \caption{Notification}
+                \label{fig:example}
+            \end{figure}
+
         \item Suspension\\
         It is a screen that appears after the login screen and is a page for writing a sleep journal, which is the main purpose of the application. In the case of writing a sleep journal, it will be placed in the center of the screen to give a visual emphasis effect. In the center of the screen, the date is shown in the form of [November 16,  2023] in the upper left of the box, and the date cannot be modified separately. If you press the Suyeon diary button inside the date, the link is hung on the page for writing the sleep diary, and the page is moved.\\
         The box below the Sleep Diary Writing box shows a summary of the solution from the sleep-related data analysis. Specifically, the phrase [Caffeine has the worst effect on Kang  Byung-hun's sleep! If you click the box, you will be directed to the main page of the solution page, which is the third item in the navigation bar.\\
+        
         \item The bottom\\
         The navigation bar is located.\\
-        \includegraphics[width=4cm]{home1.png}\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{home1.png}
+                \end{center}
+                \caption{Home Screen}
+                \label{fig:example}
+            \end{figure}
     \end{enumerate}
 
     \item \textit{Writing a Sleep Diary Page 1}
@@ -557,9 +750,18 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         4) Dose of sleeping pills (choose the type of sleeping pills, and choose the number of pills you took).\\
         In the server, the number of sleeping pills x the number of medicines is entered in a water-repellent type.\\
         Below the box are the following buttons: Press the next button to move to the next input page. Clicking the next page does not save that information in the database.\\
+        
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{home2.png}
+                \end{center}
+                \caption{Write the sleep factors}
+                \label{fig:example}
+            \end{figure}
         \item The bottom\\
         The navigation bar is located.\\
-        \includegraphics[width=4cm]{home2.png}\\
+
     \end{enumerate}
     
     \item \textit{Writing a Sleep Diary Page 2}\\
@@ -571,10 +773,18 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         \item Suspension\\
         The date is written on the first box. The box is a static image, not a reactive image.\\
         In the second box, enter the sleep time and the number of times you wake up. The next button is located at the bottom.\\
-
+        
+    
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{home3.png}
+                \end{center}
+                \caption{Write overall sleep information}
+                \label{fig:example}
+            \end{figure}
         \item The bottom\\
         The navigation bar is located.\\
-        \includegraphics[width=4cm]{home3.png}\\
     \end{enumerate}
 
     \item \textit{Writing a Sleep Diary Page 3}
@@ -591,8 +801,22 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
 
         \item The bottom\\
         The navigation bar is located.\\
-        \includegraphics[width=8cm]{home4.png}\\\\
-        \includegraphics[width=8cm]{home5.png}\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{home4.png}
+                \end{center}
+                \caption{Write sleep diary}
+                \label{fig:example}
+            \end{figure}
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{home5.png}
+                \end{center}
+                \caption{Generate sleep state image}
+                \label{fig:example}
+            \end{figure}
     \end{enumerate}
 
     \item \textit{Monthly Calendar Screen}\\
@@ -603,10 +827,17 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         The pop-up window consists of a yes/no button at the bottom , along with the  phrase 'Would  you like to keep a sleep diary?'\\
         1) If you  click 'Yes', you will  be taken to the page for creating a sleep diary for that date.\\
         2) If  you click 'No', stay on the  current monthly calendar screen.\\
-        \includegraphics[width=8cm]{diary.png}\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{monthly_n.png}
+                \end{center}
+                \caption{Monthly Calendar}
+                \label{fig:example}
+            \end{figure}
         
     \end{enumerate}
-    
+\newpage
     \item \textit{Daily Diary Screen}\\
     \begin{enumerate}
         \item Sleep Summary Images\\
@@ -615,10 +846,25 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         \item Breeze data\\
         If  Breeze data exists:\\
         If data from  the use of Breeze products exists, objective data on sleep is presented in a simplified form. A circular graph of sleep scores and quality of sleep is presented in the corresponding item to intuitively present information to the user.\\
-        \includegraphics[width=8cm]{daily_diary_revise.png}\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{daily_data_n.png}
+                \end{center}
+                \caption{Daily Diary - Brid.zzz data valid}
+                \label{fig:example}
+            \end{figure}
         If  Breeze data does not exist:\\
         If data from the  use of Breeze products does not exist, the item will display the phrase 'data does not exist'.\\
-        \includegraphics[width=8cm]{daily_diary_nodatare.png}\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{daily_nodata_n.png}
+                \end{center}
+                \caption{Daily Diary - Brid.zzz data invalid}
+                \label{fig:example}
+            \end{figure}
+        
 
         \item Factors Affecting Sleep\\
         \begin{enumerate}
@@ -674,18 +920,35 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         \item Sleep Data Analysis Screen\\
         This feature can learn long-term data to provide customized daily life pattern advice to users. Various variables such as sleep changes according to caffeine intake time, exercise time, sleep changes according to exercise intensity changes, and sleep changes according to drug dose changes can be analyzed to generate advice to help users sleep.\\
         To improve the quality of your sleep, you can advise changes in exercise intensity, duration, dosage and time of medication types, and sleep solutions allow you to enter data more aggressively. The more actively a user enters data, the more high-quality data can be received, and the more high-quality data can be received. Providing high-quality results to users will make users interested in functions, allowing them to write more active data and use applications frequently.\\
-        
+\newpage        
         \item Data Analysis Method\\
         Data Analysis Long-term user data is required to provide a customized sleep solution. The items of data required are as follows. \\
         \textit{Quality of sleep, Exercise, Sleep time, Stress level, Blood pressure.}\\
         Among the above items, nominal variables go through a one-hot encoder process and perform a data EDA process, such as processing for null.\\
         After that, linear regression is used to determine the correlation between each variable and the quality of sleep. For this project, we use some sleep-state based on many factors in Kaggle.\\
-        \includegraphics[width=4cm]{solution_revise.png}\\
+        \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{solution_n.png}
+                \end{center}
+                \caption{Sleep Solution}
+                \label{fig:example}
+            \end{figure}
+     
     \end{enumerate}
 
     \item \textit{Settings}\\
-    The setup window is a window that contains various information about the user's personal information management and applications, and the detailed functions of the setup window are as follows.\\
+    The setup window is a window that contains various information about the user's personal information management and applications, and the detailed functions of the setup window are as follow.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{settings.png}
+                \end{center}
+                \caption{Settings}
+                \label{fig:example}
+            \end{figure}
     \begin{enumerate}
+    
         \item My Page\\
         When you press the "My Page" button, a new window appears. This window allows you to modify a user's account.\\
         The ability to modify is all the information received from membership registration, such as ID change, height and weight change.\\
@@ -708,13 +971,28 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         
     \end{enumerate}
 \end{enumerate}
-
- \section{\Large{Architecture Design \& Implementation}}
+\newpage
+\section{\Large{Architecture Design \& Implementation}}
 \begin{enumerate}[label=\arabic*]
     \item {\large{Overall Architecture}}\\
-    \includegraphics[width=7cm]{관계도2.drawio.png}\\
-    The process of image request and retrieval using the DALL·E API is as follows.\\
-    \includegraphics[width=8cm]{dalle_process3.drawio.png}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{관계도2.drawio.png}
+                \end{center}
+                \caption{Overall Architecture}
+                \label{fig:example}
+            \end{figure}
+    The process of image request and retrieval using the DALL·E API is as Fig33.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{dalle_process3.drawio.png}
+                \end{center}
+                \caption{Image Generating Process}
+                \label{fig:example}
+            \end{figure}
+  
     Our service consists of four modules.\\
     The first module is the front-end. We conducted front-end development based on a web app, using JavaScript, CSS, and HTML. Additionally, we utilized React to componentize complex and repetitive code, enabling simple and intuitive development. The reason for developing a web app is the advantage of being able to run it anytime, anywhere with internet access without the need for a separate app installation. Thanks to this, users can easily record actions affecting sleep when connected to the internet, even without installing the application separately. Moreover, we developed a user-friendly UI, providing a comfortable interface reminiscent of accessing an app, even when connected through the web.\\
     The second module is the back-end. We used the open-source framework Spring Boot, based on the Java language, for the web application server. Overcoming the drawbacks of Spring, such as configuration complexity, initial setup difficulty, dependency management issues, and the complexity of WAR server configuration, led us to choose Spring Boot. Apache Tomcat serves as the web application server. In the back-end, we handle communication with Brid.zzz. When the server receives a signal for data synchronization to load Brid.zzz's data, it stores it in the database and responds to application requests.\\
@@ -797,57 +1075,59 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
         
 \end{enumerate}
 
-    \item {\large{Module 1 : front end}}
+    \item {\large{Module 1 : Front-End}}
     \begin{enumerate}[label=\alph*]
         \item Purpose\\
-        This module is primarily used to show users generated sleep images through sleep solutions and lunar phases. Additionally, it handles all the visual aspects of using this application. Also, this application provides only mobile UI.\\
+        This module is primarily used to show users generated sleep images through sleep solutions and lunar phases. Additionally, it handles all the visual aspects of using this application. Also, this application provides only mobile UI.\vspace{12pt}\\
         \item Functionality\\
-        This module provides two main functions. The first is sleep diary writing. It allows users to check whether they have written a sleep diary in calendar format. It also enables users to directly input factors that may affect sleep using input boxes. Lastly, it provides a text box for users to write their sleep diary for the day.\\
-        The second is providing sleep solutions. We analyze the correlation between Brid.zzz data and the factors users have input to offer sleep solutions. For user readability, we use graphs and tables to enhance visibility. Additionally, along with the sleep solution, it inputs sleep data into the DALL·E prompt to represent the sleep state with unique images. This allows users to easily grasp their sleep state through visuals.\\
+        This module provides two main functions. The first is sleep diary writing. It allows users to check whether they have written a sleep diary in calendar format. It also enables users to directly input factors that may affect sleep using input boxes. Lastly, it provides a text box for users to write their sleep diary for the day.
+        The second is providing sleep solutions. We analyze the correlation between Brid.zzz data and the factors users have input to offer sleep solutions. For user readability, we use graphs and tables to enhance visibility. Additionally, along with the sleep solution, it inputs sleep data into the DALL·E prompt to represent the sleep state with unique images. This allows users to easily grasp their sleep state through visuals.\vspace{12pt}\\
         \item Location of Source Code\\
-        /frontend/my-insomnia-diary
+        /backend/src/main/frontend/my-insomnia-diary\vspace{12pt}
         \item Class Component
         \begin{enumerate}
             \item Entry\\
-            It shows the first screen of the app. This screen was implemented as a functional component and used react. It consists of a logo image, login button, and sign-up button. An logo is included using the img tag with a source (src) pointing to '/images/main.jpg'. The image is styled with Tailwind CSS classes. Two Link components are used for navigation. One links to '/Login' with the label "LOGIN," and the other links to '/Signup' with the label "SIGN UP." In summary, this code defines a React component for an Entry page. It includes text, an image, and navigation links styled using Tailwind CSS. The component is intended to be used in a React application and serves as a simple entry point with links to login and sign-up pages.\\
+            It shows the first screen of the app. This screen was implemented as a functional component and used react. It consists of a logo image, login button, and sign-up button. An logo is included using the img tag with a source (src) pointing to '/images/main.jpg'. The image is styled with Tailwind CSS classes. Two Link components are used for navigation. One links to '/login' with the label "LOGIN," and the other links to '/signup' with the label "SIGN UP." In summary, this code defines a React component for an Entry page. It includes text, an image, and navigation links styled using Tailwind CSS. The component is intended to be used in a React application and serves as a simple entry point with links to login and sign-up pages.\vspace{12pt}\\
             \item Sign In Page\\
-            This page defines a functional component named Login. Functional components are a way to define React components using a function. The JSX includes a form element with email and password input fields. The form has a placeholder action, indicating that form submission is not yet handled. The email and password input fields have labels and are styled using Tailwind CSS classes. There are two Link components from 'react-router-dom' used for navigation. One links to the root ('/') with a "Cancel" label, and the other links to '/home' with a "Login" label. It also defines a React component for a login page with form inputs for email and password, styling using Tailwind CSS, navigation links, and an image.\\
+            This page defines a functional component named Login. Functional components are a way to define React components using a function. The JSX includes a form element with email and password input fields. The form has a placeholder action, indicating that form submission is not yet handled. The email and password input fields have labels and are styled using Tailwind CSS classes. There are two Link components from 'react-router-dom' used for navigation. One links to the root ('/') with a "Cancel" label, and the other links to '/home' with a "Login" label. It also defines a React component for a login page with form inputs for email and password, styling using Tailwind CSS, navigation links, and an image.\vspace{12pt}\\
+\newpage
             \item Sign Up Page1\\
             This is a page for sign-up. This page starts with defining a functional component named `Sign-up` for the sign-up page.
             The component returns JSX markup representing the structure and layout of the sign-up page.
             The JSX includes a form element with email and password input fields for user registration.
-            Also, email input includes a button for duplicate checking. Two password input fields are provided to enter and confirm the password. "Cancel" and "Next" buttons are implemented using `Link` components for navigation. The "Next" button links to '/signup/userinfo'`.\\
+            It will convert user data into JSON format and send it to the server using the HTTP POST method.
+            Also, email input includes a button for duplicate checking. Two password input fields are provided to enter and confirm the password. "Cancel" and "Next" buttons are implemented using `Link` components for navigation. The "Next" button links to '/signup/userinfo'`.\vspace{12pt}\\
             \item Sign Up Page2\\
-            This page is a React component written in JSX, representing a user information page for the signup process. It defines a functional component named SignupUserInfo for the user information page in the signup process. The JSX includes a form element with input fields for name, birthdate, phone number, and phone number verification. Each input field is styled with Tailwind CSS classes, and placeholder text is provided for user guidance. Phone number input includes a button for sending an authentication message. Phone number verification input includes a button for confirming the authentication code.  "Cancel" and "Next" buttons are implemented using Link components for navigation. The "Next" button links to '/signup/detail'.\\
+            This page is a React component written in JSX, representing a user information page for the signup process. It defines a functional component named SignupUserInfo for the user information page in the signup process. The JSX includes a form element with input fields for name, birthdate, phone number, and phone number verification. Each input field is styled with Tailwind CSS classes, and placeholder text is provided for user guidance. Phone number input includes a button for sending an authentication message. Phone number verification input includes a button for confirming the authentication code.  "Cancel" and "Next" buttons are implemented using Link components for navigation. The "Next" button links to '/signup/detail'.\vspace{12pt}\\
             \item Sign Up Page3\\
-            This is React component written in JSX, representing a user information page for the sign-up process. Let's break down the key components and functionalities of the code. It defines a functional component named `SignupUserInfo` for the user information page in the sign-up process. The JSX includes a form element with input fields for height, age, weight, and gender.Each input field is styled with Tailwind CSS classes, and placeholder text is provided for user guidance. Gender options are presented as radio buttons with labels. The default gender is set to 'male'. "Cancel" and "Complete" buttons are implemented using `Link` components for navigation. The "Complete" button links to '/Login'.
+            This is React component written in JSX, representing a user information page for the sign-up process. Let's break down the key components and functionalities of the code. It defines a functional component named `SignupUserInfo` for the user information page in the sign-up process. The JSX includes a form element with input fields for height, age, weight, and gender.Each input field is styled with Tailwind CSS classes, and placeholder text is provided for user guidance. Gender options are presented as radio buttons with labels. The default gender is set to 'male'. "Cancel" and "Complete" buttons are implemented using `Link` components for navigation. The "Complete" button links to '/Login'.\vspace{12pt}\\
             \item Monthly Calendar\\
-            This page is a React component written in JSX, representing a calendar page. This page imports the necessary dependencies, including “useState”for managing state, "Link" and "useNavigate" from 'react-router-dom' for navigation, "Datepicker" from 'flowbite-react' for the date picker component, and a custom "BottomBar" component. It uses the "useState" hook to manage the state of the selected date, initialized with the current date. It defines a function to handle changes in the selected date. It updates the state with the new date, logs the date to the console, and navigates to the '/Diary' route. The component returns JSX markup representing the structure and layout of the calendar page. and it includes a title, a date picker, and a link to write a sleep diary. It includes a custom "BottomBar" component, presumably providing additional navigation options. Finally, it provides a link to navigate to the '/Write' route with styling for a button-like appearance.\\
+            This page is a React component written in JSX, representing a calendar page. This page imports the necessary dependencies, including “useState”for managing state, "Link" and "useNavigate" from 'react-router-dom' for navigation, "Datepicker" from 'flowbite-react' for the date picker component, and a custom "BottomBar" component. It uses the "useState" hook to manage the state of the selected date, initialized with the current date. It defines a function to handle changes in the selected date. It updates the state with the new date, logs the date to the console, and navigates to the '/diary' route. The component returns JSX markup representing the structure and layout of the calendar page. and it includes a title, a date picker, and a link to write a sleep diary. It includes a custom "BottomBar" component, presumably providing additional navigation options. Finally, it provides a link to navigate to the '/write' route with styling for a button-like appearance.\vspace{12pt}\\
             \item Writing a sleep diary-Text input\\
-            This page represents a React component for a diary entry page. It defines a variable DiaryText that holds the content of the diary entry as a multiline string. It defines a functional component named Write representing the diary entry page. It includes a date, an image, sleep quality information, user data, and a text area for the diary entry. This page provides a link to navigate to the '/Calendar' route with styling for a button-like appearance. \\
+            This page represents a React component for a diary entry page. It defines a variable DiaryText that holds the content of the diary entry as a multiline string. It defines a functional component named Write representing the diary entry page. It includes a date, an image, sleep quality information, user data, and a text area for the diary entry. This page provides a link to navigate to the '/calendar' route with styling for a button-like appearance.\vspace{12pt} \\
             \item Writing a sleep diary-Factors input\\
-            This page is a React component that displays a form for writing factors that affect sleep conditions. It defines arrays containing options for caffeine dosage, pill dosage, and pill type. It defines a functional component named "Write" representing the sleep diary form. The component returns JSX markup representing the structure and layout of the sleep diary form. Sections include Caffeine, Workout, Pills, Fill in the data, and Diary. The form includes various input elements such as radio buttons, select drop downs, and text inputs. Users can input data related to caffeine dosage, workout details, pill information, sleep time, wake-up frequency, and diary entry. It provides navigation links to cancel or complete the sleep diary form.\\
+            This page is a React component that displays a form for writing factors that affect sleep conditions. It defines arrays containing options for caffeine dosage, pill dosage, and pill type. It defines a functional component named "Write" representing the sleep diary form. The component returns JSX markup representing the structure and layout of the sleep diary form. The form includes various input elements such as radio buttons, select drop downs, and text inputs. Users can input data related to caffeine dosage, workout details, pill information, sleep time, wake-up frequency, and diary entry. When receiving input for medication dosage, users select the medication type from a list and choose the dosage using a radio button. It provides navigation links to cancel or complete the sleep diary form.\vspace{12pt}\\
         \end{enumerate}
         \item Where it's taken from\\
         First, users give their own data directly.\\
         Second, previous data is get from database.\\
-        Third, Brid.zzz gives sleep-state data.\\
+        Third, Brid.zzz gives sleep-state data.\vspace{12pt}\\
         \item How/Why we used the module\\
-        Since we implemented it as a web app, we used CSS/JS/HTML, and of course, we also used React Native. This is because React enhances code reusability and readability by modularizing the code into components, contributing to efficient development. Additionally, by passing HTML and React.js components to the browser's tree structure, we can build clean code that is easy to maintain. Thanks to JSX and Virtual DOM, React.js apps are faster and more efficient, so we incorporated React for these benefits.\\
+        Since we implemented it as a web app, we used CSS/JS/HTML, and of course, we also used React Native. This is because React enhances code reusability and readability by modularizing the code into components, contributing to efficient development. Additionally, by passing HTML and React.js components to the browser's tree structure, we can build clean code that is easy to maintain. Thanks to JSX and Virtual DOM, React.js apps are faster and more efficient, so we incorporated React for these benefits.\vspace{12pt}\\
     \end{enumerate}
     
-    \item {\large{Module 2 : back end}}
+    \item {\large{Module 2 : Back-End}}
     \begin{enumerate}[label=\alph*]
         \item Purpose\\
-        We provide a sleep solution based on users' sleep diaries and sleep data. In addition, we utilize image-generating AI to create and provide a image of the user's sleep for each day. A server was necessary to efficiently manage these diverse pieces of information.\\
+        We provide a sleep solution based on users' sleep diaries and sleep data. In addition, we utilize image-generating AI to create and provide a image of the user's sleep for each day. A server was necessary to efficiently manage these diverse pieces of information.\vspace{12pt}\\
         \item Functionality\\
-        Our service comprehensively manages various user information. On the back-end, it handles user membership details, Brid.zzz data, sleep state images, and other diverse data. When a user requests data, the server accesses the database and delivers the requested information back to the user.\\
+        Our service comprehensively manages various user information. On the back-end, it handles user membership details, Brid.zzz data, sleep state images, and other diverse data. When a user requests data, the server accesses the database and delivers the requested information back to the user.\vspace{12pt}\\
         \item Location of Source Code\\
-        /backend
+        /backend\vspace{12pt}
         \item Class Component
         \begin{enumerate}
             \item /controller/ImageController.java\\
-            This file represents the controller part of a web application related to image generation implemented using Spring Boot. An image is represented by the Image class, which includes user-provided data and the URL generated through the OpenAI service. The generated image is presented after receiving the form through the "/generate" endpoint and displaying the result through the "/result" endpoint. The OpenAI Image service is used for image generation, and the token for calling this service is configured through the OpenAiService.\\
+            This file represents the controller part of a web application related to image generation implemented using Spring Boot. An image is represented by the Image class, which includes user-provided data and the URL generated through the OpenAI service. The generated image is presented after receiving the form through the "/generate" endpoint and displaying the result through the "/result" endpoint. The OpenAI Image service is used for image generation, and the token for calling this service is configured through the OpenAiService.\vspace{12pt}\\
             \item /domain/image/\\
             The files related to image processing are stored in this path.
             \begin{enumerate}
@@ -860,45 +1140,112 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                 \item /image/MemoryImageRepository.java\\
                 This file defines the "MemoryImageRepository" class for storing and retrieving image data in memory. It creates an in-memory repository for storing and retrieving images, using "ConcurrentHashMap" to support concurrency. It uses "AtomicLong" to generate identifiers for images, incrementing it with each image stored to provide unique values.\\
             \end{enumerate}
-            It is a file responsible for automatically connecting data from objects and databases. This makes it easier to access values in the database from Django. In this file, all tables in the database appear as objects.
+            It is a file responsible for automatically connecting data from objects and databases. This makes it easier to access values in the database from Django. In this file, all tables in the database appear as objects.\vspace{12pt}
 
             \item /domain/sleepdiary/\\
             The files related to sleepdiary are stored in this path.
             \begin{enumerate}
                 \item /MemorySleepDiaryRepository.java\\
-                This file defines the "MemorySleepDiaryRepository" class for storing and retrieving sleep diary data in memory. It creates an in-memory repository for storing and retrieving sleep diaries, using "ConcurrentHashMap" to support concurrency. It uses "AtomicLong" to generate identifiers for sleep diaries, incrementing it with each diary stored to provide unique values.\\
+                This file defines the "MemorySleepDiaryRepository" class for storing and retrieving sleep diary data in memory. It creates an in-memory repository for storing and retrieving sleep diaries, using "ConcurrentHashMap" to support concurrency. It uses "AtomicLong" to generate identifiers for sleep diaries, incrementing it with each diary stored to provide unique values.\vspace{12pt}\\
 
                 \item /SleepDiary.java\\
-                This file defines the "SleepDiary" class, representing a sleep diary. The "SleepDiary" class is used to store data related to sleep diaries. The class includes fields such as "Id" to represent the identifier of the sleep diary, and various fields to store information such as caffeine intake, exercise, medication, sleep time, and wake-up time.\\
+                This file defines the "SleepDiary" class, representing a sleep diary. The "SleepDiary" class is used to store data related to sleep diaries. The class includes fields such as "Id" to represent the identifier of the sleep diary, and various fields to store information such as caffeine intake, exercise, medication, sleep time, and wake-up time.\vspace{12pt}\\
 
                 \item /SleepDiaryRepository.java\\
-                The "SleepDiaryRepository" interface defines methods related to saving and retrieving sleep diaries. The "save" method is used to save a sleep diary, and the "findByID" method finds a sleep diary based on its identifier. The return type uses "Optional" to handle situations where the value may not exist.\\
+                The "SleepDiaryRepository" interface defines methods related to saving and retrieving sleep diaries. The "save" method is used to save a sleep diary, and the "findByID" method finds a sleep diary based on its identifier. The return type uses "Optional" to handle situations where the value may not exist.\vspace{12pt}\\
             \end{enumerate}
 
             \item /domain/user\\
             The files related to users are stored in this path.
             \begin{enumerate}
                 \item /User.java\\
-                This code defines the "User" class, representing a user. The "User" class is used to store data related to users. The class includes fields such as "id" to represent the identifier of the user, and various fields to store information such as email, password, username, age, and weight. The constructor allows for the initialization of each field of the user.\\
+                This code defines the "User" class, representing a user. The "User" class is used to store data related to users. The class includes fields such as "id" to represent the identifier of the user, and various fields to store information such as email, password, username, age, and weight. The constructor allows for the initialization of each field of the user.\vspace{12pt}\\
 
                 \item /UserRepository.java\\
-                This code defines the "UserRepository" interface for manipulating data related to users in the database. The "UserRepository" interface defines methods related to saving and retrieving users. The save method is used to save a user, and the "findById" method finds a user based on its identifier. The "findByName" method finds a user based on the username, and the "findAll" method retrieves all users. The return type uses "Optional" to handle situations where the value may not exist.\\
+                This code defines the "UserRepository" interface for manipulating data related to users in the database. The "UserRepository" interface defines methods related to saving and retrieving users. The save method is used to save a user, and the "findById" method finds a user based on its identifier. The "findByName" method finds a user based on the username, and the "findAll" method retrieves all users. The return type uses "Optional" to handle situations where the value may not exist.\vspace{12pt}\\
             \end{enumerate}
         \end{enumerate}
+        
         \item Where it's taken from\\
-        The data primarily used on the backend consists of user-entered personal information, data obtained from Brid.zzz, and data acquired through DALL·E.
+        The data primarily used on the backend consists of user-entered personal information, data obtained from Brid.zzz, and data acquired through DALL·E.\vspace{12pt}
         \item How/Why we used the module\\
-        Spring is a framework that assists in the development of Java applications. However, Spring involves a complex configuration process, and to simplify this, Spring Boot was adopted. For this reason, we chose Spring Boot. Additionally, for the web application server (WAS), Tomcat was used because it is currently one of the most widely used servers.\\
+        Spring is a framework that assists in the development of Java applications. However, Spring involves a complex configuration process, and to simplify this, Spring Boot was adopted. For this reason, we chose Spring Boot. Additionally, for the web application server (WAS), Tomcat was used because it is currently one of the most widely used servers.\vspace{12pt}\\
+    \end{enumerate}
+
+    \item {\large{Module 3 : Database}}
+    \begin{enumerate}[label=\alph*]
+        \item Purpose\\
+        Our web app's database is created for the following purposes:\\
+        \begin{enumerate}
+            \item Storing member information.
+            \item Saving the sleep status and sleep diaries entered by members.
+            \item Storing images created through generative AI and providing them to users.\vspace{12pt}\\
+        \end{enumerate}
+     
+        \item Functionality\\
+        MySQL is a relational database management system (RDBMS), allowing efficient representation and management of relationships between tables.\vspace{12pt}\\
+        
+        \item Location of Source Code\\
+        \begin{enumerate}
+            \item /backend/src/main/java/com/example\\
+        /insomniadiary/domain/image\\/ImageRepository.java\\
+            \item /backend/src/main/java/com/example\\
+        /insomniadiary/domain/user\\/UserRepository.java\\
+            \item /backend/src/main/java/com/example\\
+            /insomniadiary/domain/sleepdiary\\/SleepDiaryRepository.java\vspace{12pt}\\
+        \end{enumerate}
+
+        \item Class Component
+           \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{erd2.png}
+                \end{center}
+                \caption{ER-Diagram}
+                \label{fig:example}
+            \end{figure}   
+        \begin{enumerate}
+     
+            \item user\_table\\
+            A table for storing member information. The primary key is 'id,' and it has attributes such as age, weight, email, password, and username. It has a one-to-many relationship with sleep\_diary\_table and image\_table.\vspace{12pt}\\
+            
+            \item image\_table\\
+            A table for storing images created through generative AI.\\
+            It is linked to AWS S3 storage, and the URL of the stored image is added to the 'url' attribute of the image\_table. When a call is made, the corresponding image is retrieved from the AWS S3 based on the URL in the image\_table.\\
+            image\_table has a foreign key from user\_table's 'id' primary key.\\
+            Also, a one-to-one relationship with sleep\_diary\_table, and a one-to-many relationship with user\_table.\vspace{12pt}\\
+
+            \item sleep\_diary\_table\\
+            A table containing information entered by users when writing sleep diaries, including caffeine intake, medication information, sleep details, and exercise information.\\
+            It has foreign keys from user\_table's 'id' and image\_table's 'id.'\\
+            sleep\_diary\_table has a one-to-many relationship with user\_table and a one-to-one relationship with image\_table.\vspace{12pt}\\
+        \end{enumerate}
+        
+        \item Where it's taken from\\
+        \begin{enumerate}
+            \item user\_table\\
+            Data in this table is generated when a user first signs up.\\
+
+            \item image\_table\\
+            Data in this table is created when a user saves their sleep diary, triggering the generation of an image through generative AI.\\
+
+            \item sleep\_diary\_table\\
+            Data in this table is created when a user writes a sleep diary and answers provided questions.\vspace{12pt}\\
+        \end{enumerate}
+
+        \item How/Why we used the module\\
+        Our web app deals with a substantial amount of user-generated data, including the storage of image data. Efficient and accurate management of data is crucial, and clear specification of relationships between data is necessary. For these reasons, we chose to use a relational database system and AWS S3 storage for storing images. This ensures effective data management and clarity in the relationships between different data components.\vspace{12pt}\\
     \end{enumerate}
 
     \item {\large{Module 4 : Data Analysis \& Machine Learning}}
     \begin{enumerate}[label=\alph*]
         \item Purpose\\
-        We provide users with sleep solutions through this application. For this purpose, it is necessary to analyze quantitative data from Brid.zzz and user-input data. The process involves data preprocessing and correlation analysis to make use of the data. Additionally, machine learning is essential to offer predicted sleep states based on how factors affecting sleep change over time.\\
+        We provide users with sleep solutions through this application. For this purpose, it is necessary to analyze quantitative data from Brid.zzz and user-input data. The process involves data preprocessing and correlation analysis to make use of the data. Additionally, machine learning is essential to offer predicted sleep states based on how factors affecting sleep change over time.\vspace{12pt}\\
         \item Functionality\\
-        Data analysis and machine learning are essential for providing users with sleep solutions. When users record sleep factors on the sleep factor input page, this information is stored in the database. Additionally, data from Brid.zzz is also stored in the database. Through machine learning and correlation analysis, these data are analyzed and used to predict sleep states. When users request predicted data, it is provided accordingly.\\
+        Data analysis and machine learning are essential for providing users with sleep solutions. When users record sleep factors on the sleep factor input page, this information is stored in the database. Additionally, data from Brid.zzz is also stored in the database. Through machine learning and correlation analysis, these data are analyzed and used to predict sleep states. When users request predicted data, it is provided accordingly.\vspace{12pt}\\
         \item Location of Source Code\\
-        /InsomniaDiary\_LG-bridzz/dataAnalysis
+        /dataAnalysis\vspace{12pt}
+    
         \item Class Component
         \begin{enumerate}
             \item Evaluation\\
@@ -912,7 +1259,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                \setlength{\baselineskip}{1.2\baselineskip}
                 $\hat{y}$ : predicted value\\
                 ${y}$: observed value\\
-                ${N}$: the number of observations\\
+                ${N}$: the number of observations\vspace{12pt}\\
 
                 \item MSE\\
                 Mean Squared Error (MSE) is a frequently used loss function in regression. It is calculated by taking the square of the errors and then averaging them. A lower MSE indicates that the predicted values are closer to the original values, implying higher accuracy.\\
@@ -923,7 +1270,7 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                 \setlength{\baselineskip}{1.2\baselineskip}
                 $\hat{y}$ : predicted value\\
                 ${y}$: observed value\\
-                ${n}$: the number of observations\\
+                ${n}$: the number of observations\vspace{12pt}\\
 
                 \item R2\_score\\
                 The R2 score, representing the coefficient of determination, is an evaluation metric for the performance of a regression model. It is the squared value of the correlation coefficient. Unlike the correlation coefficient, the coefficient of determination quantifies the extent to which variables influence each other or the degree of causation. In the context of a regression model, it illustrates how well the independent variables explain the variability in the dependent variable. A higher R2 score suggests that the independent variables effectively explain the variation in the dependent variable.\\
@@ -936,47 +1283,130 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
                 $\hat{y}_i$ : predicted value\\
                 ${y}_i$: observed value\\
                 $\overline{y}$: mean of the observed value\\
-                ${n}$: the number of observations\\
+                ${n}$: the number of observations\vspace{12pt}\\
            \end{enumerate}
-            \newpage
+            
            \item Correlation Analysis\\
            Correlation analysis is sometimes referred to as the initial step in conducting regression analysis. It is a technique for analyzing the linear relationship between two variables measured as continuous variables. It indicates whether one variable increases or decreases linearly as the other variable increases.\\
            In our project, we conducted a correlation analysis with sleep quality as the dependent variable and exercise frequency, caffeine intake, and alcohol consumption as independent variables. The results are as follows:\\
-           \includegraphics[width=8cm]{correlation.png}\\
-           As seen in the table, the factor showing a positive correlation is exercise frequency, while negative correlations are observed with alcohol consumption and caffeine intake.\\
+           \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{correlation.png}
+                \end{center}
+                \caption{Correlation Result}
+                \label{fig:example}
+            \end{figure}
+       
+           As seen in the table, the factor showing a positive correlation is exercise frequency, while negative correlations are observed with alcohol consumption and caffeine intake.\vspace{12pt}\\
 
             \item train-test set split\\
             This is a module provided within the scikit-learn's model\_selection package. In simple terms, when using this module, it allows you to split your dataset into training and testing sets. This process is crucial for evaluating a model, aiming to prevent overfitting, and is considered an essential step in the model evaluation process.\\
-            We set the ratio of train and test set into 7:3.\\
-
+            We set the ratio of train and test set into 7:3.\vspace{12pt}\\
+            
             \item Linear Regression\\
             Linear regression is a data analysis technique used to predict the values of an unknown variable using known values of other related data. Linear regression consists of independent variables (variables that influence) and dependent variables (variables that are influenced).\\
             In our project, independent variables include caffeine intake, alcohol consumption, and exercise frequency, while the dependent variable is set as sleep quality.\\
-            \includegraphics[width=8cm]{linearRegression.png}\\
-            When using 5-fold cross-validation for linear regression, the average RMSE (Root Mean Squared Error) was found to be 0.122. Additionally, it was observed that the regression coefficient for caffeine approached 0, for alcohol consumption it was negative, and for exercise frequency, it was positive.\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{linearRegression.png}
+                \end{center}
+                \caption{Linear Regression Result}
+                \label{fig:example}
+            \end{figure}
+    
+            When using 5-fold cross-validation for linear regression, the average RMSE (Root Mean Squared Error) was found to be 0.122. Additionally, it was observed that the regression coefficient for caffeine approached 0, for alcohol consumption it was negative, and for exercise frequency, it was positive.\vspace{12pt}\\
 
             \item Ridge Regression\\
             This is regularized linear regression, where a regularization term with an alpha value is added to the cost function. The regularization term ensures that the model's weights are kept as small as possible, not only fitting the algorithm to the data but also preventing the weights from becoming too large. The alpha parameter controls how much the model is regularized. If alpha is 0, it becomes the same as linear regression. When alpha is very large, the weights tend to become close to zero.\\
-            \includegraphics[width=8cm]{ridgeregression.png}\\
-            In Ridge regression, the model was executed with five different alpha values. However, despite varying alpha values, no significant changes were observed. The results of Ridge regression showed an R2 score of 0.113 and an RMSE of 0.122.\\
-
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{ridgeregression.png}
+                \end{center}
+                \caption{Ridge Regression Result}
+                \label{fig:example}
+            \end{figure}
+           
+            In Ridge regression, the model was executed with five different alpha values. However, despite varying alpha values, no significant changes were observed. The results of Ridge regression showed an R2 score of 0.113 and an RMSE of 0.122.\vspace{12pt}\\
+\newpage
             \item Lasso Regression\\
             Lasso regression is a type of linear regression that adds a constraint to minimize the sum of the absolute values of the weights, in addition to finding weights and biases that minimize the MSE. All elements of the weights should become zero or close to zero. Lasso regression also aims to prevent overfitting.\\
-            \includegraphics[width=8cm]{lassoregression.png}\\
-            Despite dividing the alpha values into five and conducting Lasso regression, all five results showed regression coefficients that were too small to yield significant outcomes. Additionally, an RMSE of 0.130 was observed, and the R2 score turned out to be negative. A negative R2 score implies that the model is unreliable.\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{lassoregression.png}
+                \end{center}
+                \caption{Lasso Regression Result}
+                \label{fig:example}
+            \end{figure}
+       
+            Despite dividing the alpha values into five and conducting Lasso regression, all five results showed regression coefficients that were too small to yield significant outcomes. Additionally, an RMSE of 0.130 was observed, and the R2 score turned out to be negative. A negative R2 score implies that the model is unreliable.\vspace{12pt}\\
 
             \item XGBoost Regression\\
             XGBoost is a model that currently holds top ranks on various AI competition platforms such as Kaggle. XGBoost, short for Extreme Gradient Boosting, operates within the boosting framework. Boosting involves creating a second model (Model 2) by feeding sampled data into the first model and analyzing the errors of the first model's predictions. Subsequently, a third model (Model 3) is built to analyze the errors of Model 2. This process continues, with each model analyzing errors and improving regression accuracy. It's important to note that XGBoost is not limited to regression models; it can also be used for classification tasks.
-            \includegraphics[width=8cm]{xgboost.png}\\
-            The XGBoost regression resulted in an RMSE of 0.112 and an R2 score of 0.245. It can be identified as the most effective regression model among those conducted so far.\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{xgboost.png}
+                \end{center}
+                \caption{XGBoost Regression Result}
+                \label{fig:example}
+            \end{figure}
+       
+            The XGBoost regression resulted in an RMSE of 0.112 and an R2 score of 0.245.\vspace{12pt}\\
 
+            \item Decision Tree Regression\\
+            Decision Tree Regression is a machine learning algorithm used for predicting continuous numerical values. Unlike classification trees that predict categorical outcomes, decision tree regression builds a tree structure to predict a target variable that is continuous.\\
+            Decision Tree Regression is intuitive, easy to understand, and capable of capturing complex relationships in the data. However, it is prone to overfitting, especially when the tree becomes deep. Techniques like pruning or using ensemble methods (e.g., Random Forests) can be applied to mitigate this issue and enhance predictive performance.\\
+            When we used this algorithm, we got the result like this. For this result, we set the max depth 3.\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{deci_mse.png}
+                \end{center}
+                \caption{Decision Tree Regression Result}
+                \label{fig:example}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{decisiontree.png}
+                \end{center}
+                \caption{Decision Tree}
+                \label{fig:example}
+            \end{figure}\vspace{12pt}
+  
+
+            \item Random Forest Regression\\
+            Random Forest Regression is a machine learning algorithm that belongs to the ensemble learning category. It is an extension of the Random Forest algorithm, which is primarily used for classification tasks. However, Random Forest can also be applied to regression problems, and when used for regression, it is referred to as Random Forest Regression.\\
+            Random Forest Regression is widely used in practice due to its versatility, ease of implementation, and strong performance across different types of dataset. It is particularly effective when dealing with complex, high-dimensional data and can handle both numerical and categorical features.\\
+            According to our result, Random Forest Regression model is the best algorithm to predict quality of sleep. Also, there is a significant association between the quality of sleep and the levels of alcohol consumption, exercise duration, and caffeine intake, in that order.\\
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{random_msee.png}
+                \end{center}
+                \caption{Random Forest Regression Result}
+                \label{fig:example}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{randomforest_feature.png}
+                \end{center}
+                \caption{Feature Importance}
+                \label{fig:example}
+            \end{figure}\vspace{12pt}
+            
             \item EDA(Exploratory Data Analysis)\\
             This is the process of observing and understanding the collected data from various perspectives. In other words, it is the step of intuitively looking at the data through graphs or statistical methods before analyzing it.\\
-            By reviewing the distribution and values of the data, one can better understand the phenomena represented by the data and discover potential issues with the data. Additionally, examining the data from various angles can reveal patterns that may not have been noticed during the problem definition stage. Detecting outliers is also one of the steps in the Exploratory Data Analysis(EDA) process.\\
+            By reviewing the distribution and values of the data, one can better understand the phenomena represented by the data and discover potential issues with the data. Additionally, examining the data from various angles can reveal patterns that may not have been noticed during the problem definition stage. Detecting outliers is also one of the steps in the Exploratory Data Analysis(EDA) process.\vspace{12pt}\\
 
             \item K-fold\\
             This is cross-validation conducted by creating K folds. It is performed to improve the accuracy for dataset with a small total number of data points.\\
-            In the scikit-learn module, which was used in this project, the 'cross\_val\_score' API is provided for K-fold cross-validation.\\
+            In the scikit-learn module, which was used in this project, the 'cross\_val\_score' API is provided for K-fold cross-validation.\vspace{12pt}\\
 
             \item Regression Coeffiecient\\
             Regression coefficients are the coefficients in the equation that represents the relationship between independent variables and the dependent variable, indicating the extent to which each independent variable influences the dependent variable.\\
@@ -988,39 +1418,265 @@ User & WooSung Jung & He is a Development Manager. He's in charge of this projec
             \setlength{\baselineskip}{1.2\baselineskip}
             $\hat{\beta}$: the vector of regression coefficients.\\
             ${X}$: the matrix of independent variables.\\
-            ${y}$: the vector of dependent variable values.\\
+            ${y}$: the vector of dependent variable values.\\\vspace{12pt}
         \end{enumerate}
         
     \item Where it's taken from\\
-    When users provide responses regarding factors that may influence their sleep, this data is stored in the database. Once a sufficient amount of data is accumulated, the system trains on the user-inputted data along with data retrieved from Brid.zzz to offer a personalized sleep solution. If an adequate amount of data has not been accumulated, the system utilizes data provided by other users with similar physiological profiles to offer a sleep solution to the user.\\
+    When users provide responses regarding factors that may influence their sleep, this data is stored in the database. Once a sufficient amount of data is accumulated, the system trains on the user-inputted data along with data retrieved from Brid.zzz to offer a personalized sleep solution. If an adequate amount of data has not been accumulated, the system utilizes data provided by other users with similar physiological profiles to offer a sleep solution to the user.\vspace{12pt}\\
     
     \item How/Why we used the module\\
         \begin{enumerate}
             \item pandas\\
-            Pandas is a popular open-source data manipulation and analysis library for Python. It provides easy-to-use data structures, such as DataFrame and Series, that are designed to efficiently manipulate large datasets. Pandas is particularly useful for tasks like cleaning, filtering, and analyzing data. It also integrates well with other libraries in the Python ecosystem, making it a powerful tool for data scientists and analysts. With Pandas, you can easily load data from various file formats, perform data cleaning operations, handle missing data, and conduct statistical and exploratory data analysis.\\
+            Pandas is a popular open-source data manipulation and analysis library for Python. It provides easy-to-use data structures, such as DataFrame and Series, that are designed to efficiently manipulate large datasets. Pandas is particularly useful for tasks like cleaning, filtering, and analyzing data. It also integrates well with other libraries in the Python ecosystem, making it a powerful tool for data scientists and analysts. With Pandas, you can easily load data from various file formats, perform data cleaning operations, handle missing data, and conduct statistical and exploratory data analysis.\vspace{12pt}\\
 
             \item numpy\\
-            NumPy is a powerful open-source numerical computing library for Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. NumPy is a fundamental package for scientific computing in Python and is widely used in various fields such as machine learning, data science, and engineering.\\
+            NumPy is a powerful open-source numerical computing library for Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. NumPy is a fundamental package for scientific computing in Python and is widely used in various fields such as machine learning, data science, and engineering.\vspace{12pt}\\
 
-            \newpage
             \item matplotlib.pyplot\\
-            matplotlib.pyplot is a collection of functions within the Matplotlib library, which is a widely-used Python plotting library for creating static, animated, and interactive visualizations in Python. The pyplot module provides a convenient interface for creating various types of plots and charts.\\
+            matplotlib.pyplot is a collection of functions within the Matplotlib library, which is a widely-used Python plotting library for creating static, animated, and interactive visualizations in Python. The pyplot module provides a convenient interface for creating various types of plots and charts.\vspace{12pt}\\
 
             \item scikit-learn\\
-            Scikit-learn, often abbreviated as sklearn, is an open-source machine learning library for Python. It provides simple and efficient tools for data analysis and modeling, including a wide array of machine learning algorithms for tasks such as classification, regression, clustering, dimensionality reduction, and more.\\
+            Scikit-learn, often abbreviated as sklearn, is an open-source machine learning library for Python. It provides simple and efficient tools for data analysis and modeling, including a wide array of machine learning algorithms for tasks such as classification, regression, clustering, dimensionality reduction, and more.\vspace{12pt}\\
 
             \item scipy\\
             Scipy is an open-source scientific computing library for Python that builds on the capabilities of NumPy and provides additional functionality for scientific and technical computing. It offers a collection of modules for optimization, signal and image processing, statistical functions, linear algebra, integration, interpolation, and more.\\
-            Scipy is a valuable companion to NumPy, providing additional capabilities for scientific computing tasks and contributing to the rich ecosystem of Python libraries used in scientific research, engineering, and data analysis.\\
+            Scipy is a valuable companion to NumPy, providing additional capabilities for scientific computing tasks and contributing to the rich ecosystem of Python libraries used in scientific research, engineering, and data analysis.\vspace{12pt}\\
 
             \item math\\
-            The math module is a standard Python module that provides mathematical functions and constants for performing mathematical operations in Python. It is available by default and does not require additional installation.\\
-            
+            The math module is a standard Python module that provides mathematical functions and constants for performing mathematical operations in Python. It is available by default and does not require additional installation.
             
         \end{enumerate}
     \end{enumerate}
 \end{enumerate}
 
+\newpage
+\section{\Large{Use Cases}}
+            \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{usercase.drawio.png}
+                \end{center}
+                \caption{Usercase Diagram}
+                \label{fig:example}
+            \end{figure}
+
+\begin{enumerate}[label=\arabic*]
+    \item \textit{Usercase1: Execution of Application}\\
+    Our application is implemented as a web app. When user accesses it through mobile web, he will see the application name and logo in the center. Below that, there are login and sign-up buttons.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{entry_n.png}
+                \end{center}
+                \caption{Entry}
+                \label{fig:example}
+            \end{figure}
+
+    If he has a history of signing up for our platform, he clicks the login button; otherwise, if it's his first time, he clicks the sign-up button.\vspace{12pt}\\
+    
+\newpage
+    \item \textit{Usercase2: Sign-Up}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.3\textwidth]{signup.drawio (1).png}
+                \end{center}
+                \caption{Sign Up flow chart}
+                \label{fig:example}
+            \end{figure}
+ 
+    As he is new to our platform, he clicks the sign-up button.\\
+    Upon clicking the sign-up button, the following input fields appear.\\
+    First, He enters his email and clicks the 'Check for Duplicates' button to confirm if his email is already in the database. If a message indicating a duplicate email appears, he proceeds to the login screen.\\
+    After confirming it's not a duplicate, he sets a password and enters it again for confirmation. After completing these steps, he clicks the "Next" button.\\
+    On the next page, there are input fields for personal information. As shown in the image, he enters his name, date of birth, and phone number.\\
+    After entering the phone number, he clicks the 'Send Verification Message' button to receive a verification code, which he enters into the verification code input field.\\
+    After entering the code, he clicks the 'Check for Duplicates' button to confirm if the verification code is correct. Upon seeing the message "Verified," he has successfully completed the identity verification process. He then clicks the next button.\\
+    On the following page, there are fields for entering detailed personal information. As shown in the image, he enters height, age, weight, and gender.\\ If he doesn't want to provide this detailed information, it's optional, but he receives a message that using the platform may be restricted in this case. If he agrees to the collection of sensitive personal information, he enters the information and clicks the agreement button on the checkbox.\\
+    After completing these steps, he successfully completes the sign-up process.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.5\textwidth]{signin_n.png}
+                \end{center}
+                \caption{Sign Up}
+                \label{fig:example}
+            \end{figure}
+
+    \newpage
+    \item \textit{Usercase3: Log-In}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.3\textwidth]{login.drawio.png}
+                \end{center}
+                \caption{Log In flow chart}
+                \label{fig:example}
+            \end{figure}
+  
+    After completing the sign-up process, he proceeds with the login process before using the platform extensively.\\
+    He enters the username and password created during the sign-up stage and clicks the login button.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{login_n.png}
+                \end{center}
+                \caption{Log In page}
+                \label{fig:example}
+            \end{figure}
+
+    If the entered information doesn't match his data, he receives a message stating that the membership information does not match. In case of a simple typo, He can go through the login process again. However, if he has forgotten the username or password, he follows these steps:\\
+    \begin{enumerate}
+        \item Clicks the "Forgot Password" button.\\
+        \item Enters his email address or phone number for identity verification.\\
+        \item After successful verification, he resets the password.\\
+    \end{enumerate}
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{login_inval_n.png}
+                \end{center}
+                \caption{Log In Invalid}
+                \label{fig:example}
+            \end{figure}
+   
+    At this point, if he sets a password that is less than 8 characters long or doesn't include special characters or uppercase letters, he receives a warning message to reset the password accordingly.\\
+    After setting the password, clicking the "Check for Duplicates" button allows him to successfully reset the password.\vspace{12pt}\\
+
+    \item \textit{Usercase4: Home}\\
+    After he successfully logs in and accesses the platform for the first time, he sees the following screen. At the top, there is a bell-shaped button that, when clicked, allows him to check important announcements.\\
+    On the main screen, today's date is displayed, and next to it, there is a button to assist in writing a sleep diary. When he wants to write a sleep diary, he clicks this button.\\
+    Below the button, there is a tab briefly showing solutions for comfortable sleep. He can check summarized solutions on this screen when he wants to review them.\\
+    At the bottom bar, there are buttons to navigate to key features, allowing he to select the desired service and move to the corresponding page.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{home_n.png}
+                \end{center}
+                \caption{Home Screen}
+                \label{fig:example}
+            \end{figure}\vspace{12pt}
+
+    \item \textit{Usercase5: Monthly Calendar}\\
+    On this screen, He can easily grasp his monthly sleep status at a glance.\\
+    If there is a blue circle on the date he wants to check, it indicates a good sleep status for that day. If there is a yellow circle, it suggests a moderately typical sleep, and a red circle indicates a night with poor sleep.\\
+    If he forgets to write a sleep diary on a particular day, there won't be any markings. Clicking on these dates takes he to the sleep diary creation screen, allowing him to record the sleep details he remembers for that day.\\
+    Below the calendar, there's a button to assist in writing today's sleep diary. After checking the monthly calendar, when he wants to write a sleep diary for the current day, he can click this button to go to the sleep diary creation page.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{monthly_n.png}
+                \end{center}
+                \caption{Monthly Calendar}
+                \label{fig:example}
+            \end{figure}\vspace{12pt}
+   
+
+    \item \textit{Usercase6: Writing Sleep Diary}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.3\textwidth]{diaryflow.drawio.png}
+                \end{center}
+                \caption{Writing Diary \& Generating Image flow chart}
+                \label{fig:example}
+            \end{figure}
+    When he enters the sleep diary creation page to write his sleep diary, the following index appear:\\
+    He responds to categories such as caffeine, exercise, and medication on this page.\\
+    In the caffeine section, he selects the amount of caffeine consumed during the day. For instance, if he consumed a cup of caffeine today, he would click the "150mg, 1cup" button (A regular-sized Americano in a typical coffee specialty shop contains an average of 150mg of caffeine). He also notes how many hours before bedtime he consumed caffeine.\\
+    In the exercise section, he responds to how many hours of exercise he did during the day and notes how many hours before sleeping he exercised.\\
+    In the medication section, he selects the type of medication and how many times it was taken.\\
+    After completing this process, he clicks the next button, leading to the next page. Here, he inputs the total hours of sleep he got and how many times he woke up during the night.\\
+    Clicking the next button again reveals a text input field. Here, he writes down his emotions or events from the day as he wishes. For example:\vspace{6pt}\\
+    \textit{"These days have been really challenging. I'm stressed due to a lot of tasks assigned by my boss at work. Perhaps that's why I tossed and turned so much even while sleeping."}\vspace{6pt}\\
+    Once the diary is complete, he clicks the finish button. At this point, all the information he entered, along with Brid.zzz data, is transferred to the platform, and his unique sleep chart is generated.\vspace{12pt}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{writng_diary_n.png}
+                \end{center}
+                \caption{Write sleep diary}
+                \label{fig:example}
+            \end{figure}
+
+    \item \textit{Usercase7: Daily Diary}\\
+    When he comes to this page to review his daily sleep diary, the first thing he sees is the sleep chart generated by DALL-E. As an image created from his input, he can easily glance at this chart to assess his sleep status for the day.\\
+    Below the chart, there is a section where he can assess the quality of his sleep. he can check his sleep score numerically, and next to the score, there is a table displaying the sleep stage distribution obtained from Brid.zzz.\\
+    Further down, there is a section where he can review the information he entered. Responses to sleep impact factors from the sleep diary page are presented in an easy-to-read table format.\\
+    At the bottom, the content of the diary he wrote is displayed.\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{daily_data_n.png}
+                \end{center}
+                \caption{Daily Diary - Brid.zzz data valid}
+                \label{fig:example}
+            \end{figure}
+
+    If there is no Brid.zzz data for that day or if he did not enter information about sleep impact factors, the corresponding sections will display "None"\vspace{12pt}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.4\textwidth]{daily_nodata_n.png}
+                \end{center}
+                \caption{Daily Diary - Brid.zzz data invalid}
+                \label{fig:example}
+            \end{figure}
+   
+    \item \textit{Usercase8: Sleep Solution}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{solution_n.png}
+                \end{center}
+                \caption{Sleep Solution}
+                \label{fig:example}
+            \end{figure}
+    This is the page he navigates to when he wants to explore the sleep solutions provided by our platform for the past week.\\
+    Here, he can read about the sleep solutions offered by our platform based on the data from the past week. As mentioned earlier, this page provides detailed information about the sleep solutions for the past week.\\
+    If he wants to review the sleep solutions from two weeks ago, he can press the "Previous Week" button to check.\\
+    It's important to note that he can view a maximum of three months' data during this process.\vspace{12pt}
+    
+    \item \textit{Usercase9: Settings}\\
+    This is the page he navigates to when he wants to change the settings of our platform.\\
+    If he wishes to modify the personal information entered during registration, he clicks the "My Page" button.\\
+    When seeking help or general instructions about using the platform, he can press the "Help" button to access the overall user manual.\\
+    To check the platform's version information or verify updates, he can press "Updates \& Versions" to review.
+    If he wants to toggle notifications on or off for alerts sent by the platform, he can adjust the On/Off toggle button to configure this setting.\\
+    Finally, clicking the "Log Out" button will log him out of the platform.\vspace{12pt}\\
+    \begin{figure}
+                \centering
+                \begin{center}
+                    \includegraphics[width=0.2\textwidth]{settings.png}
+                \end{center}
+                \caption{Settings}
+                \label{fig:example}
+            \end{figure}
+
+    \item \textit{Usercase10: Shutdown of Application}\\
+    When he wants to exit the program, he can do so through two processes.\\
+    \begin{enumerate}
+        \item Exiting the program while keeping login information intact:\\
+        In this case, simply closing the mobile web is sufficient. Since our application is a web app, closing the web browser will end the program.
+
+        \item Exiting the program after logging out:\\
+        If Kevin wants to go through the logout process, he can enter the "Settings" window, press the "Log Out" button, and complete the logout. Afterward, closing the web browser will finalize the program's shutdown.\\
+    \end{enumerate}
+
+\section{\Large{Discussion}}
+\begin{enumerate}[label=\arabic*]
+    \item \textit{Error in Transmitting Radio Button Values to the Backend}\vspace{6pt}\\
+    An unknown error occurred when implementing radio buttons on the frontend. Despite examining compile messages, the error type seemed unfamiliar, making it challenging to determine where to start troubleshooting. After exploring various resources, it was identified that the values were transmitted in the format of a JSON object. To address this issue, the radio box values were parsed into JSON string format before being posted. As a result, the error was successfully resolved.\vspace{12pt}\\
+
+    \item \textit{Failure in Connecting the Data Analysis Model with the Web Server}\vspace{6pt}\\
+    One crucial functionality of our web service is to analyze user-inputted data, undergo machine learning, and provide personalized sleep solutions to users. During the short preparation period of the first semester project, we did not have the opportunity to collect our own data, so we utilized datasets available on Kaggle.\\
+
+    With this data, we performed correlation analysis and utilized various regression models to find the most significant regression model. We also determined the correlation between the dependent variable and each independent variable. However, connecting this model to the web server to implement a service that offers personalized solutions based on user-inputted data proved to be challenging.\\
+    
+    Despite our efforts to provide this service until the end of the project, achieving a perfect implementation was unsuccessful. During the upcoming vacation, we plan to work on implementing a flawless service.\vspace{12pt}\\
+    \end{enumerate}
+\end{enumerate}
+\newpage
 
 \bibliographystyle{unsrt}
 \bibliography{ref}
